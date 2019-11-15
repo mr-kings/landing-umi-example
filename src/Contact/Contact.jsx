@@ -31,7 +31,8 @@ class Contact extends React.PureComponent {
     delete props.dataSource;
     delete props.isMobile;
     return (
-      <div {...props} {...dataSource.wrapper} style={{background: `url(${dataSource.wrapper.bg})`}}>
+      <div {...props} {...dataSource.wrapper} style={{background: `url(${dataSource.wrapper.bg}) no-repeat center center`,
+      backgroundSize: 'cover'}}>
         <div
           {...dataSource.Content}
           onMouseEnter={this.markerEnter}

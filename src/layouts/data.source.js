@@ -120,7 +120,7 @@ export const Footer10DataSource = {
         className: 'block',
         title: {
           className: 'logo',
-          isimg: true,
+          isimg: 'true',
           children: spaceed,
         },
         childWrapper: {
@@ -140,7 +140,7 @@ export const Footer10DataSource = {
         className: 'block',
         title: {
           className: 'logo',
-          isimg: true,
+          isimg: 'true',
           children: blackCube,
         },
         childWrapper: {

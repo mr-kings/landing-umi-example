@@ -12,6 +12,7 @@
     "antd": "^3.10.3",
     "dva-logger": "^1.0.0",
     "enquire-js": "^0.2.1",
+    "nprogress": "^0.2.0",
     "rc-banner-anim": "^2.1.0",
     "rc-queue-anim": "^1.6.7",
     "rc-scroll-anim": "^2.5.6",
@@ -19,7 +20,8 @@
     "rc-tween-one": "^2.2.14",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-sublime-video": "^0.2.5"
+    "react-sublime-video": "^0.2.5",
+    "react-transition-group": "^4.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",

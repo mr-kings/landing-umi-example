@@ -2,7 +2,8 @@ import React from 'react';
 import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import QueueAnim from 'rc-queue-anim';
-import { Row, Col } from 'antd';
+import Animate from 'rc-animate';
+import { Row, Col,BackTop,Popover } from 'antd';
 import NavLink from 'umi/navlink';
 import { getChildrenToRender } from '../utils/utils';
 
@@ -14,13 +15,13 @@ class Footer extends React.Component {
   getChildrenToRender2 = (item, i) => {
     if (item && item.href) {
       return (<NavLink
+        key={i}
         href={item.href}
         to={item.href}>
         {item.children}
       </NavLink>)
     }
   }
-
 
   getLiChildren = (data) =>
     data.map((item, i) => {
@@ -29,7 +30,7 @@ class Footer extends React.Component {
         <Col key={i.toString()} {...itemProps} title={null} content={null}>
           <h2 {...title}>
             {typeof title.children === 'string' &&
-            title.isimg ? (
+            title.isimg && title.isimg === 'true' ? (
               <img src={title.children} width="100%" alt="img" />
             ) : (
               title.children
@@ -48,7 +49,16 @@ class Footer extends React.Component {
     delete props.dataSource;
     delete props.isMobile;
     const childrenToRender = this.getLiChildren(dataSource.block.children);
+    const content = (
+      <div>
+        <p>返回顶部</p>
+      </div>
+    );
     return (
+      <>
+      <Popover placement="left" content={content} trigger="hover">
+        <BackTop visibilityHeight={200}/>
+      </Popover>
       <div {...props} {...dataSource.wrapper}>
         <OverPack {...dataSource.OverPack}>
           <QueueAnim
@@ -73,6 +83,7 @@ class Footer extends React.Component {
           </TweenOne>
         </OverPack>
       </div>
+      </>
     );
   }
 }

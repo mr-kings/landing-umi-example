@@ -33,7 +33,7 @@ class Content extends React.PureComponent {
                 console.info('block',block)
                 return (
                   // <Col key={i.toString()} {...blockProps}>
-                    <div {...item}>
+                    <div key={i.toString()} {...item}>
                       {item.children.map(getChildrenToRender)}
                     </div>
                   // </Col>

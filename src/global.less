@@ -1,5 +1,45 @@
 @import './assets/style/antMotionStyle.less';
 
+
+.contentWrap{
+  min-height: calc(~"100vh - 64px");
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1993;
+  width: 100vw;
+  min-height: 100vh;
+  background: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-back-top{
+  right: 20px!important;
+  bottom: 100px!important;
+  .ant-back-top-content{
+    background-color: #666!important;
+    &:hover {
+      background-color: rgba(3, 169, 244, 0.65)!important;
+    }
+  }
+}
+
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar{
   width: 1px;  /*滚动条宽度*/

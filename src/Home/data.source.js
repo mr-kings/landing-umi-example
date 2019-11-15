@@ -152,6 +152,73 @@ export const Content00DataSource = {
     ],
   },
 };
+
+export const FeatureDataSource = {
+  wrapper: { className: 'home-page-wrapper feature-wrapper' },
+  OverPack: { className: 'home-page feature', playScale: 0.3 },
+  Carousel: {
+    className: 'feature-content',
+    dots: false,
+    wrapper: { className: 'feature-content-wrapper' },
+    titleWrapper: {
+      className: 'feature-title-wrapper',
+      barWrapper: {
+        className: 'feature-title-bar-wrapper',
+        children: { className: 'feature-title-bar' },
+      },
+      title: { className: 'feature-title' },
+    },
+    children: [
+      {
+        title: { className: 'feature-title-text', children: '服务指标' },
+        className: 'feature-item',
+        name: 'block0',
+        children: [
+          {
+            md: 8,
+            xs: 24,
+            className: 'feature-number-wrapper',
+            name: 'child0',
+            number: {
+              className: 'feature-number',
+              unit: { className: 'feature-unit', children: '万' },
+              toText: true,
+              children: '116',
+            },
+            children: { className: 'feature-text', children: '浏览数量' },
+          },
+          {
+            md: 8,
+            xs: 24,
+            className: 'feature-number-wrapper',
+            name: 'child1',
+            number: {
+              className: 'feature-number',
+              unit: { className: 'feature-unit', children: '家' },
+              toText: true,
+              children: '20',
+            },
+            children: { className: 'feature-text', children: '合作企业' },
+          },
+          {
+            md: 8,
+            xs: 24,
+            className: 'feature-number-wrapper',
+            name: 'child2',
+            number: {
+              className: 'feature-number',
+              unit: { className: 'feature-unit', children: '个' },
+              toText: true,
+              children: '200',
+            },
+            children: { className: 'feature-text', children: '产品数量' },
+          },
+        ],
+      },
+    ],
+  },
+};
+
 export const Content50DataSource = {
   wrapper: { className: 'home-page-wrapper content5-wrapper' },
   page: { className: 'home-page content5' },

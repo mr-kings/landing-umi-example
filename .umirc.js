@@ -4,12 +4,18 @@ export default {
     htmlSuffix: true,
     dynamicRoot: true,
   },
+  treeShaking: true,
   plugins: [
     [
       'umi-plugin-react', {
         antd: true,
         dva: {
           immer: true,
+        },
+        dynamicImport: {
+          loadingComponent: './components/Loading/index',
+          webpackChunkName: true,
+          level: 3,
         },
         locale: {
           enable: true, // default false

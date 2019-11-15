@@ -1,4 +1,21 @@
 @import '../assets/style/custom.less';
+.goUp{
+  position: fixed;
+  bottom: 200px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  z-index: 1993;
+  cursor: pointer;
+  border-radius: 50%;
+  background: url('../assets/img/up.svg');
+  transition: all 0.5s;
+  &:hover{
+    transition: all 0.5s;
+    box-shadow: 0px 0px 5px #888888;
+    background: url('../assets/img/upActived.svg');
+  }
+}
 .footer1-wrapper {
   background: @template-bg-color;
   overflow: hidden;

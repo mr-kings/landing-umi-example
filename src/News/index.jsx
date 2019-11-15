@@ -3,16 +3,11 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Banner1 from './Banner1';
-import Content0 from './Content0';
-import Content5 from './Content5';
-import Feature from './Feature';
+import List from './List';
+import Detail from './Detail';
 
 import {
-  Banner10DataSource,
-  Content00DataSource,
-  Content50DataSource,
-  FeatureDataSource,
+  NewsListDataSource
 } from './data.source';
 
 let isMobile;
@@ -22,7 +17,7 @@ enquireScreen((b) => {
 
 const { location } = window;
 
-export default class Home extends React.Component {
+export default class Team extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -51,25 +46,18 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Banner1
-        id="Banner1_0"
-        key="Banner1_0"
-        dataSource={Banner10DataSource}
+      <List
+        id="List"
+        key="List"
+        dataSource={NewsListDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content0
-        id="Content0_0"
-        key="Content0_0"
-        dataSource={Content00DataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature
-        id="Feature"
-        key="Feature"
-        dataSource={FeatureDataSource}
-        isMobile={this.state.isMobile}
-      />,
-
+      // <Detail
+      //   id="Detail"
+      //   key="Detail"
+      //   dataSource={Feature00DataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
     ];
     return (
       <div

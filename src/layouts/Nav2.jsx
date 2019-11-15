@@ -2,7 +2,7 @@ import React from 'react';
 import TweenOne from 'rc-tween-one';
 import { Button, Menu, Dropdown, Input } from 'antd';
 import NavLink from 'umi/navlink';
-// import Link from 'umi/link';
+import router from 'umi/router';
 import { Link } from 'rc-scroll-anim';
 import { FormattedMessage, getLocale, setLocale } from 'umi-plugin-locale'
 
@@ -37,11 +37,16 @@ class Header extends React.Component {
   // 检索
   onHandleSearch = value => {
     console.info('value',value)
+  }
 
+  // 页面跳转
+  onHandleLink (url) {
+    router.push(url)
   }
 
   render() {
     const { dataSource, isMobile, ...props } = this.props;
+    const pathname = window.location.pathname.split('.html')[0]
 
     const { phoneOpen } = this.state;
     const { LinkMenu } = dataSource;
@@ -50,9 +55,9 @@ class Header extends React.Component {
     const navChildren = Object.keys(navData).map((key, i) => {
       if (navData[key].childrens && navData[key].childrens.length > 0) {
         const menu = (
-          <Menu>
+          <Menu key={i.toString()}>
             {navData[key].childrens.map((item,index) => {
-              return <Menu.Item key={index.toString()}>
+              return <Menu.Item key={index.toString()} onClick={this.onHandleLink.bind(this,navData[key].href)}>
                 <Link {...item}>
                   {item.name}
                 </Link>
@@ -61,23 +66,26 @@ class Header extends React.Component {
           </Menu>
         );
         return <Dropdown overlay={menu} key={i.toString()}>
-                <NavLink
-                  {...navData[key]}
-                  href={navData[key].href}
-                  to={navData[key].href}
-                >
-                  {navData[key].name}
-                </NavLink>
-              </Dropdown>
+            <span key={i.toString()} className={pathname==navData[key].href?'menu-item actived':'menu-item'}>
+              <NavLink
+                key={i.toString()}
+                href={navData[key].href}
+                to={navData[key].href}
+              >
+                {navData[key].name}
+              </NavLink>
+            </span>
+          </Dropdown>
       } else {
-        return <NavLink
+        return <span key={i.toString()} className={pathname==navData[key].href?'menu-item actived':'menu-item'}>
+              <NavLink
                   key={i.toString()}
-                  {...navData[key]}
                   href={navData[key].href}
                   to={navData[key].href}
                 >
                   {navData[key].name}
                 </NavLink>
+        </span>
       }
     });
 

@@ -31,9 +31,11 @@ class Content extends React.PureComponent {
               {childWrapper.children.map((block, i) => {
                 const { children: item, ...blockProps } = block;
                 return (
-                  <div key={i.toString()} {...item}>
-                    {item.children.map(getChildrenToRender)}
-                  </div>
+                  <Col key={i.toString()} {...blockProps}>
+                    <div {...item}>
+                      {item.children.map(getChildrenToRender)}
+                    </div>
+                  </Col>
                 );
               })}
             </QueueAnim>
