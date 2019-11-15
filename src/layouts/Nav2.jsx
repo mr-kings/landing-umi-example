@@ -144,18 +144,19 @@ class Header extends React.Component {
             reverse={!!phoneOpen}
           >
             {navChildren}
-
           </TweenOne>
           <div className="searchWrap">
             <Search
               placeholder="请输入关键词"
-              style={{ width: 200 }}
+              style={{ width: 200,marginRight: '6px' }}
               maxLength={30}
               onSearch={value => this.onHandleSearch(value)}
             />
             <Button
               size="small"
-              type="link"
+              // type="link"
+              shape="circle"
+              ghost="true"
               onClick={() => {
                 this.changLang();
               }}
