@@ -145,12 +145,12 @@ export const NewsListDataSource = {
   titleWrapper: {
     className: 'title-wrapper',
     children: [
-      {
-        name: 'image',
-        children:
-          'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
-        className: 'title-image',
-      },
+      // {
+      //   name: 'image',
+      //   children:
+      //     'https://gw.alipayobjects.com/zos/rmsportal/PiqyziYmvbgAudYfhuBr.svg',
+      //   className: 'title-image',
+      // },
       { name: 'title', children: '新闻动态', className: 'title-h1' },
     ],
   },

@@ -1,10 +1,23 @@
 import React from 'react';
-import { List, Avatar, Icon, Row, Col } from 'antd';
+import { List, Skeleton, Icon, Row, Col } from 'antd';
 import { TweenOneGroup } from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from '../utils/utils';
 
 class NewsList extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: true
+    }
+  }
+
+  componentDidMount () {
+    setTimeout(() => {
+      this.setState({ loading: false });
+    }, 3000);
+  }
+
   getChildrenToRender = (data) =>
     data.map((item) => {
       return (
@@ -26,17 +39,18 @@ class NewsList extends React.PureComponent {
     const childrenToRender = this.getChildrenToRender(
       dataSource.block.children
     );
+    const {loading} = this.state
 
     const listData = [];
     for (let i = 0; i < 23; i++) {
       listData.push({
         href: 'http://ant.design',
-        title: `ant design part ${i}`,
+        title: `37岁程序员被裁，120天没找到工作，无奈去小公司，结果蒙了 ${i}`,
         avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
         description:
-          'Ant Design, a design language for background applications, is refined by Ant UED Team.',
+          '2019-11-11 12:00:00',
         content:
-          'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
+          '从短期来看，程序员的确算是个不错的工作，薪水也比一般岗位高很多；但是从长远来看，程序员的中年危机会比其他岗位来的更早，很多程序员只有到了35岁左...',
       });
     }
 
@@ -70,44 +84,44 @@ class NewsList extends React.PureComponent {
               {...dataSource.block}
             >
               <List
-    itemLayout="vertical"
-    size="large"
-    pagination={{
-      onChange: page => {
-        console.log(page);
-      },
-      pageSize: 3,
-    }}
-    dataSource={listData}
-    footer={
-      <div>
-      </div>
-    }
-    renderItem={item => (
-      <List.Item
-        key={item.title}
-        actions={[
-          <IconText type="star-o" text="156" key="list-vertical-star-o" />,
-          <IconText type="like-o" text="156" key="list-vertical-like-o" />,
-          <IconText type="message" text="2" key="list-vertical-message" />,
-        ]}
-        extra={
-          <img
-            width={272}
-            alt="logo"
-            src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
-          />
-        }
-      >
-        <List.Item.Meta
-          // avatar={<Avatar src={item.avatar} />}
-          title={<a href={item.href}>{item.title}</a>}
-          description={item.description}
-        />
-        {item.content}
-      </List.Item>
-    )}
-  />
+                itemLayout="vertical"
+                size="large"
+                bordered={false}
+                split={false}
+                pagination={{
+                  onChange: page => {
+                    console.log(page);
+                  },
+                  pageSize: 6,
+                }}
+                dataSource={listData}
+                footer={<div></div>}
+                renderItem={item => (
+                  <Skeleton active loading={loading}>
+                    <List.Item
+                      key={item.title}
+                      actions={[
+                        <IconText type="star-o" text="156" key="list-vertical-star-o" />,
+                        <IconText type="like-o" text="156" key="list-vertical-like-o" />,
+                        <IconText type="message" text="2" key="list-vertical-message" />,
+                      ]}
+                      extra={
+                        <img
+                          width={272}
+                          alt="logo"
+                          src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+                        />
+                      }
+                    >
+                      <List.Item.Meta
+                        title={<a href={item.href}>{item.title}</a>}
+                        description={item.description}
+                      />
+                      {item.content}
+                    </List.Item>
+                  </Skeleton>
+                )}
+              />
             </TweenOneGroup>
           </OverPack>
         </div>

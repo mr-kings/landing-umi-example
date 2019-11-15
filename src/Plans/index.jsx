@@ -7,7 +7,7 @@ import List from './List';
 import Detail from './Detail';
 
 import {
-  NewsListDataSource
+  PlansListDataSource
 } from './data.source';
 
 let isMobile;
@@ -49,7 +49,7 @@ export default class Team extends React.Component {
       <List
         id="List"
         key="List"
-        dataSource={NewsListDataSource}
+        dataSource={PlansListDataSource}
         isMobile={this.state.isMobile}
       />,
       // <Detail
