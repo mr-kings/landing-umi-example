@@ -1,6 +1,6 @@
 @import '../assets/style/custom';
-@header2: header2;
-.@{header2} {
+@header: header;
+.@{header} {
   background: @template-nav-bg-color;
   width: 100%;
   z-index: 1;
@@ -18,14 +18,22 @@
     height: 64px;
     line-height: 64px;
     margin-right: 20px;
-    & img {
-      height: 100%;
-      vertical-align: middle;
-      display: inline-block;
-    }
     & a {
-      display: block;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
       height: 100%;
+      overflow: hidden;
+      & img {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-right: 6px;
+      }
+      & span{
+        color: #fff;
+      }
     }
   }
   &-menu {
@@ -75,7 +83,6 @@
   text-align: right;
   display: flex;
   align-items: center;
-  width: 260px;
 }
 .ant-input-search{
   & input{
@@ -95,7 +102,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{header2} {
+  .@{header} {
     &-logo {
       z-index: 101;
     }
@@ -121,8 +128,8 @@
         margin: 4px 0 8px;
         &.active, &:hover {
           border: none;
-          background: @primary-color;
-          color: @template-text-color-light;
+          background: transparent;
+          color: @primary-color;
         }
       }
     }
@@ -148,7 +155,7 @@
     }
     & .open {
       height: auto;
-      .@{header2}-mobile-menu {
+      .@{header}-mobile-menu {
         em {
           &:nth-child(1) {
             transform: translateY(6px) rotate(45deg);
@@ -161,7 +168,7 @@
           }
         }
       }
-      .@{header2}-menu {
+      .@{header}-menu {
         opacity: 1;
         pointer-events: auto;
       }

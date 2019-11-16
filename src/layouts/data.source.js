@@ -5,68 +5,40 @@ import logo from '@/assets/img/SpaceedLogo(LR).png';
 
 export const Nav20DataSource = {
   isScrollLink: true,
-  wrapper: { className: 'header2 home-page-wrapper' },
-  page: { className: 'home-page' },
+  wrapper: { className: 'header home-page-wrapper' },
+  page: { className: 'home-page header' },
   logo: {
-    className: 'header2-logo',
+    className: 'header-logo',
     href: '/index',
-    children: logo,
+    children: 'https://gw.alipayobjects.com/zos/rmsportal/SVDdpZEbAlWBFuRGIIIL.svg',
+    name: 'LANDING'
   },
   LinkMenu: {
-    className: 'header2-menu',
+    className: 'header-menu',
     children: [
       {
-        name: '团队力量',
-        href: '/team',
-        className: 'menu-item',
-        childrens: [{
-          name: '公司简介',
-          to: 'ideal',
-          className: 'child-menu-item',
-        },{
-          name: '发展历程',
-          to: 'development',
-          className: 'child-menu-item',
-        },{
-          name: '社会责任',
-          to: 'responsibility',
-          className: 'child-menu-item',
-        },{
-          name: '团队文化',
-          to: 'culture',
-          className: 'child-menu-item',
-        },{
-          name: '团队成员',
-          to: 'managment',
-          className: 'child-menu-item',
-        }]
-      },
-      {
-        name: '合作伙伴',
-        href: '/partners',
-        className: 'menu-item',
-        childrens: [{
-          name: '合作企业目录',
-          to: 'Banner1_0',
-          className: 'child-menu-item',
-        },{
-          name: '最新合作企业',
-          to: 'Banner1_1',
-          className: 'child-menu-item',
-        },{
-          name: '金牌合作企业',
-          to: 'Banner1_0',
-          className: 'child-menu-item',
-        }]
-      },
-      {
-        name: '新闻动态',
-        href: '/news',
+        name: '公司首页',
+        href: '/index',
         className: 'menu-item',
       },
       {
-        name: '明日计划',
-        href: '/plans',
+        name: '关于我们',
+        href: '/about',
+        className: 'menu-item',
+      },
+      {
+        name: '服务项目',
+        href: '/service',
+        className: 'menu-item',
+      },
+      {
+        name: '工程案列',
+        href: '/case',
+        className: 'menu-item',
+      },
+      {
+        name: '服务流程',
+        href: '/process',
         className: 'menu-item',
       },
       {
@@ -76,7 +48,7 @@ export const Nav20DataSource = {
       },
     ],
   },
-  mobileMenu: { className: 'header2-mobile-menu' },
+  mobileMenu: { className: 'header-mobile-menu' },
   menuLink: { children: [] },
 };
 
@@ -100,36 +72,32 @@ export const Footer10DataSource = {
       {
         name: 'block1',
         xs: 24,
-        md: 8,
+        md: 4,
         className: 'block',
-        title: { children: '导航' },
+        title: { children: '网站导航' },
         childWrapper: {
           children: [
-            { name: 'link0', href: '/team', to: '/team', children: '团队力量' },
-            { name: 'link1', href: '/partners', to: '/partners',  children: '合作伙伴' },
-            { name: 'link2', href: '/news', to: '/news',  children: '新闻动态' },
-            { name: 'link3', href: '/plans', to: '/plans',  children: '明天计划' },
-            { name: 'link4', href: '/contact', to: '/contact',  children: '联系我们' },
+            { name: 'link0', href: '/index', to: '/index', children: '网站首页' },
+            { name: 'link1', href: '/about', to: '/about',  children: '关于我们' },
+            { name: 'link2', href: '/service', to: '/service',  children: '服务项目' },
+            { name: 'link3', href: '/case', to: '/case', children: '工程案列' },
+            { name: 'link4', href: '/process', to: '/process',  children: '服务流程' },
+            { name: 'link5', href: '/contact', to: '/contact',  children: '联系我们' },
           ],
         },
       },
       {
         name: 'block2',
         xs: 24,
-        md: 4,
+        md: 8,
         className: 'block',
-        title: {
-          className: 'logo',
-          isimg: 'true',
-          children: spaceed,
-        },
+        title: { children: '公司信息' },
         childWrapper: {
-          className: 'slogan',
           children: [
-            {
-              name: '关注我们',
-              children: '太空种子公众号',
-            },
+            { name: 'link0', children: '公司名称：金服科技有限公司' },
+            { name: 'link1', children: '公司地址：广东省深圳市南山区前海路1号' },
+            { name: 'link2', children: '公司电话：0778 - 8434221' },
+            { name: 'link3', children: '公司邮箱：kimshareclub@gmail.com' },
           ],
         },
       },
@@ -148,7 +116,7 @@ export const Footer10DataSource = {
           children: [
             {
               name: '关注我们',
-              children: '黑方科技公众号',
+              children: '快捷通道 扫码关注',
             },
           ],
         },
@@ -172,8 +140,9 @@ export const Footer10DataSource = {
     children: (
       <>
         <span>
-          ©2019 粤ICP备14000000号-1 / 粤
+          Copyright ©2019 Powered By Kimshare Version 1.0.0
         </span>
+        <a href="http://www.miitbeian.gov.cn/" style={{marginLeft: '6px'}}>粤ICP备18059926号</a>
       </>
     ),
   },

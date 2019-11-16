@@ -24,21 +24,6 @@ class Header extends React.Component {
     });
   };
 
-  // 切换语言
-  changLang() {
-    const locale = getLocale();
-    if (!locale || locale === 'zh-CN') {
-      setLocale('en-US');
-    } else {
-      setLocale('zh-CN');
-    }
-  }
-
-  // 检索
-  onHandleSearch = value => {
-    console.info('value',value)
-  }
-
   // 页面跳转
   onHandleLink (url) {
     router.push(url)
@@ -109,7 +94,8 @@ class Header extends React.Component {
               href={dataSource.logo.href}
               to={dataSource.logo.href}
             >
-            <img width="100%" src={dataSource.logo.children} alt="img" />
+              <img width="100%" src={dataSource.logo.children} alt="img" />
+              <span>{dataSource.logo.name}</span>
             </NavLink>
           </TweenOne>
           {isMobile && (
@@ -145,25 +131,6 @@ class Header extends React.Component {
           >
             {navChildren}
           </TweenOne>
-          <div className="searchWrap">
-            <Search
-              placeholder="请输入关键词"
-              style={{ width: 200,marginRight: '6px' }}
-              maxLength={30}
-              onSearch={value => this.onHandleSearch(value)}
-            />
-            <Button
-              size="small"
-              // type="link"
-              shape="circle"
-              ghost="true"
-              onClick={() => {
-                this.changLang();
-              }}
-            >
-              <FormattedMessage id="lang" />
-            </Button>
-          </div>
         </div>
 
       </TweenOne>
