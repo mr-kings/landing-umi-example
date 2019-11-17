@@ -1,12 +1,10 @@
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import { Row, Col } from 'antd';
-import { Carousel } from 'element-react';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from '../utils/utils';
-import 'element-theme-default';
 
-class Case extends React.PureComponent {
+class Culture extends React.PureComponent {
   render() {
     const { dataSource, isMobile, ...props } = this.props;
     const {
@@ -15,7 +13,7 @@ class Case extends React.PureComponent {
       page,
       OverPack: overPackData,
       childWrapper,
-      carousel,
+      contentWrap,
     } = dataSource;
     return (
       <div {...props} {...wrapper}>
@@ -34,20 +32,16 @@ class Case extends React.PureComponent {
               component={Row}
               componentProps={childWrapper}
             >
-              <Carousel {...carousel}>
-                {
-                  childWrapper.children.map((item, index) => {
-                    return (
-                      <Carousel.Item key={index}>
-                        <div className={item.className}>
-                          <img src={item.children.image} alt="工程案例" />
-                          <span className={item.children.titleClassName}>{item.children.title}</span>
-                        </div>
-                      </Carousel.Item>
-                    )
-                  })
-                }
-              </Carousel>
+              {childWrapper.children.map((block, i) => {
+                const { children: item, ...blockProps } = block;
+                return (
+                  <Col key={i.toString()} {...blockProps}>
+                    <div {...item}>
+                      {item.children.map(getChildrenToRender)}
+                    </div>
+                  </Col>
+                );
+              })}
             </QueueAnim>
           </OverPack>
         </div>
@@ -56,4 +50,4 @@ class Case extends React.PureComponent {
   }
 }
 
-export default Case;
+export default Culture;

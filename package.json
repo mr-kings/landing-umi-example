@@ -11,6 +11,8 @@
   "dependencies": {
     "antd": "^3.10.3",
     "dva-logger": "^1.0.0",
+    "element-react": "^1.4.34",
+    "element-theme-default": "^1.4.13",
     "enquire-js": "^0.2.1",
     "nprogress": "^0.2.0",
     "rc-banner-anim": "^2.1.0",
@@ -20,6 +22,7 @@
     "rc-tween-one": "^2.2.14",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-hot-loader": "^4.12.18",
     "react-sublime-video": "^0.2.5",
     "react-transition-group": "^4.3.0"
   },

@@ -47,6 +47,7 @@ class Layout extends Component {
 
   componentDidUpdate (prevProps) {
     if (this.props.location !== prevProps.location) {
+      window.scrollTo(0,0)
       NProgress.done();
     }
   }

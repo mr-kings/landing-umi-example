@@ -3,22 +3,14 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Banner1 from './Banner1';
 import About from './About';
+import Culture from './Culture';
 import Service from './Service';
-import Case from './Case';
-import Process from './Process';
-import Feature from './Feature';
-import Contact from './Contact';
 
 import {
-  Banner10DataSource,
   AboutDataSource,
-  ServiceDataSource,
-  CaseDataSource,
-  ProcessDataSource,
-  FeatureDataSource,
-  ContactDataSource,
+  CultureDataSource,
+  ServiceFetureDataSource
 } from './data.source';
 
 let isMobile;
@@ -57,46 +49,23 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Banner1
-        id="Banner1_0"
-        key="Banner1_0"
-        dataSource={Banner10DataSource}
-        isMobile={this.state.isMobile}
-      />,
+      <img key="img" style={{width: '100%', height: '300px'}} src="https://zos.alipayobjects.com/rmsportal/xHxWkcvaIcuAdQl.jpg"/>,
       <About
         id="About"
         key="About"
         dataSource={AboutDataSource}
         isMobile={this.state.isMobile}
       />,
+      <Culture
+        id="Culture"
+        key="Culture"
+        dataSource={CultureDataSource}
+        isMobile={this.state.isMobile}
+      />,
       <Service
         id="Service"
         key="Service"
-        dataSource={ServiceDataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Case
-        id="Case"
-        key="Case"
-        dataSource={CaseDataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Process
-        id="Process"
-        key="Process"
-        dataSource={ProcessDataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Feature
-        id="Feature"
-        key="Feature"
-        dataSource={FeatureDataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Contact
-        id="Contact"
-        key="Contact"
-        dataSource={ContactDataSource}
+        dataSource={ServiceFetureDataSource}
         isMobile={this.state.isMobile}
       />,
     ];

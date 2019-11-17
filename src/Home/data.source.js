@@ -1,7 +1,10 @@
 import React from 'react';
+import blackCube from '@/assets/img/blackCube.jpeg';
+// 轮播图
 export const Banner10DataSource = {
   wrapper: { className: 'banner1' },
   BannerAnim: {
+    autoPlay: true,
     children: [
       {
         name: 'elem0',
@@ -76,7 +79,12 @@ export const AboutDataSource = {
   contentWrap: {
     content: (
       <>
-        <p>关于我们</p>
+        <p>AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单
+        方便、专业可靠、无限可能的数据可视化最佳实践。</p>
+        <p>AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单
+        方便、专业可靠、无限可能的数据可视化最佳实践。</p>
+        <p>AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单
+        方便、专业可靠、无限可能的数据可视化最佳实践。</p>
       </>
     )
   },
@@ -180,15 +188,12 @@ export const ServiceDataSource = {
       },
     ],
   },
-  contentWrap: {
-    className: 'service-content',
-    content: (
-      <>
-        <p>服务项目</p>
-      </>
-    )
+  BannerAnim: {
+    autoPlay: true,
+    arrow: false,
+    type: "across"
   },
-  childWrapper: {
+  block: {
     className: 'service-block-wrapper',
     children: [
       {
@@ -197,21 +202,35 @@ export const ServiceDataSource = {
         md: 8,
         xs: 24,
         children: {
-          className: 'service-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'service-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
+          wrapper: { className: 'service-block-box ' },
+          topWrapper: { className: 'service-top-wrapper' },
+          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          content: {
+            className: 'service-content',
+            children: (
+              <>
+                <p className="service-content-title">管网服务工程</p>
+                <ul>
+                  <li>市政管道工程</li>
+                  <li>管道CCTV检测</li>
+                  <li>管道疏通精细</li>
+                  <li>管道维修改造</li>
+                  <li>管道封堵</li>
+                </ul>
+              </>
+            ),
+          },
+          line: { className: 'service-line' },
+          buttonWrapper: {
+            className: 'service-button-wrapper',
+            children: {
+              a: {
+                className: 'service-button',
+                href: '#',
+                children: '查看更多',
+              },
             },
-            {
-              name: 'title',
-              className: 'service-block-title',
-              children: '一站式业务接入',
-            },
-            { name: 'content', children: '支付、结算、核算接入产品效率翻四倍' },
-          ],
+          },
         },
       },
       {
@@ -220,24 +239,35 @@ export const ServiceDataSource = {
         md: 8,
         xs: 24,
         children: {
-          className: 'service-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'service-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
+          wrapper: { className: 'service-block-box' },
+          topWrapper: { className: 'service-top-wrapper' },
+          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          content: {
+            className: 'service-content',
+            children: (
+              <>
+                <p className="service-content-title">河道清淤工程</p>
+                <ul>
+                  <li>市政管道工程</li>
+                  <li>管道CCTV检测</li>
+                  <li>管道疏通精细</li>
+                  <li>管道维修改造</li>
+                  <li>管道封堵</li>
+                </ul>
+              </>
+            ),
+          },
+          line: { className: 'service-line' },
+          buttonWrapper: {
+            className: 'service-button-wrapper',
+            children: {
+              a: {
+                className: 'service-button',
+                href: '#',
+                children: '查看更多',
+              },
             },
-            {
-              name: 'title',
-              className: 'service-block-title',
-              children: '一站式事中风险监控',
-            },
-            {
-              name: 'content',
-              children: '在所有需求配置环节事前风险控制和质量控制能力',
-            },
-          ],
+          },
         },
       },
       {
@@ -246,24 +276,146 @@ export const ServiceDataSource = {
         md: 8,
         xs: 24,
         children: {
-          className: 'service-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'service-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+          wrapper: { className: 'service-block-box ' },
+          topWrapper: { className: 'service-top-wrapper' },
+          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          content: {
+            className: 'service-content',
+            children: (
+              <>
+                <p className="service-content-title">排污系统清理</p>
+                <ul>
+                  <li>市政管道工程</li>
+                  <li>管道CCTV检测</li>
+                  <li>管道疏通精细</li>
+                  <li>管道维修改造</li>
+                  <li>管道封堵</li>
+                </ul>
+              </>
+            ),
+          },
+          line: { className: 'service-line' },
+          buttonWrapper: {
+            className: 'service-button-wrapper',
+            children: {
+              a: {
+                className: 'service-button',
+                href: '#',
+                children: '查看更多',
+              },
             },
-            {
-              name: 'title',
-              className: 'service-block-title',
-              children: '一站式数据运营',
+          },
+        },
+      },
+      {
+        name: 'block3',
+        className: 'service-block',
+        md: 8,
+        xs: 24,
+        children: {
+          wrapper: { className: 'service-block-box ' },
+          topWrapper: { className: 'service-top-wrapper' },
+          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          content: {
+            className: 'service-content',
+            children: (
+              <>
+                <p className="service-content-title">管网服务工程</p>
+                <ul>
+                  <li>市政管道工程</li>
+                  <li>管道CCTV检测</li>
+                  <li>管道疏通精细</li>
+                  <li>管道维修改造</li>
+                  <li>管道封堵</li>
+                </ul>
+              </>
+            ),
+          },
+          line: { className: 'service-line' },
+          buttonWrapper: {
+            className: 'service-button-wrapper',
+            children: {
+              a: {
+                className: 'service-button',
+                href: '#',
+                children: '查看更多',
+              },
             },
-            {
-              name: 'content',
-              children: '沉淀产品接入效率和运营小二工作效率数据',
+          },
+        },
+      },
+      {
+        name: 'block4',
+        className: 'service-block',
+        md: 8,
+        xs: 24,
+        children: {
+          wrapper: { className: 'service-block-box' },
+          topWrapper: { className: 'service-top-wrapper' },
+          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          content: {
+            className: 'service-content',
+            children: (
+              <>
+                <p className="service-content-title">管网服务工程</p>
+                <ul>
+                  <li>市政管道工程</li>
+                  <li>管道CCTV检测</li>
+                  <li>管道疏通精细</li>
+                  <li>管道维修改造</li>
+                  <li>管道封堵</li>
+                </ul>
+              </>
+            ),
+          },
+          line: { className: 'service-line' },
+          buttonWrapper: {
+            className: 'service-button-wrapper',
+            children: {
+              a: {
+                className: 'service-button',
+                href: '#',
+                children: '查看更多',
+              },
             },
-          ],
+          },
+        },
+      },
+      {
+        name: 'block5',
+        className: 'service-block',
+        md: 8,
+        xs: 24,
+        children: {
+          wrapper: { className: 'service-block-box ' },
+          topWrapper: { className: 'service-top-wrapper' },
+          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          content: {
+            className: 'service-content',
+            children: (
+              <>
+                <p className="service-content-title">管网服务工程</p>
+                <ul>
+                  <li>市政管道工程</li>
+                  <li>管道CCTV检测</li>
+                  <li>管道疏通精细</li>
+                  <li>管道维修改造</li>
+                  <li>管道封堵</li>
+                </ul>
+              </>
+            ),
+          },
+          line: { className: 'service-line' },
+          buttonWrapper: {
+            className: 'service-button-wrapper',
+            children: {
+              a: {
+                className: 'service-button',
+                href: '#',
+                children: '查看更多',
+              },
+            },
+          },
         },
       },
     ],
@@ -288,13 +440,14 @@ export const CaseDataSource = {
       },
     ],
   },
-  contentWrap: {
-    className: 'case-content',
-    content: (
-      <>
-        <p>工程案例</p>
-      </>
-    )
+  carousel: {
+    className: 'case-block-wrapper',
+    interval: '4000',
+    type: 'card',
+    height: '400px',
+    autoplay: true,
+    indicatorPosition: 'outside',
+    trigger: 'click',
   },
   childWrapper: {
     className: 'case-block-wrapper',
@@ -302,77 +455,32 @@ export const CaseDataSource = {
       {
         name: 'block0',
         className: 'case-block',
-        md: 8,
-        xs: 24,
         children: {
           className: 'case-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'case-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
-            },
-            {
-              name: 'title',
-              className: 'case-block-title',
-              children: '一站式业务接入',
-            },
-            { name: 'content', children: '支付、结算、核算接入产品效率翻四倍' },
-          ],
-        },
+          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          title: '文字描述',
+          titleClassName: 'case-block-item-title',
+        }
       },
       {
         name: 'block1',
         className: 'case-block',
-        md: 8,
-        xs: 24,
         children: {
           className: 'case-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'case-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
-            },
-            {
-              name: 'title',
-              className: 'case-block-title',
-              children: '一站式事中风险监控',
-            },
-            {
-              name: 'content',
-              children: '在所有需求配置环节事前风险控制和质量控制能力',
-            },
-          ],
-        },
+          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          title: '文字描述',
+          titleClassName: 'case-block-item-title',
+        }
       },
       {
         name: 'block2',
         className: 'case-block',
-        md: 8,
-        xs: 24,
         children: {
           className: 'case-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'case-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
-            },
-            {
-              name: 'title',
-              className: 'case-block-title',
-              children: '一站式数据运营',
-            },
-            {
-              name: 'content',
-              children: '沉淀产品接入效率和运营小二工作效率数据',
-            },
-          ],
-        },
+          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          title: '文字描述',
+          titleClassName: 'case-block-item-title',
+        }
       },
     ],
   },
@@ -382,9 +490,9 @@ export const CaseDataSource = {
 export const ProcessDataSource = {
   wrapper: { className: 'home-page-wrapper process-wrapper' },
   page: { className: 'home-page process' },
-  OverPack: { playScale: 0.3, className: '' },
+  OverPack: { playScale: 0.3 },
   titleWrapper: {
-    className: 'title-wrapper',
+    className: 'process-title-wrapper',
     children: [
       {
         name: 'title',
@@ -396,57 +504,230 @@ export const ProcessDataSource = {
       },
     ],
   },
-  contentWrap: {
-    className: 'process-content',
-    content: (
-      <>
-        <p>服务流程</p>
-      </>
-    )
+  childWrapper: {
+    className: 'process-button-wrapper',
+    children: [
+      {
+        name: 'button',
+        className: 'process-button',
+        children: { href: '#Contact', children: '立即体验' },
+      },
+    ],
+  },
+  Carousel: {
+    dots: false,
+    className: 'process-carousel',
+    wrapper: { className: 'process-block-wrapper' },
+    children: {
+      className: 'process-block',
+      titleWrapper: {
+        className: 'process-carousel-title-wrapper',
+        title: { className: 'process-carousel-title' },
+      },
+      children: [
+        {
+          name: 'block0',
+          className: 'process-block-row',
+          gutter: 120,
+          title: {
+            className: 'process-carousel-title-block',
+            children: '',
+          },
+          children: [
+            {
+              className: 'process-block-col',
+              md: 6,
+              xs: 24,
+              name: 'child0',
+              arrow: {
+                className: 'process-block-arrow',
+                children:
+                  'https://gw.alipayobjects.com/zos/basement_prod/167bee48-fbc0-436a-ba9e-c116b4044293.svg',
+              },
+              children: {
+                className: 'process-block-child',
+                children: [
+                  {
+                    name: 'image',
+                    className: 'process-block-image',
+                    children:
+                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                  },
+                  {
+                    name: 'title',
+                    className: 'process-block-title',
+                    children: '需求沟通',
+                  },
+                  {
+                    name: 'content',
+                    className: 'process-block-content',
+                    children: '沟通业务需求，对接人：诚凡、芸彩',
+                  },
+                ],
+              },
+            },
+            {
+              className: 'process-block-col',
+              md: 6,
+              xs: 24,
+              name: 'child1',
+              arrow: {
+                className: 'process-block-arrow',
+                children:
+                  'https://gw.alipayobjects.com/zos/basement_prod/167bee48-fbc0-436a-ba9e-c116b4044293.svg',
+              },
+              children: {
+                className: 'process-block-child',
+                children: [
+                  {
+                    name: 'image',
+                    className: 'process-block-image',
+                    children:
+                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                  },
+                  {
+                    name: 'title',
+                    className: 'process-block-title',
+                    children: '需求沟通',
+                  },
+                  {
+                    name: 'content',
+                    className: 'process-block-content',
+                    children:
+                      '沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩',
+                  },
+                ],
+              },
+            },
+            {
+              className: 'process-block-col',
+              md: 6,
+              xs: 24,
+              name: 'child2',
+              arrow: {
+                className: 'process-block-arrow',
+                children:
+                  'https://gw.alipayobjects.com/zos/basement_prod/167bee48-fbc0-436a-ba9e-c116b4044293.svg',
+              },
+              children: {
+                className: 'process-block-child',
+                children: [
+                  {
+                    name: 'image',
+                    className: 'process-block-image',
+                    children:
+                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                  },
+                  {
+                    name: 'title',
+                    className: 'process-block-title',
+                    children: '需求沟通',
+                  },
+                  {
+                    name: 'content',
+                    className: 'process-block-content',
+                    children:
+                      '沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩',
+                  },
+                ],
+              },
+            },
+            {
+              className: 'process-block-col',
+              md: 6,
+              xs: 24,
+              name: 'child3',
+              arrow: {
+                className: 'process-block-arrow',
+                children:
+                  'https://gw.alipayobjects.com/zos/basement_prod/167bee48-fbc0-436a-ba9e-c116b4044293.svg',
+              },
+              children: {
+                className: 'process-block-child',
+                children: [
+                  {
+                    name: 'image',
+                    className: 'process-block-image',
+                    children:
+                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                  },
+                  {
+                    name: 'title',
+                    className: 'process-block-title',
+                    children: '需求沟通',
+                  },
+                  {
+                    name: 'content',
+                    className: 'process-block-content',
+                    children:
+                      '沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩',
+                  },
+                ],
+              },
+            },
+          ],
+        },
+      ],
+    },
+  },
+};
+
+// 找聚通就是省心
+export const FeatureDataSource = {
+  wrapper: { className: 'home-page-wrapper feature-wrapper' },
+  page: { className: 'home-page feature' },
+  OverPack: { playScale: 0.3, className: '' },
+  titleWrapper: {
+    className: 'title-wrapper',
+    children: [{ name: 'title', children: '找聚通,就是省心' }],
   },
   childWrapper: {
-    className: 'process-block-wrapper',
+    className: 'feature-block-wrapper',
     children: [
       {
         name: 'block0',
-        className: 'process-block',
+        className: 'feature-block',
         md: 8,
         xs: 24,
         children: {
-          className: 'process-block-item',
+          className: 'feature-block-item',
           children: [
             {
               name: 'image',
-              className: 'process-block-icon',
+              className: 'feature-block-icon',
               children:
-                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
+                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
             },
             {
               name: 'title',
-              className: 'process-block-title',
+              className: 'feature-block-title',
               children: '一站式业务接入',
             },
-            { name: 'content', children: '支付、结算、核算接入产品效率翻四倍' },
+            {
+              name: 'content',
+              children: '支付、结算、核算接入产品效率翻四倍',
+              className: 'jzj8z9sya9-editor_css',
+            },
           ],
         },
       },
       {
         name: 'block1',
-        className: 'process-block',
+        className: 'feature-block',
         md: 8,
         xs: 24,
         children: {
-          className: 'process-block-item',
+          className: 'feature-block-item',
           children: [
             {
               name: 'image',
-              className: 'process-block-icon',
+              className: 'feature-block-icon',
               children:
-                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
+                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
             },
             {
               name: 'title',
-              className: 'process-block-title',
+              className: 'feature-block-title',
               children: '一站式事中风险监控',
             },
             {
@@ -458,21 +739,21 @@ export const ProcessDataSource = {
       },
       {
         name: 'block2',
-        className: 'process-block',
+        className: 'feature-block',
         md: 8,
         xs: 24,
         children: {
-          className: 'process-block-item',
+          className: 'feature-block-item',
           children: [
             {
               name: 'image',
-              className: 'process-block-icon',
+              className: 'feature-block-icon',
               children:
-                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
             },
             {
               name: 'title',
-              className: 'process-block-title',
+              className: 'feature-block-title',
               children: '一站式数据运营',
             },
             {
@@ -486,287 +767,74 @@ export const ProcessDataSource = {
   },
 };
 
-export const FeatureDataSource = {
-  wrapper: { className: 'home-page-wrapper feature-wrapper' },
-  OverPack: { className: 'home-page feature', playScale: 0.3 },
-  Carousel: {
-    className: 'feature-content',
-    dots: false,
-    wrapper: { className: 'feature-content-wrapper' },
-    titleWrapper: {
-      className: 'feature-title-wrapper',
-      barWrapper: {
-        className: 'feature-title-bar-wrapper',
-        children: { className: 'feature-title-bar' },
-      },
-      title: { className: 'feature-title' },
-    },
+// 联系我们
+export const ContactDataSource = {
+  wrapper: { className: 'home-page-wrapper contact-wrapper' },
+  page: { className: 'home-page contact' },
+  OverPack: { playScale: 0.3, className: '' },
+  titleWrapper: {
+    className: 'title-wrapper',
     children: [
       {
-        title: { className: 'feature-title-text', children: '服务指标' },
-        className: 'feature-item',
+        name: 'title',
+        children: (
+          <>
+            <p>联系我们</p>
+          </>
+        ),
+      },
+    ],
+  },
+  childWrapper: {
+    className: 'contact-block-wrapper',
+    children: [
+      {
         name: 'block0',
-        children: [
-          {
-            md: 8,
-            xs: 24,
-            className: 'feature-number-wrapper',
-            name: 'child0',
-            number: {
-              className: 'feature-number',
-              unit: { className: 'feature-unit', children: '万' },
-              toText: true,
-              children: '116',
+        className: 'contact-block contact-block1',
+        md: 10,
+        xs: 24,
+        children: {
+          className: 'contact-block-item',
+          children: [
+            {
+              name: 'content',
+              className: 'contact-block-label',
+              children: '公司名称：金服科技有限公司',
             },
-            children: { className: 'feature-text', children: '浏览数量' },
-          },
-          {
-            md: 8,
-            xs: 24,
-            className: 'feature-number-wrapper',
-            name: 'child1',
-            number: {
-              className: 'feature-number',
-              unit: { className: 'feature-unit', children: '家' },
-              toText: true,
-              children: '20',
+            {
+              name: 'content',
+              className: 'contact-block-label',
+              children: '联系人：罗**',
             },
-            children: { className: 'feature-text', children: '合作企业' },
-          },
-          {
-            md: 8,
-            xs: 24,
-            className: 'feature-number-wrapper',
-            name: 'child2',
-            number: {
-              className: 'feature-number',
-              unit: { className: 'feature-unit', children: '个' },
-              toText: true,
-              children: '200',
+            {
+              name: 'content',
+              className: 'contact-block-label',
+              children: '联系电话：0778 - 8434221',
             },
-            children: { className: 'feature-text', children: '产品数量' },
-          },
-        ],
+            {
+              name: 'content',
+              className: 'contact-block-label',
+              children: '电子邮箱：kimshareclub@gmail.com',
+            },
+            {
+              name: 'image',
+              className: 'contact-block-img',
+              src: blackCube,
+            },
+          ],
+        },
+      },
+      {
+        name: 'block1',
+        className: 'contact-block',
+        md: 14,
+        xs: 24,
+        children: {
+          className: 'contact-block-item',
+          children: [ ],
+        },
       },
     ],
   },
 };
 
-export const Content50DataSource = {
-  wrapper: { className: 'home-page-wrapper content5-wrapper' },
-  page: { className: 'home-page content5' },
-  OverPack: { playScale: 0.3, className: '' },
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      { name: 'title', children: '客户案例', className: 'title-h1' },
-      {
-        name: 'content',
-        className: 'title-content',
-        children: '在这里用一段话介绍服务的案例情况',
-      },
-    ],
-  },
-  block: {
-    className: 'content5-img-wrapper',
-    gutter: 16,
-    children: [
-      {
-        name: 'block0',
-        className: 'block',
-        md: 6,
-        xs: 24,
-        children: {
-          wrapper: { className: 'content5-block-content' },
-          img: {
-            children:
-              'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          },
-          content: { children: 'Ant Design' },
-        },
-      },
-      {
-        name: 'block1',
-        className: 'block',
-        md: 6,
-        xs: 24,
-        children: {
-          wrapper: { className: 'content5-block-content' },
-          img: {
-            children:
-              'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
-          },
-          content: { children: 'Ant Motion' },
-        },
-      },
-      {
-        name: 'block2',
-        className: 'block',
-        md: 6,
-        xs: 24,
-        children: {
-          wrapper: { className: 'content5-block-content' },
-          img: {
-            children:
-              'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          },
-          content: { children: 'Ant Design' },
-        },
-      },
-      {
-        name: 'block3',
-        className: 'block',
-        md: 6,
-        xs: 24,
-        children: {
-          wrapper: { className: 'content5-block-content' },
-          img: {
-            children:
-              'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
-          },
-          content: { children: 'Ant Motion' },
-        },
-      },
-      {
-        name: 'block4',
-        className: 'block',
-        md: 6,
-        xs: 24,
-        children: {
-          wrapper: { className: 'content5-block-content' },
-          img: {
-            children:
-              'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          },
-          content: { children: 'Ant Design' },
-        },
-      },
-      {
-        name: 'block5',
-        className: 'block',
-        md: 6,
-        xs: 24,
-        children: {
-          wrapper: { className: 'content5-block-content' },
-          img: {
-            children:
-              'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
-          },
-          content: { children: 'Ant Motion' },
-        },
-      },
-      {
-        name: 'block6',
-        className: 'block',
-        md: 6,
-        xs: 24,
-        children: {
-          wrapper: { className: 'content5-block-content' },
-          img: {
-            children:
-              'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-          },
-          content: { children: 'Ant Design' },
-        },
-      },
-      {
-        name: 'block7',
-        className: 'block',
-        md: 6,
-        xs: 24,
-        children: {
-          wrapper: { className: 'content5-block-content' },
-          img: {
-            children:
-              'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
-          },
-          content: { children: 'Ant Motion' },
-        },
-      },
-    ],
-  },
-};
-export const Footer10DataSource = {
-  wrapper: { className: 'home-page-wrapper footer1-wrapper' },
-  OverPack: { className: 'footer1', playScale: 0.2 },
-  block: {
-    className: 'home-page',
-    gutter: 0,
-    children: [
-      {
-        name: 'block0',
-        xs: 24,
-        md: 6,
-        className: 'block',
-        title: {
-          className: 'logo',
-          children:
-            'https://zos.alipayobjects.com/rmsportal/qqaimmXZVSwAhpL.svg',
-        },
-        childWrapper: {
-          className: 'slogan',
-          children: [
-            {
-              name: 'case',
-              children: 'Animation specification and components of Ant Design.',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block1',
-        xs: 24,
-        md: 6,
-        className: 'block',
-        title: { children: '产品' },
-        childWrapper: {
-          children: [
-            { name: 'link0', href: '#', children: '产品更新记录' },
-            { name: 'link1', href: '#', children: 'API文档' },
-            { name: 'link2', href: '#', children: '快速入门' },
-            { name: 'link3', href: '#', children: '参考指南' },
-          ],
-        },
-      },
-      {
-        name: 'block2',
-        xs: 24,
-        md: 6,
-        className: 'block',
-        title: { children: '关于' },
-        childWrapper: {
-          children: [
-            { href: '#', name: 'link0', children: 'FAQ' },
-            { href: '#', name: 'link1', children: '联系我们' },
-          ],
-        },
-      },
-      {
-        name: 'block3',
-        xs: 24,
-        md: 6,
-        className: 'block',
-        title: { children: '资源' },
-        childWrapper: {
-          children: [
-            { href: '#', name: 'link0', children: 'Ant Design' },
-            { href: '#', name: 'link1', children: 'Ant Motion' },
-          ],
-        },
-      },
-    ],
-  },
-  copyrightWrapper: { className: 'copyright-wrapper' },
-  copyrightPage: { className: 'home-page' },
-  copyright: {
-    className: 'copyright',
-    children: (
-      <>
-        <span>
-          ©2018 by <a href="https://motion.ant.design">Ant Motion</a> All Rights
-          Reserved
-        </span>
-      </>
-    ),
-  },
-};
