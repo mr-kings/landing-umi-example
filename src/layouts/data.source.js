@@ -60,19 +60,9 @@ export const Footer10DataSource = {
     gutter: 0,
     children: [
       {
-        name: 'block0',
-        xs: 24,
-        md: 4,
-        className: 'block',
-        title: { children: '' },
-        childWrapper: {
-          children: []
-        }
-      },
-      {
         name: 'block1',
         xs: 24,
-        md: 4,
+        md: 6,
         className: 'block',
         title: { children: '网站导航' },
         childWrapper: {
@@ -89,7 +79,7 @@ export const Footer10DataSource = {
       {
         name: 'block2',
         xs: 24,
-        md: 8,
+        md: 12,
         className: 'block',
         title: { children: '公司信息' },
         childWrapper: {
@@ -104,7 +94,7 @@ export const Footer10DataSource = {
       {
         name: 'block3',
         xs: 24,
-        md: 4,
+        md: 6,
         className: 'block',
         title: {
           className: 'logo',
@@ -120,16 +110,6 @@ export const Footer10DataSource = {
             },
           ],
         },
-      },
-      {
-        name: 'block4',
-        xs: 24,
-        md: 4,
-        className: 'block',
-        title: { children: '' },
-        childWrapper: {
-          children: []
-        }
       },
     ],
   },

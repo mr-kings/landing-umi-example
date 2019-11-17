@@ -4,14 +4,17 @@ import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
 import Banner1 from './Banner1';
-import Content0 from './Content0';
-import Content5 from './Content5';
+import About from './About';
+import Service from './Service';
+import Case from './Case';
 import Feature from './Feature';
 
 import {
   Banner10DataSource,
-  Content00DataSource,
-  Content50DataSource,
+  AboutDataSource,
+  ServiceDataSource,
+  CaseDataSource,
+  ProcessDataSource,
   FeatureDataSource,
 } from './data.source';
 
@@ -57,10 +60,28 @@ export default class Home extends React.Component {
         dataSource={Banner10DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Content0
-        id="Content0_0"
-        key="Content0_0"
-        dataSource={Content00DataSource}
+      <About
+        id="About"
+        key="About"
+        dataSource={AboutDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Service
+        id="Service"
+        key="Service"
+        dataSource={ServiceDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Case
+        id="Case"
+        key="Case"
+        dataSource={CaseDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Case
+        id="Process"
+        key="Process"
+        dataSource={ProcessDataSource}
         isMobile={this.state.isMobile}
       />,
       <Feature

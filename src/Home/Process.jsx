@@ -4,7 +4,7 @@ import { Row, Col } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from '../utils/utils';
 
-class Content extends React.PureComponent {
+class Service extends React.PureComponent {
   render() {
     const { dataSource, isMobile, ...props } = this.props;
     const {
@@ -13,12 +13,16 @@ class Content extends React.PureComponent {
       page,
       OverPack: overPackData,
       childWrapper,
+      contentWrap,
     } = dataSource;
     return (
       <div {...props} {...wrapper}>
         <div {...page}>
           <div {...titleWrapper}>
             {titleWrapper.children.map(getChildrenToRender)}
+            <div className="title-line-wrapper page1-line">
+              <div className="title-line" />
+            </div>
           </div>
           <OverPack {...overPackData}>
             <QueueAnim
@@ -28,6 +32,9 @@ class Content extends React.PureComponent {
               component={Row}
               componentProps={childWrapper}
             >
+              {
+                contentWrap.content && <div className={contentWrap.className}>{contentWrap.content}</div>
+              }
               {childWrapper.children.map((block, i) => {
                 const { children: item, ...blockProps } = block;
                 return (
@@ -46,4 +53,4 @@ class Content extends React.PureComponent {
   }
 }
 
-export default Content;
+export default Service;

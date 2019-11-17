@@ -59,7 +59,7 @@ class Banner extends React.PureComponent {
             </BannerAnim>
           </div>
         </TweenOneGroup>
-        <TweenOne
+        {/* <TweenOne
           animation={{
             y: '-=20',
             yoyo: true,
@@ -71,7 +71,7 @@ class Banner extends React.PureComponent {
           key="icon"
         >
           <Icon type="down" />
-        </TweenOne>
+        </TweenOne> */}
       </div>
     );
   }
