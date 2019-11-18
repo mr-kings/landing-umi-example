@@ -790,7 +790,7 @@ export const ContactDataSource = {
     children: [
       {
         name: 'block0',
-        className: 'contact-block contact-block1',
+        className: 'contact-block contact-block-first',
         md: 10,
         xs: 24,
         children: {
