@@ -445,7 +445,7 @@ export const CaseDataSource = {
     interval: '4000',
     type: 'card',
     height: '400px',
-    autoplay: true,
+    autoplay: false,
     indicatorPosition: 'outside',
     trigger: 'click',
   },

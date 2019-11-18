@@ -6,15 +6,15 @@
   .@{service} {
     height: 100%;
     padding: 64px 24px;
-    .title-line-wrapper {
-      width: 312px;
-      margin: 10px auto 20px;
-      .title-line {
-        animation: page1TitleLine 3s ease-in-out 1.5s infinite;
-      }
-    }
-    >.title-wrapper {
+    .title-wrapper {
       margin: 0 auto 50px;
+      .title-line-wrapper {
+        width: 312px;
+        margin: 10px auto 20px;
+        .title-line {
+          animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+        }
+      }
     }
     .banner2-wrapper{
       height: 550px;
@@ -23,7 +23,7 @@
         height: 100%;
       }
       .banner-anim-thumb span.active {
-        background: #1890ff;
+        background: @primary-color;
       }
     }
     &-block {
