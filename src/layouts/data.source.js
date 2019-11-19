@@ -97,7 +97,7 @@ export const Footer10DataSource = {
         md: 6,
         className: 'block',
         title: {
-          className: 'logo',
+          className: 'image',
           isimg: 'true',
           children: blackCube,
         },

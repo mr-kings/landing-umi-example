@@ -6,11 +6,15 @@ import { enquireScreen } from 'enquire-js';
 import About from './About';
 import Culture from './Culture';
 import Service from './Service';
+import Group from './Group';
+import Area from './Area';
 
 import {
   AboutDataSource,
   CultureDataSource,
-  ServiceFetureDataSource
+  ServiceFetureDataSource,
+  ServiceGroupDataSource,
+  ServiceAreaDataSource
 } from './data.source';
 
 let isMobile;
@@ -60,6 +64,18 @@ export default class Home extends React.Component {
         id="Culture"
         key="Culture"
         dataSource={CultureDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Group
+        id="Group"
+        key="Group"
+        dataSource={ServiceGroupDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Area
+        id="Area"
+        key="Area"
+        dataSource={ServiceAreaDataSource}
         isMobile={this.state.isMobile}
       />,
       <Service

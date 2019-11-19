@@ -1,0 +1,51 @@
+@serviceGroup: serviceGroup;
+.@{serviceGroup}-wrapper {
+  // background: @layout-body-background;
+  .@{serviceGroup} {
+    min-height: 530px;
+    overflow: hidden;
+    position: relative;
+    padding: 56px 24px;
+    .title-line-wrapper {
+      width: 312px;
+      margin: 10px auto 20px;
+      .title-line {
+        animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+      }
+    }
+    &-box {
+      position: absolute;
+      width: 80%;
+      height: 300px;
+      display: block;
+      left: 0;
+      top: 166px;
+      bottom: 0;
+      right: 0;
+      margin: 10px auto;
+    }
+    &-block {
+      position: absolute;
+      transition: transform .45s ease;
+      cursor: pointer;
+      &-child {
+        border-radius: 100%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-text {
+        color: @white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
