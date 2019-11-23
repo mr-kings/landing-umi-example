@@ -3,11 +3,14 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import List from './List';
-import Detail from './Detail';
+import Step from './Step';
+import Desc from './Description';
+import Contact from './Contact';
 
 import {
-  NewsListDataSource
+  ProcessDescDataSource,
+  ProcessStepDataSource,
+  ProcessContactDataSource
 } from './data.source';
 
 let isMobile;
@@ -46,18 +49,25 @@ export default class Team extends React.Component {
 
   render() {
     const children = [
-      <List
-        id="List"
-        key="List"
-        dataSource={NewsListDataSource}
+      <img key="img" style={{width: '100%', height: '300px'}} src="https://img.ui.cn/data/upload/201911/1574157846_103.jpeg"/>,
+      <Desc
+        id="Desc"
+        key="Desc"
+        dataSource={ProcessDescDataSource}
         isMobile={this.state.isMobile}
       />,
-      // <Detail
-      //   id="Detail"
-      //   key="Detail"
-      //   dataSource={Feature00DataSource}
-      //   isMobile={this.state.isMobile}
-      // />,
+      <Step
+        id="Step"
+        key="Step"
+        dataSource={ProcessStepDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Contact
+        id="Contact"
+        key="Contact"
+        dataSource={ProcessContactDataSource}
+        isMobile={this.state.isMobile}
+      />
     ];
     return (
       <div

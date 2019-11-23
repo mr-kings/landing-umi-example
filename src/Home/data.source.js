@@ -226,7 +226,7 @@ export const ServiceDataSource = {
             children: {
               a: {
                 className: 'service-button',
-                href: '#',
+                href: '/service.html',
                 children: '查看更多',
               },
             },
@@ -263,7 +263,7 @@ export const ServiceDataSource = {
             children: {
               a: {
                 className: 'service-button',
-                href: '#',
+                href: '/service.html',
                 children: '查看更多',
               },
             },
@@ -300,7 +300,7 @@ export const ServiceDataSource = {
             children: {
               a: {
                 className: 'service-button',
-                href: '#',
+                href: '/service.html',
                 children: '查看更多',
               },
             },
@@ -337,7 +337,7 @@ export const ServiceDataSource = {
             children: {
               a: {
                 className: 'service-button',
-                href: '#',
+                href: '/service.html',
                 children: '查看更多',
               },
             },
@@ -374,7 +374,7 @@ export const ServiceDataSource = {
             children: {
               a: {
                 className: 'service-button',
-                href: '#',
+                href: '/service.html',
                 children: '查看更多',
               },
             },
@@ -411,7 +411,7 @@ export const ServiceDataSource = {
             children: {
               a: {
                 className: 'service-button',
-                href: '#',
+                href: '/service.html',
                 children: '查看更多',
               },
             },
@@ -790,7 +790,7 @@ export const ContactDataSource = {
     children: [
       {
         name: 'block0',
-        className: 'contact-block contact-block-first',
+        className: 'contact-block',
         md: 10,
         xs: 24,
         children: {
@@ -826,7 +826,7 @@ export const ContactDataSource = {
       },
       {
         name: 'block1',
-        className: 'contact-block',
+        className: 'contact-block contact-block-two',
         md: 14,
         xs: 24,
         children: {

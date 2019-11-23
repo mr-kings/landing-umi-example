@@ -3,6 +3,7 @@ import withRouter from 'umi/withRouter';
 import { connect } from 'dva';
 import { enquireScreen } from 'enquire-js';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { Alert } from 'antd';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css'
 import Header from './Nav2';
@@ -14,7 +15,7 @@ import {
 } from './data.source.js';
 
 
-NProgress.configure({ showSpinner: false, easing: 'ease', speed: 900, minimum: 0.1 });
+NProgress.configure({ showSpinner: true, easing: 'ease', speed: 900, minimum: 0.1 });
 
 let isMobile;
 enquireScreen((b) => {
@@ -52,9 +53,19 @@ class Layout extends Component {
     }
   }
 
-  render() {
+  render () {
+    const onClose = e => {
+      console.log(e, 'I was closed.');
+    };
     return (
       <>
+        <Alert
+          message="欢迎来到***官网!"
+          type="info"
+          banner={true}
+          closable
+          onClose={onClose}
+        />
         <Header dataSource={Nav20DataSource} isMobile={this.state.isMobile} />
         <div className="contentWrap">
           <TransitionGroup>

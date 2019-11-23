@@ -1,9 +1,9 @@
-@aboutModule: aboutModule;
+@processDesc: processDesc;
 
-.@{aboutModule}-wrapper {
+.@{processDesc}-wrapper {
   padding: 60px 0 60px 0;
   background-color: #fafafa;
-  .@{aboutModule} {
+  .@{processDesc} {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -37,8 +37,10 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{aboutModule}-wrapper {
-    .@{aboutModule} {
+  .@{processDesc}-wrapper {
+    min-height: 480px;
+
+    .@{processDesc} {
       display: block;
     }
   }

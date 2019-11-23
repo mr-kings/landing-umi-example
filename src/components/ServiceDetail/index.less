@@ -1,10 +1,14 @@
-@caseList: caseList;
-.@{caseList}-wrapper {
+@serviceDetail: serviceDetail;
+.@{serviceDetail}-wrapper {
   background-color: #fafafa;
-  .@{caseList} {
-    padding-top: 65px;
+  .@{serviceDetail} {
+    padding: 0px 24px;
+    padding-top: 56px;
     >p {
       text-align: center;
+    }
+    .title-second{
+      font-size: 18px;
     }
     .title-line-wrapper {
       width: 312px;
@@ -13,13 +17,13 @@
         animation: page1TitleLine 3s ease-in-out 1.5s infinite;
       }
     }
-    &-img-wrapper {
+    .serviceItem-img-wrapper {
       margin: 0 auto;
       left: 0;
       right: 0;
       .block {
         margin-bottom: 24px;
-        .caseList-block-content {
+        .serviceItem-block-content {
           display: block;
           background: #fff;
           border-radius: 4px;
@@ -53,9 +57,9 @@
 }
 
 @media screen and (max-width: 767px) {
-  .@{caseList}-wrapper {
+  .@{serviceDetail}-wrapper {
     overflow: hidden;
-    .@{caseList} {
+    .@{serviceDetail} {
       ul {
         li {
           display: block;

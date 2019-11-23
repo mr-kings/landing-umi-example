@@ -11,6 +11,7 @@
   "dependencies": {
     "antd": "^3.10.3",
     "dva-logger": "^1.0.0",
+    "echarts": "^4.5.0",
     "element-react": "^1.4.34",
     "element-theme-default": "^1.4.13",
     "enquire-js": "^0.2.1",

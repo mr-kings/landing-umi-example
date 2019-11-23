@@ -1,6 +1,6 @@
 @serviceList: serviceList;
 .@{serviceList}-wrapper {
-  min-height: 720px;
+  background-color: #fafafa;
   .@{serviceList} {
     padding-top: 65px;
     .title-line-wrapper {
@@ -14,7 +14,66 @@
     >p {
       text-align: center;
     }
-    &-tag {
+    .serviceItem-img-wrapper {
+      margin: 0 auto;
+      padding: 0 24px 24px;
+      .block {
+        margin-bottom: 54px;
+        .serviceItem-block-content {
+          display: block;
+          background: #fff;
+          border: 1px solid #e9e9e9;
+          border-radius: 4px;
+          padding: 10px;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          .page-pro();
+          border: none;
+          transition: box-shadow .3s @ease-out, transform .3s @ease-out;
+          & > span {
+            width: 100%;
+            height: 160px;
+            display: block;
+            background: @line-color;
+            padding: 5%;
+          }
+          & p {
+            width: 100%;
+            line-height: 30px;
+          }
+          &:hover {
+            & p {
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .serviceItem-button {
+      text-align: center;
+      .ant-btn {
+        padding: 8px 40px;
+        border-radius: 20px;
+        line-height: 1.5;
+        height: 40px;
+        border: none;
+        color: #fff;
+        background-color: #3c89f6;
+        background-image: linear-gradient(135deg, #82b5ff 0%, #3c89f6 100%);
+        box-shadow: 0 9px 22px fade(#5f9bf1, 35);
+        transition: color .45s @ease-in-out, box-shadow .45s @ease-in-out, transform .45s @ease-in-out;
+        will-change: transform, box-shadow;
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 14px 26px fade(#5f9bf1, 40);
+        }
+      }
+    }
+
+    .serviceItem-tag {
+      font-size: 16px;
       & i {
         width: 12px;
         height: 14px;
@@ -37,7 +96,6 @@
     }
     &-tabs-wrapper {
       position: relative;
-      margin-top: 24px;
     }
     &-content {
       display: flex;
@@ -57,7 +115,6 @@
 
 @media screen and (max-width: 767px) {
   .@{serviceList}-wrapper {
-    min-height: 980px;
     overflow: hidden;
     .@{serviceList} {
       max-width: 100%;

@@ -45,7 +45,7 @@ export default class Team extends React.Component {
 
   render() {
     const children = [
-      <img key="img" style={{width: '100%', height: '300px'}} src="https://zos.alipayobjects.com/rmsportal/xHxWkcvaIcuAdQl.jpg"/>,
+      <img key="img" style={{width: '100%', height: '300px'}} src="https://img.ui.cn/data/upload/201911/1572859364_912.png"/>,
       <List
         id="List"
         key="List"
