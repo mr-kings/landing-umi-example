@@ -21,7 +21,7 @@ class ServiceDetail extends React.PureComponent {
     });
 
   render() {
-    const { serviceItem, ...props } = this.props;
+    const { serviceItem, children, ...props } = this.props;
     const { dataSource } = props;
     delete props.dataSource;
     delete props.isMobile;
@@ -55,6 +55,7 @@ class ServiceDetail extends React.PureComponent {
               {...serviceItem.content}
             >
               {childrenToRender}
+              {children}
             </TweenOneGroup>
           </OverPack>
         </div>

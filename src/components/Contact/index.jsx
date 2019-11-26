@@ -70,15 +70,15 @@ class Contact extends React.PureComponent {
             ],
           })(<Input placeholder="请输入您的手机号码" maxLength={11} />)}
         </Form.Item>
-        <Form.Item {...formItemLayout} label="电子邮件">
+        <Form.Item {...formItemLayout} label="电子邮箱">
           {getFieldDecorator('email', {
             rules: [
               {
                 required: false,
-                message: '请输入您的电子邮件',
+                message: '请输入您的电子邮箱',
               },
             ],
-          })(<Input placeholder="请输入您的电子邮件" maxLength={20} />)}
+          })(<Input placeholder="请输入您的电子邮箱" maxLength={20} />)}
         </Form.Item>
         <Form.Item {...formItemLayout} label="公司名称">
           {getFieldDecorator('company', {
@@ -94,7 +94,7 @@ class Contact extends React.PureComponent {
           {getFieldDecorator('area', {
             rules: [
               {
-                required: true,
+                required: false,
                 message: '请输入您的所在区域',
               },
             ],

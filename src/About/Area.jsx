@@ -30,7 +30,7 @@ class Area extends React.PureComponent {
     var JiangsuDatas = [
       [{
         name: '南京市',
-        value: 0
+        value: 1
       }],	[{
         name: '镇江市',
         value: 0
@@ -95,16 +95,16 @@ class Area extends React.PureComponent {
           zlevel: 2,
           effect: {
             show: true,
-            period: 5, //箭头指向速度，值越小速度越快
-            trailLength: 0.7, //特效尾迹长度[0,1]值越大，尾迹越长重
+            period: 10, //箭头指向速度，值越小速度越快
+            trailLength: 0, //特效尾迹长度[0,1]值越大，尾迹越长重
             symbol: 'arrow', //箭头图标
-            symbolSize: 3, //图标大小
+            symbolSize: 10, //图标大小
           },
           lineStyle: {
             normal: {
-              width: 0, //尾迹线条宽度
+              width: 2, //尾迹线条宽度
               opacity: 1, //尾迹线条透明度
-              curveness: .2, //尾迹线条曲直度
+              curveness: .3, //尾迹线条曲直度
               color: color[i],
             }
           },
@@ -114,9 +114,9 @@ class Area extends React.PureComponent {
           coordinateSystem: 'geo',
           zlevel: 2,
           rippleEffect: { //涟漪特效
-            period: 4, //动画时间，值越小速度越快
+            period: 7, //动画时间，值越小速度越快
             brushType: 'stroke', //波纹绘制方式 stroke, fill
-            scale: 4 //波纹圆环最大限制，值越大波纹越大
+            scale: 6 //波纹圆环最大限制，值越大波纹越大
           },
           label: {
             normal: {
@@ -134,12 +134,12 @@ class Area extends React.PureComponent {
           },
           symbol: 'circle',
           symbolSize: function(val) {
-            return 5+ val[2] * 5; //圆环大小
+            return 10 + val[2] * 5; //圆环大小
           },
           itemStyle: {
             normal: {
-              show: false,
-              color: '#a6c84c'
+              show: true,
+              color: color[1],
             }
           },
           data: item[1].map(function(dataItem) {
@@ -186,7 +186,6 @@ class Area extends React.PureComponent {
     });
 
     var option = {
-      // backgroundColor: '#404a59',
       geo: {
         map: 'Jiangsu',
         zoom: 1.2,
@@ -198,9 +197,9 @@ class Area extends React.PureComponent {
         roam: false, //是否允许缩放
         itemStyle: {
           normal: {
-            color: 'rgba(51, 69, 89, .5)', //地图背景色
-            borderColor: '#516a89', //省市边界线00fcff 516a89
-            borderWidth: 2
+            color: '#0D74DD', //地图背景色
+            borderColor: '#f2f2f2', //省市边界线00fcff 516a89
+            borderWidth: 1
           },
           emphasis: {
             color: 'rgba(37, 43, 61, .5)' //悬浮背景
@@ -240,7 +239,7 @@ class Area extends React.PureComponent {
               </Row>
             </QueueAnim>
           </OverPack>
-          <div id="echart" style={{width: '100%',height:'500px'}}></div>
+          <div id="echart" style={{width: '100%',height:'600px'}}></div>
         </div>
       </div>
     );

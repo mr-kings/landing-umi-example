@@ -6,7 +6,6 @@ import router from 'umi/router';
 import { Link } from 'rc-scroll-anim';
 import { FormattedMessage, getLocale, setLocale } from 'umi-plugin-locale'
 
-const { Search } = Input;
 
 class Header extends React.Component {
   constructor(props) {
@@ -86,7 +85,7 @@ class Header extends React.Component {
           {...dataSource.page}
           className={`${dataSource.page.className}${phoneOpen ? ' open' : ''}`}
         >
-          <TweenOne
+          {/* <TweenOne
             animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
             {...dataSource.logo}
           >
@@ -97,19 +96,8 @@ class Header extends React.Component {
               <img width="100%" src={dataSource.logo.children} alt="img" />
               <span>{dataSource.logo.name}</span>
             </NavLink>
-          </TweenOne>
-          {isMobile && (
-            <div
-              {...dataSource.mobileMenu}
-              onClick={() => {
-                this.phoneClick();
-              }}
-            >
-              <em />
-              <em />
-              <em />
-            </div>
-          )}
+          </TweenOne> */}
+
           <TweenOne
             {...LinkMenu}
             animation={
@@ -131,8 +119,19 @@ class Header extends React.Component {
           >
             {navChildren}
           </TweenOne>
+          {isMobile && (
+            <div
+              {...dataSource.mobileMenu}
+              onClick={() => {
+                this.phoneClick();
+              }}
+            >
+              <em />
+              <em />
+              <em />
+            </div>
+          )}
         </div>
-
       </TweenOne>
     );
   }

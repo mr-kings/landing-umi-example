@@ -22,9 +22,7 @@ export const AboutDataSource = {
         children: {
           className: 'aboutModule-block-item',
           children: [
-            { name: 'content', children: `太空种子Spaceed作为众筹服务项目的全称，名称用意与品牌文化和项目本身
-            浑然天成。“太空”即空间Space，此空间包含众多服务，真正做到众筹服务”一站
-            式“解决方案，全面服务于初创企业和孵化项目。`},
+            { name: 'content', children: `江苏趣通市政工程有限公司是一家专业从事市政疏通行业的公司，本着客户为先、诚信至上、专业高效的服务理念，为广大客户提供管道疏通、管网CCTV检测、工业管道清洗、管道非开挖修复、下水道疏通、排水管道修复、涵洞清淤、排污箱涵清淤、化粪池清理、污水池清理、河道整治清淤、工厂废水清运、水库清淤等综合性服务。`},
           ],
         },
       },
@@ -35,37 +33,7 @@ export const AboutDataSource = {
         children: {
           className: 'aboutModule-block-item',
           children: [
-            { name: 'content', children: `此外，”太空“还有高科技和超前
-            技术的未来展望，对”太空“的探索，也是科技初创企业和项目，以及科技人才对
-            科技的展望和追求。我们希望打造一个科技空间，在追求创新和展望未来的同时，
-            能够从基础的设施上为科技团队服务。`},
-          ],
-        },
-      },
-      {
-        name: 'block2',
-        md: 24,
-        className: 'aboutModule-block',
-        children: {
-          className: 'aboutModule-block-item',
-          children: [
-            { name: 'content', children: `”种子“即seed,是从一个新的创意和想法
-            诞生之初，拥有萌发新芽和蓬勃向上动力的种子。我们希望对全新创意和科技想
-            法在诞生之初就开始孵化，并通过不断的养育和给予，使此创意能够从扎根开始
-            就立足于我们的众筹服务空间，在早期进行持续性的孵化。`},
-          ],
-        },
-      },
-      {
-        name: 'block3',
-        md: 24,
-        className: 'aboutModule-block',
-        children: {
-          className: 'aboutModule-block-item',
-          children: [
-            { name: 'content', children: `我们希望我们支持和
-            孵化的众筹科技产品可以最终走向成功，我们在此过程中，负责到底地不断为项
-            目提供可延续性的服务，帮助项目持续性成长。`},
+            { name: 'content', children: `公司现今有优秀的施工团队、严格的施工流程、先进的机械设备以及标准化的服务系统，合同制合作形式，我们提供首年内1次项目检查服务，针对大需求客户，我公司特别定制了套餐服务，优惠多多，加速响应，快速解决客户的问题。公司常年承包各企业、工厂、小区物业、酒店、饭店、学校等的工程项目，欢迎广大尊敬的客户来电咨询，服务热线13913370505/025-52209660，联系人徐经理。`},
           ],
         },
       },
@@ -111,9 +79,9 @@ export const CultureDataSource = {
             {
               name: 'title',
               className: 'aboutCultureModule-block-title',
-              children: '一站式业务接入',
+              children: '企业价值观',
             },
-            { name: 'content', children: '支付、结算、核算接入产品效率翻四倍' },
+            { name: 'content', children: '以诚行道，以信载物' },
           ],
         },
       },
@@ -134,11 +102,11 @@ export const CultureDataSource = {
             {
               name: 'title',
               className: 'aboutCultureModule-block-title',
-              children: '一站式事中风险监控',
+              children: '企业服务宗旨',
             },
             {
               name: 'content',
-              children: '在所有需求配置环节事前风险控制和质量控制能力',
+              children: '专业高效，保证服务质量',
             },
           ],
         },
@@ -160,11 +128,11 @@ export const CultureDataSource = {
             {
               name: 'title',
               className: 'aboutCultureModule-block-title',
-              children: '一站式数据运营',
+              children: '企业使命',
             },
             {
               name: 'content',
-              children: '沉淀产品接入效率和运营小二工作效率数据',
+              children: '解决城市刚需，美化环境',
             },
           ],
         },
@@ -202,7 +170,6 @@ export const ServiceAreaDataSource = {
   wrapper: { className: 'home-page-wrapper serviceArea-wrapper' },
   page: { className: 'home-page serviceArea' },
   OverPack: { playScale: 0.3 },
-  OverPack: { playScale: 0.3 },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
@@ -228,11 +195,10 @@ export const ServiceAreaDataSource = {
               'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
           },
           textWrapper: { className: 'serviceArea-text' },
-          title: { className: 'serviceArea-title', children: '企业资源管理' },
+          title: { className: 'serviceArea-title', children: '' },
           content: {
             className: 'serviceArea-content',
-            children:
-              '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
+            children: '客服急速应答，团队高效施工',
           },
         },
       },
@@ -248,11 +214,10 @@ export const ServiceAreaDataSource = {
               'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
           },
           textWrapper: { className: 'serviceArea-text' },
-          title: { className: 'serviceArea-title', children: '云安全' },
+          title: { className: 'serviceArea-title', children: '' },
           content: {
             className: 'serviceArea-content',
-            children:
-              '按金融企业安全要求打造的完整云上安全体系，全方位保障金融应用及数据安全。',
+            children: '评估项目难度，收费有凭有据',
           },
         },
       },
@@ -268,11 +233,10 @@ export const ServiceAreaDataSource = {
               'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
           },
           textWrapper: { className: 'serviceArea-text' },
-          title: { className: 'serviceArea-title', children: '云监控' },
+          title: { className: 'serviceArea-title', children: '' },
           content: {
             className: 'serviceArea-content',
-            children:
-              '分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。',
+            children: '合同制合作形式，并提供维护服务',
           },
         },
       },
@@ -316,11 +280,10 @@ export const ServiceFetureDataSource = {
               'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
           },
           textWrapper: { className: 'serviceFeature-text' },
-          title: { className: 'serviceFeature-title', children: '企业资源管理' },
+          title: { className: 'serviceFeature-title', children: '快' },
           content: {
             className: 'serviceFeature-content',
-            children:
-              '云资源集中编排、弹性伸缩、持续发布和部署，高可用及容灾。',
+            children: '客服急速应答，团队高效施工',
           },
         },
       },
@@ -336,11 +299,10 @@ export const ServiceFetureDataSource = {
               'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
           },
           textWrapper: { className: 'serviceFeature-text' },
-          title: { className: 'serviceFeature-title', children: '云安全' },
+          title: { className: 'serviceFeature-title', children: '准' },
           content: {
             className: 'serviceFeature-content',
-            children:
-              '按金融企业安全要求打造的完整云上安全体系，全方位保障金融应用及数据安全。',
+            children: '评估项目难度，收费有凭有据',
           },
         },
       },
@@ -356,11 +318,10 @@ export const ServiceFetureDataSource = {
               'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
           },
           textWrapper: { className: 'serviceFeature-text' },
-          title: { className: 'serviceFeature-title', children: '云监控' },
+          title: { className: 'serviceFeature-title', children: '稳' },
           content: {
             className: 'serviceFeature-content',
-            children:
-              '分布式云环境集中监控，统一资源及应用状态视图，智能分析及故障定位。',
+            children: '合同制合作形式，并提供维护服务',
           },
         },
       },

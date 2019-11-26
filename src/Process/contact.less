@@ -8,9 +8,10 @@
     &-title {
       font-size: 18px;
       color: #000;
+      text-align: left;
     }
     & .title-content {
-      text-align: center;
+      text-align: left;
     }
     &-block-wrapper {
       position: relative;
@@ -30,6 +31,15 @@
         .@{processContact}-text {
           display: inline-block;
           padding-left: 16px;
+        }
+        .@{processContact}-button {
+          & a {
+            padding-left: 0;
+            color: @text-color;
+            &:hover{
+              color: @primary-color;
+            }
+          }
         }
         &.clear-both {
           clear: both;

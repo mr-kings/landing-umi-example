@@ -7,6 +7,7 @@ export const Nav20DataSource = {
   isScrollLink: true,
   wrapper: { className: 'header home-page-wrapper' },
   page: { className: 'home-page header' },
+  page2: { className: 'home-page header2' },
   logo: {
     className: 'header-logo',
     href: '/index',
@@ -16,37 +17,37 @@ export const Nav20DataSource = {
   LinkMenu: {
     className: 'header-menu',
     children: [
-      {
-        name: '公司首页',
-        href: '/index',
-        className: 'menu-item',
-      },
-      {
-        name: '关于我们',
-        href: '/about',
-        className: 'menu-item',
-      },
-      {
-        name: '服务项目',
-        href: '/service',
-        className: 'menu-item',
-      },
-      {
-        name: '工程案列',
-        href: '/case',
-        className: 'menu-item',
-      },
-      {
-        name: '服务流程',
-        href: '/process',
-        className: 'menu-item',
-      },
-      {
-        name: '联系我们',
-        href: '/contact',
-        className: 'menu-item',
-      },
-    ],
+        {
+          name: '公司首页',
+          href: '/index',
+          className: 'menu-item',
+        },
+        {
+          name: '关于我们',
+          href: '/about',
+          className: 'menu-item',
+        },
+        {
+          name: '服务项目',
+          href: '/service',
+          className: 'menu-item',
+        },
+        {
+          name: '工程案列',
+          href: '/case',
+          className: 'menu-item',
+        },
+        {
+          name: '服务流程',
+          href: '/process',
+          className: 'menu-item',
+        },
+        {
+          name: '联系我们',
+          href: '/contact',
+          className: 'menu-item',
+        },
+      ],
   },
   mobileMenu: { className: 'header-mobile-menu' },
   menuLink: { children: [] },
@@ -62,7 +63,7 @@ export const Footer10DataSource = {
       {
         name: 'block1',
         xs: 24,
-        md: 6,
+        md: 8,
         className: 'block',
         title: { children: '网站导航' },
         childWrapper: {
@@ -79,22 +80,22 @@ export const Footer10DataSource = {
       {
         name: 'block2',
         xs: 24,
-        md: 12,
+        md: 8,
         className: 'block',
         title: { children: '公司信息' },
         childWrapper: {
           children: [
-            { name: 'link0', children: '公司名称：金服科技有限公司' },
-            { name: 'link1', children: '公司地址：广东省深圳市南山区前海路1号' },
-            { name: 'link2', children: '公司电话：0778 - 8434221' },
-            { name: 'link3', children: '公司邮箱：kimshareclub@gmail.com' },
+            { name: 'link0', children: '公司名称：江苏趣通市政工程有限公司' },
+            { name: 'link1', children: '公司地址：江苏省南京市江宁区天元东路388号' },
+            { name: 'link2', children: '公司电话：13913370505 / 025-52209660' },
+            { name: 'link3', children: '公司邮箱：1151560686@qq.com' },
           ],
         },
       },
       {
         name: 'block3',
         xs: 24,
-        md: 6,
+        md: 8,
         className: 'block',
         title: {
           className: 'image',

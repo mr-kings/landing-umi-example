@@ -4,6 +4,7 @@ import { connect } from 'dva';
 import { enquireScreen } from 'enquire-js';
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Alert } from 'antd';
+import NavLink from 'umi/navlink';
 import NProgress from 'nprogress';
 import 'nprogress/nprogress.css'
 import Header from './Nav2';
@@ -60,12 +61,29 @@ class Layout extends Component {
     return (
       <>
         <Alert
-          message="欢迎来到***官网!"
+          message="欢迎来到江苏趣通市政工程有限公司官网"
           type="info"
           banner={true}
           closable
           onClose={onClose}
         />
+        <div className="header-top-wraper">
+          <div className="header-top">
+            <div className="header-top-logo">
+              <NavLink
+                href={Nav20DataSource.logo.href}
+                to={Nav20DataSource.logo.href}
+              >
+                <img width="100%" src={Nav20DataSource.logo.children} alt={Nav20DataSource.logo.name} />
+                <span>{Nav20DataSource.logo.name}</span>
+              </NavLink>
+            </div>
+            <div className="header-top-contact">
+              <span className="header-man">联系人：徐经理</span>
+              <span className="header-phone">联系方式：13913370505</span>
+            </div>
+          </div>
+        </div>
         <Header dataSource={Nav20DataSource} isMobile={this.state.isMobile} />
         <div className="contentWrap">
           <TransitionGroup>

@@ -21,9 +21,7 @@ export const ProcessDescDataSource = {
         children: {
           className: 'processDesc-block-item',
           children: [
-            { name: 'content', children: `太空种子Spaceed作为众筹服务项目的全称，名称用意与品牌文化和项目本身
-            浑然天成。“太空”即空间Space，此空间包含众多服务，真正做到众筹服务”一站
-            式“解决方案，全面服务于初创企业和孵化项目。`},
+            { name: 'content', children: `我公司服务范畴包含了市政管道疏通清洗、市政管道检测维护、雨水管道疏通清理、明暗渠道疏通、下水道疏通、工业管道疏通维护、排水管道修复、涵洞清淤、排污箱涵清淤、化粪池清掏、污水池清理、隔油池清理、河道整治清淤、工厂废水清运、水库清淤、大型管道检测评估、管道非开挖修复、管网改造、窨井清理等。`},
           ],
         },
       },
@@ -34,10 +32,7 @@ export const ProcessDescDataSource = {
         children: {
           className: 'processDesc-block-item',
           children: [
-            { name: 'content', children: `此外，”太空“还有高科技和超前
-            技术的未来展望，对”太空“的探索，也是科技初创企业和项目，以及科技人才对
-            科技的展望和追求。我们希望打造一个科技空间，在追求创新和展望未来的同时，
-            能够从基础的设施上为科技团队服务。`},
+            { name: 'content', children: `服务对象小至个人、家庭，大至公司、写字楼、小区物业、学校、饭店、酒店、工厂等。`},
           ],
         },
       },
@@ -48,23 +43,7 @@ export const ProcessDescDataSource = {
         children: {
           className: 'processDesc-block-item',
           children: [
-            { name: 'content', children: `”种子“即seed,是从一个新的创意和想法
-            诞生之初，拥有萌发新芽和蓬勃向上动力的种子。我们希望对全新创意和科技想
-            法在诞生之初就开始孵化，并通过不断的养育和给予，使此创意能够从扎根开始
-            就立足于我们的众筹服务空间，在早期进行持续性的孵化。`},
-          ],
-        },
-      },
-      {
-        name: 'block3',
-        md: 24,
-        className: 'processDesc-block',
-        children: {
-          className: 'processDesc-block-item',
-          children: [
-            { name: 'content', children: `我们希望我们支持和
-            孵化的众筹科技产品可以最终走向成功，我们在此过程中，负责到底地不断为项
-            目提供可延续性的服务，帮助项目持续性成长。`},
+            { name: 'content', children: `公司拥有优秀的人才队伍，先进的施工设备，正规化的操作流程，您有需求，可以拨打我们的服务热线13913370505/025-52209660或者留言进行免费的项目咨询，我们会在24小时内给予回复，进行初步的需求了解后，我们可以提供免费的施工现场勘察，合理评估项目周期和造价，确定合作关系后，制定可行的施工方案，并且我们提供年度维护服务，让客户少了后顾之忧。有需求，找趣通，就是省心。`},
           ],
         },
       },
@@ -78,7 +57,7 @@ export const ProcessStepDataSource = {
   page: { className: 'home-page processStep' },
   OverPack: { playScale: 0.3 },
   Carousel: {
-    dots: false,
+    dots: true,
     className: 'processStep-carousel',
     wrapper: { className: 'processStep-block-wrapper' },
     children: {
@@ -119,12 +98,12 @@ export const ProcessStepDataSource = {
                   {
                     name: 'title',
                     className: 'processStep-block-title',
-                    children: '联系我们',
+                    children: '项目咨询',
                   },
                   {
                     name: 'content',
                     className: 'processStep-block-content',
-                    children: '拨打热线或者留言',
+                    children: '拨打热线或在线留言免费咨询',
                   },
                 ],
               },
@@ -156,8 +135,7 @@ export const ProcessStepDataSource = {
                   {
                     name: 'content',
                     className: 'processStep-block-content',
-                    children:
-                      '专员回电，了解客户需求',
+                    children: '24小时内回电，了解客户需求',
                   },
                 ],
               },
@@ -189,8 +167,7 @@ export const ProcessStepDataSource = {
                   {
                     name: 'content',
                     className: 'processStep-block-content',
-                    children:
-                      '评估项目周期和报价',
+                    children: '免费勘察，评估项目周期及造价',
                   },
                 ],
               },
@@ -222,8 +199,7 @@ export const ProcessStepDataSource = {
                   {
                     name: 'content',
                     className: 'processStep-block-content',
-                    children:
-                      '签订合作协议，确定方案',
+                    children: '签订合作协议，制定项目方案',
                   },
                 ],
               },
@@ -250,13 +226,12 @@ export const ProcessStepDataSource = {
                   {
                     name: 'title',
                     className: 'processStep-block-title',
-                    children: '收工验收',
+                    children: '施工验收',
                   },
                   {
                     name: 'content',
                     className: 'processStep-block-content',
-                    children:
-                      '如期施工，工程验收',
+                    children: '如期施工，工程质量验收',
                   },
                 ],
               },
@@ -283,13 +258,12 @@ export const ProcessStepDataSource = {
                   {
                     name: 'title',
                     className: 'processStep-block-title',
-                    children: '免费维护',
+                    children: '年度维护',
                   },
                   {
                     name: 'content',
                     className: 'processStep-block-content',
-                    children:
-                      '承诺首年项目免费维护',
+                    children: '项目竣工，提供年度维护服务',
                   },
                 ],
               },
@@ -324,8 +298,7 @@ export const ProcessContactDataSource = {
           title: { className: 'processContact-title', children: '拨打热线' },
           content: {
             className: 'processContact-content',
-            children:
-              '0778 - 8434221',
+            children: '13913370505 / 025-52209660',
           },
         },
       },
@@ -345,7 +318,7 @@ export const ProcessContactDataSource = {
           content: {
             name: 'button',
             className: 'processContact-button',
-            children: { href: '/contact.html#contact', target: '#contact', children: '立即留言' },
+            children: { href: '/contact.html', target: '#contact', children: '立即留言' },
           },
         },
       },

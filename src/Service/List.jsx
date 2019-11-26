@@ -117,7 +117,7 @@ class ServiceList extends React.Component {
     return (
       <div {...props} {...dataSource.wrapper}>
         <div {...dataSource.page}>
-          {this.state.showDetail ? this.state.serviceItem && Object.keys(this.state.serviceItem).length > 0 && <><ServiceDetail dataSource={ServiceDetailDataSource} serviceItem={this.state.serviceItem}/><div className="serviceItem-button"><Button onClick={this.onGoBack}>返回列表</Button></div></> : <><div {...dataSource.titleWrapper}>
+          {this.state.showDetail ? this.state.serviceItem && Object.keys(this.state.serviceItem).length > 0 && <><ServiceDetail dataSource={ServiceDetailDataSource} serviceItem={this.state.serviceItem}><div className="serviceItem-button"><Button onClick={this.onGoBack}>返回列表</Button></div></ServiceDetail></> : <><div {...dataSource.titleWrapper}>
             {dataSource.titleWrapper.children.map(getChildrenToRender)}
             <div className="title-line-wrapper page1-line">
               <div className="title-line" />

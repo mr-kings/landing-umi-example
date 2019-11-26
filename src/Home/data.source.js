@@ -1,5 +1,7 @@
 import React from 'react';
+import data from '@/assets/js/data.json';
 import blackCube from '@/assets/img/blackCube.jpeg';
+
 // 轮播图
 export const Banner10DataSource = {
   wrapper: { className: 'banner1' },
@@ -79,12 +81,7 @@ export const AboutDataSource = {
   contentWrap: {
     content: (
       <>
-        <p>AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单
-        方便、专业可靠、无限可能的数据可视化最佳实践。</p>
-        <p>AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单
-        方便、专业可靠、无限可能的数据可视化最佳实践。</p>
-        <p>AntV 是蚂蚁金服全新一代数据可视化解决方案，致力于提供一套简单
-        方便、专业可靠、无限可能的数据可视化最佳实践。</p>
+        江苏趣通市政工程有限公司是一家专业从事市政疏通行业的公司，本着客户为先、诚信至上、专业高效的服务理念，为广大客户提供管道疏通、管网CCTV检测、工业管道清洗、管道非开挖修复、下水道疏通、排水管道修复、涵洞清淤、排污箱涵清淤、化粪池清理、污水池清理、河道整治清淤、工厂废水清运、水库清淤等综合性服务。公司拥有一流的施工团队、专业的机械设备、正规的合作流程和非常严格的操作管理，快捷服务，高效施工，保证工程质量，让客户省心满意！我们承诺免费定期检查，客户无后顾之忧！公司常年承包各事业单位、企业、工厂、小区物业、酒店、饭店的疏通、排污项目，欢迎来电垂询！免费咨询热线：13913370505/025-52209660，联系人：徐经理
       </>
     )
   },
@@ -108,9 +105,9 @@ export const AboutDataSource = {
             {
               name: 'title',
               className: 'about-block-title',
-              children: '一站式业务接入',
+              children: '企业价值观',
             },
-            { name: 'content', children: '支付、结算、核算接入产品效率翻四倍' },
+            { name: 'content', children: '以诚行道，以信载物' },
           ],
         },
       },
@@ -131,11 +128,11 @@ export const AboutDataSource = {
             {
               name: 'title',
               className: 'about-block-title',
-              children: '一站式事中风险监控',
+              children: '企业服务宗旨',
             },
             {
               name: 'content',
-              children: '在所有需求配置环节事前风险控制和质量控制能力',
+              children: '专业高效，客户满意至上',
             },
           ],
         },
@@ -157,11 +154,11 @@ export const AboutDataSource = {
             {
               name: 'title',
               className: 'about-block-title',
-              children: '一站式数据运营',
+              children: '企业使命',
             },
             {
               name: 'content',
-              children: '沉淀产品接入效率和运营小二工作效率数据',
+              children: '解决城市刚需，美化环境',
             },
           ],
         },
@@ -209,13 +206,12 @@ export const ServiceDataSource = {
             className: 'service-content',
             children: (
               <>
-                <p className="service-content-title">管网服务工程</p>
+                <p className="service-content-title">南京管道疏通</p>
                 <ul>
-                  <li>市政管道工程</li>
-                  <li>管道CCTV检测</li>
-                  <li>管道疏通精细</li>
-                  <li>管道维修改造</li>
-                  <li>管道封堵</li>
+                  <li>南京市政管道疏通</li>
+                  <li>南京生活管道疏通</li>
+                  <li>南京下水道疏通</li>
+                  <li>南京工业管道疏通</li>
                 </ul>
               </>
             ),
@@ -246,13 +242,12 @@ export const ServiceDataSource = {
             className: 'service-content',
             children: (
               <>
-                <p className="service-content-title">河道清淤工程</p>
+                <p className="service-content-title">南京管道清洗</p>
                 <ul>
-                  <li>市政管道工程</li>
-                  <li>管道CCTV检测</li>
-                  <li>管道疏通精细</li>
-                  <li>管道维修改造</li>
-                  <li>管道封堵</li>
+                  <li>南京市政管道清洗</li>
+                  <li>南京生活管道清洗</li>
+                  <li>南京大型管道清洗</li>
+                  <li>南京工业管道清洗</li>
                 </ul>
               </>
             ),
@@ -283,13 +278,12 @@ export const ServiceDataSource = {
             className: 'service-content',
             children: (
               <>
-                <p className="service-content-title">排污系统清理</p>
+                <p className="service-content-title">管道检测修复</p>
                 <ul>
-                  <li>市政管道工程</li>
-                  <li>管道CCTV检测</li>
-                  <li>管道疏通精细</li>
-                  <li>管道维修改造</li>
-                  <li>管道封堵</li>
+                  <li>南京管道CCTV检测</li>
+                  <li>南京大型管道维修</li>
+                  <li>南京管道疏通封堵</li>
+                  <li>南京管道非开挖修复</li>
                 </ul>
               </>
             ),
@@ -320,13 +314,12 @@ export const ServiceDataSource = {
             className: 'service-content',
             children: (
               <>
-                <p className="service-content-title">管网服务工程</p>
+                <p className="service-content-title">排污系统清理</p>
                 <ul>
-                  <li>市政管道工程</li>
-                  <li>管道CCTV检测</li>
-                  <li>管道疏通精细</li>
-                  <li>管道维修改造</li>
-                  <li>管道封堵</li>
+                  <li>南京污水池清理</li>
+                  <li>南京化粪池清理</li>
+                  <li>南京隔油池清理</li>
+                  <li>开发区管道系统清理</li>
                 </ul>
               </>
             ),
@@ -357,13 +350,12 @@ export const ServiceDataSource = {
             className: 'service-content',
             children: (
               <>
-                <p className="service-content-title">管网服务工程</p>
+                <p className="service-content-title">南京河道清淤</p>
                 <ul>
-                  <li>市政管道工程</li>
-                  <li>管道CCTV检测</li>
-                  <li>管道疏通精细</li>
-                  <li>管道维修改造</li>
-                  <li>管道封堵</li>
+                  <li>南京河道清淤</li>
+                  <li>南京水库清淤</li>
+                  <li>南京池塘清淤</li>
+                  <li>南京船舶管道清理</li>
                 </ul>
               </>
             ),
@@ -394,13 +386,12 @@ export const ServiceDataSource = {
             className: 'service-content',
             children: (
               <>
-                <p className="service-content-title">管网服务工程</p>
+                <p className="service-content-title">更多相关服务</p>
                 <ul>
-                  <li>市政管道工程</li>
-                  <li>管道CCTV检测</li>
-                  <li>管道疏通精细</li>
-                  <li>管道维修改造</li>
-                  <li>管道封堵</li>
+                  <li>南京工厂废水清运</li>
+                  <li>厨房油烟囱清洗</li>
+                  <li>屋面防水堵漏</li>
+                  <li>南京窨井清理</li>
                 </ul>
               </>
             ),
@@ -458,7 +449,7 @@ export const CaseDataSource = {
         children: {
           className: 'case-block-item',
           image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
-          title: '文字描述',
+          title: '大型管道CCTV检测',
           titleClassName: 'case-block-item-title',
         }
       },
@@ -468,7 +459,7 @@ export const CaseDataSource = {
         children: {
           className: 'case-block-item',
           image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
-          title: '文字描述',
+          title: '市政管道疏通维护',
           titleClassName: 'case-block-item-title',
         }
       },
@@ -478,7 +469,27 @@ export const CaseDataSource = {
         children: {
           className: 'case-block-item',
           image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
-          title: '文字描述',
+          title: '工业管道高压冲洗',
+          titleClassName: 'case-block-item-title',
+        }
+      },
+      {
+        name: 'block3',
+        className: 'case-block',
+        children: {
+          className: 'case-block-item',
+          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          title: '南京污水池清理',
+          titleClassName: 'case-block-item-title',
+        }
+      },
+      {
+        name: 'block4',
+        className: 'case-block',
+        children: {
+          className: 'case-block-item',
+          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          title: '大型管网改造维护',
           titleClassName: 'case-block-item-title',
         }
       },
@@ -528,7 +539,7 @@ export const ProcessDataSource = {
         {
           name: 'block0',
           className: 'process-block-row',
-          gutter: 120,
+          gutter: 100,
           title: {
             className: 'process-carousel-title-block',
             children: '',
@@ -556,12 +567,12 @@ export const ProcessDataSource = {
                   {
                     name: 'title',
                     className: 'process-block-title',
-                    children: '需求沟通',
+                    children: '1',
                   },
                   {
                     name: 'content',
                     className: 'process-block-content',
-                    children: '沟通业务需求，对接人：诚凡、芸彩',
+                    children: '拨打热线13913370505或在下方留言区留言，免费咨询项目',
                   },
                 ],
               },
@@ -588,13 +599,12 @@ export const ProcessDataSource = {
                   {
                     name: 'title',
                     className: 'process-block-title',
-                    children: '需求沟通',
+                    children: '2',
                   },
                   {
                     name: 'content',
                     className: 'process-block-content',
-                    children:
-                      '沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩',
+                    children: '客服联系您初步了解您的需求后，安排项目经理同您对接',
                   },
                 ],
               },
@@ -621,13 +631,12 @@ export const ProcessDataSource = {
                   {
                     name: 'title',
                     className: 'process-block-title',
-                    children: '需求沟通',
+                    children: '3',
                   },
                   {
                     name: 'content',
                     className: 'process-block-content',
-                    children:
-                      '沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩',
+                    children: '确定合作后，签订合作协议，制定项目解决方案，进行施工',
                   },
                 ],
               },
@@ -654,13 +663,12 @@ export const ProcessDataSource = {
                   {
                     name: 'title',
                     className: 'process-block-title',
-                    children: '需求沟通',
+                    children: '4',
                   },
                   {
                     name: 'content',
                     className: 'process-block-content',
-                    children:
-                      '沟通业务需求，对接人：诚凡、芸彩沟通业务需求，对接人：诚凡、芸彩',
+                    children: '工程竣工验收，后期专员回访，我们承诺提供年度维护服务',
                   },
                 ],
               },
@@ -683,6 +691,7 @@ export const FeatureDataSource = {
   },
   childWrapper: {
     className: 'feature-block-wrapper',
+    gutter: 100,
     children: [
       {
         name: 'block0',
@@ -701,12 +710,17 @@ export const FeatureDataSource = {
             {
               name: 'title',
               className: 'feature-block-title',
-              children: '一站式业务接入',
+              children: '服务',
+            },
+            {
+              name: 'title',
+              className: 'feature-block-title2',
+              children: '热情+真诚',
             },
             {
               name: 'content',
-              children: '支付、结算、核算接入产品效率翻四倍',
-              className: 'jzj8z9sya9-editor_css',
+              className: 'feature-block-tip',
+              children: '用情待客，用智做事，用心服务，诚信立足，以客户满意为第一服务要义',
             },
           ],
         },
@@ -728,11 +742,17 @@ export const FeatureDataSource = {
             {
               name: 'title',
               className: 'feature-block-title',
-              children: '一站式事中风险监控',
+              children: '技术',
+            },
+            {
+              name: 'title',
+              className: 'feature-block-title2',
+              children: '团队+设备',
             },
             {
               name: 'content',
-              children: '在所有需求配置环节事前风险控制和质量控制能力',
+              className: 'feature-block-tip',
+              children: '团队有专业的技术，多年的从业经验，以及专业的施工设备（高压清洗车、吸污车等）支持',
             },
           ],
         },
@@ -754,11 +774,17 @@ export const FeatureDataSource = {
             {
               name: 'title',
               className: 'feature-block-title',
-              children: '一站式数据运营',
+              children: '收费',
+            },
+            {
+              name: 'title',
+              className: 'feature-block-title2',
+              children: '合同制',
             },
             {
               name: 'content',
-              children: '沉淀产品接入效率和运营小二工作效率数据',
+              className: 'feature-block-tip',
+              children: '签订项目合同，评估项目，制定合理的施工方案，收费有据可循，我们不是做一锤子买卖',
             },
           ],
         },
@@ -799,26 +825,27 @@ export const ContactDataSource = {
             {
               name: 'content',
               className: 'contact-block-label',
-              children: '公司名称：金服科技有限公司',
+              children: '公司名称：江苏趣通市政工程有限公司',
             },
             {
               name: 'content',
               className: 'contact-block-label',
-              children: '联系人：罗**',
+              children: '联系人：徐经理',
             },
             {
               name: 'content',
               className: 'contact-block-label',
-              children: '联系电话：0778 - 8434221',
+              children: '联系电话：13913370505',
             },
             {
               name: 'content',
               className: 'contact-block-label',
-              children: '电子邮箱：kimshareclub@gmail.com',
+              children: '电子邮箱：1151560686@qq.com',
             },
             {
               name: 'image',
               className: 'contact-block-img',
+              children: '微信扫码 快速咨询：',
               src: blackCube,
             },
           ],
