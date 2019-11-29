@@ -33,10 +33,10 @@ export const PositionDataSource = {
           'https://gw.alipayobjects.com/zos/rmsportal/WIePwurYppfVvDNASZRN.svg',
         name: '图标影阴',
       },
-      url: { children: 'https://ditu.amap.com/place/B0FFG4H6N0', name: '跳转地址' },
+      url: { children: 'https://ditu.amap.com/place/B0FFH6CAOB', name: '跳转地址' },
       title: { children: '公司地址', name: '弹框标题' },
       content: {
-        children: '江苏省南京市江宁区天元东路388号',
+        children: '中国广东省深圳市福田区市花路南侧长富金茂大厦1号楼303',
         name: '弹框内容',
       },
     },

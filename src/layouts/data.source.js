@@ -46,7 +46,7 @@ export const Footer10DataSource = {
       {
         name: 'block1',
         xs: 24,
-        md: 8,
+        md: 7,
         className: 'block',
         title: { children: '网站导航' },
         childWrapper: {
@@ -60,22 +60,21 @@ export const Footer10DataSource = {
       {
         name: 'block2',
         xs: 24,
-        md: 8,
+        md: 10,
         className: 'block',
         title: { children: '企业信息' },
         childWrapper: {
           children: [
-            { name: 'link0', children: '企业名称：***' },
-            { name: 'link1', children: '企业地址：***' },
-            { name: 'link2', children: '企业电话：***' },
-            { name: 'link3', children: '企业邮箱：***' },
+            { name: 'link0', children: '企业名称：帕利国际科技（深圳）有限公司' },
+            { name: 'link1', children: '企业地址：广东省深圳市福田区市花路南侧长富金茂大厦1号楼303' },
+            { name: 'link2', children: '联系电话：+86 134 8074 4769' },
           ],
         },
       },
       {
         name: 'block3',
         xs: 24,
-        md: 8,
+        md: 7,
         className: 'block',
         title: {
           className: 'image',
@@ -101,7 +100,7 @@ export const Footer10DataSource = {
     children: (
       <>
         <p>
-          Copyright ©2019 Powered By Kimshare Version 1.0.0
+          Copyright ©2019 Powered By spaceed Version 1.0.0
         </p>
         <p>
           <a href="http://www.beian.miit.gov.cn" style={{marginLeft: '6px'}}>粤ICP备19066266号</a>
