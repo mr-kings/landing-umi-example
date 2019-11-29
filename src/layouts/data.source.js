@@ -1,7 +1,6 @@
 import React from 'react';
-import spaceed from '@/assets/img/spaceed.jpeg';
 import blackCube from '@/assets/img/blackCube.jpeg';
-import logo from '@/assets/img/SpaceedLogo(LR).png';
+import logo from '@/assets/img/logo.png';
 
 export const Nav20DataSource = {
   isScrollLink: true,
@@ -11,35 +10,19 @@ export const Nav20DataSource = {
   logo: {
     className: 'header-logo',
     href: '/index',
-    children: 'https://gw.alipayobjects.com/zos/rmsportal/SVDdpZEbAlWBFuRGIIIL.svg',
-    name: 'LANDING'
+    children: logo,
   },
   LinkMenu: {
     className: 'header-menu',
     children: [
         {
-          name: '公司首页',
-          href: '/index',
+          name: '企业介绍',
+          href: '/company',
           className: 'menu-item',
         },
         {
-          name: '关于我们',
-          href: '/about',
-          className: 'menu-item',
-        },
-        {
-          name: '服务项目',
-          href: '/service',
-          className: 'menu-item',
-        },
-        {
-          name: '工程案列',
-          href: '/case',
-          className: 'menu-item',
-        },
-        {
-          name: '服务流程',
-          href: '/process',
+          name: '产品介绍',
+          href: '/product',
           className: 'menu-item',
         },
         {
@@ -68,11 +51,8 @@ export const Footer10DataSource = {
         title: { children: '网站导航' },
         childWrapper: {
           children: [
-            { name: 'link0', href: '/index', to: '/index', children: '网站首页' },
-            { name: 'link1', href: '/about', to: '/about',  children: '关于我们' },
-            { name: 'link2', href: '/service', to: '/service',  children: '服务项目' },
-            { name: 'link3', href: '/case', to: '/case', children: '工程案列' },
-            { name: 'link4', href: '/process', to: '/process',  children: '服务流程' },
+            { name: 'link0', href: '/company', to: '/company', children: '企业介绍' },
+            { name: 'link1', href: '/product', to: '/product',  children: '产品介绍' },
             { name: 'link5', href: '/contact', to: '/contact',  children: '联系我们' },
           ],
         },
@@ -82,13 +62,13 @@ export const Footer10DataSource = {
         xs: 24,
         md: 8,
         className: 'block',
-        title: { children: '公司信息' },
+        title: { children: '企业信息' },
         childWrapper: {
           children: [
-            { name: 'link0', children: '公司名称：江苏趣通市政工程有限公司' },
-            { name: 'link1', children: '公司地址：江苏省南京市江宁区天元东路388号' },
-            { name: 'link2', children: '公司电话：13913370505 / 025-52209660' },
-            { name: 'link3', children: '公司邮箱：1151560686@qq.com' },
+            { name: 'link0', children: '企业名称：***' },
+            { name: 'link1', children: '企业地址：***' },
+            { name: 'link2', children: '企业电话：***' },
+            { name: 'link3', children: '企业邮箱：***' },
           ],
         },
       },
@@ -107,7 +87,7 @@ export const Footer10DataSource = {
           children: [
             {
               name: '关注我们',
-              children: '快捷通道 扫码关注',
+              children: '扫码关注',
             },
           ],
         },
@@ -124,7 +104,7 @@ export const Footer10DataSource = {
           Copyright ©2019 Powered By Kimshare Version 1.0.0
         </p>
         <p>
-          <a href="http://www.beian.miit.gov.cn" style={{marginLeft: '6px'}}>苏ICP备19066265号-1</a>
+          <a href="http://www.beian.miit.gov.cn" style={{marginLeft: '6px'}}>粤ICP备19066266号</a>
         </p>
       </>
     ),

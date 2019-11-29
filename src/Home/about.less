@@ -3,7 +3,7 @@
   overflow: hidden;
   .@{about} {
     height: 100%;
-    padding: 64px 24px;
+    padding: 100px 24px;
     .title-line-wrapper {
       width: 312px;
       margin: 10px auto 20px;
@@ -28,12 +28,58 @@
       padding: 0 4%;
       display: inline-block;
       text-align: center;
-      min-height: 200px;
       margin-bottom: 24px;
-      img {
-        width: 100%;
-      }
+      &-item {
+        & a {
+          display: block;
+          width: 100%;
+          height: 245px;
+          position: relative;
+          border-radius: 8px;
+          overflow: hidden;
+          transition: all 0.5s;
+          &:hover{
+            transition: all 0.5s;
+            & .overlay{
+              opacity: 0;
+              z-index: 0;
+              transition: all 0.5s;
+            }
+            & img{
+              transform: scale(1.2);
+              transition: all 0.5s;
+            }
+          }
+          & img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: all 0.5s;
+          }
+          & .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #9e9e9e;
+            opacity: 0.2;
+            cursor: pointer;
+            z-index: 1;
+            transition: all 0.5s;
+          }
+          & .about-block-title {
+            position: absolute;
+            left: 50%;
+            font-size: 30px;
+            top: 50%;
+            margin-left: -60px;
+            margin-top: -22.4px;
+            text-align: center;
+          }
+        }
 
+      }
       &-wrapper {
         position: relative;
         height: 100%;
@@ -50,11 +96,7 @@
         margin: auto;
       }
 
-      &-title {
-        line-height: 32px;
-        margin: 10px auto;
-        font-size: 24px;
-      }
+
 
     }
   }

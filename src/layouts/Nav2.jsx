@@ -86,7 +86,7 @@ class Header extends React.Component {
           {...dataSource.page}
           className={`${dataSource.page.className}${phoneOpen ? ' open' : ''}`}
         >
-          {/* <TweenOne
+          <TweenOne
             animation={{ x: -30, type: 'from', ease: 'easeOutQuad' }}
             {...dataSource.logo}
           >
@@ -97,7 +97,7 @@ class Header extends React.Component {
               <img width="100%" src={dataSource.logo.children} alt="img" />
               <span>{dataSource.logo.name}</span>
             </NavLink>
-          </TweenOne> */}
+          </TweenOne>
 
           <TweenOne
             {...LinkMenu}

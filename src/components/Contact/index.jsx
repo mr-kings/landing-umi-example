@@ -46,7 +46,8 @@ class Contact extends React.PureComponent {
     const { getFieldDecorator } = this.props.form;
     const formItemLayout = {
       labelCol: { span: 6 },
-      wrapperCol: { span: 18 },
+      wrapperCol: { xs: { span: 24, offset: 0 },
+      sm: { span: 12, }, },
       labelAlign: 'right'
     };
     return (
@@ -81,16 +82,6 @@ class Contact extends React.PureComponent {
             ],
           })(<Input placeholder="请输入您的电子邮箱" maxLength={20} />)}
         </Form.Item>
-        <Form.Item {...formItemLayout} label="公司名称">
-          {getFieldDecorator('company', {
-            rules: [
-              {
-                required: false,
-                message: '请输入您的公司名称',
-              },
-            ],
-          })(<Input placeholder="请输入您的公司名称" maxLength={30}/>)}
-        </Form.Item>
         <Form.Item {...formItemLayout} label="所在区域">
           {getFieldDecorator('area', {
             rules: [
@@ -114,7 +105,7 @@ class Contact extends React.PureComponent {
         <Form.Item
           wrapperCol={{
             xs: { span: 24, offset: 0 },
-            sm: { span: 18, offset: 6 },
+            sm: { span: 12, offset: 6 },
           }}
           style={{ marginBottom: '0px'}}
         >

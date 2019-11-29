@@ -3,7 +3,6 @@ import { Button, Icon } from 'antd';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne, { TweenOneGroup } from 'rc-tween-one';
 import BannerAnim, { Element } from 'rc-banner-anim';
-import { isImg } from '../utils/utils';
 import 'rc-banner-anim/assets/index.css';
 
 const { BgElement } = Element;
@@ -17,11 +16,11 @@ class Banner extends React.PureComponent {
       const elem = item.BannerElement;
       const elemClassName = elem.className;
       delete elem.className;
-      const { bg, textWrapper, title, content, button } = item;
+      const { bg } = item;
       return (
         <Element key={i.toString()} {...elem} prefixCls={elemClassName}>
           <BgElement key="bg" {...bg} />
-          <QueueAnim
+          {/* <QueueAnim
             type={['bottom', 'top']}
             delay={200}
             key="text"
@@ -41,7 +40,7 @@ class Banner extends React.PureComponent {
             <Button ghost key="button" {...button}>
               {button.children}
             </Button>
-          </QueueAnim>
+          </QueueAnim> */}
         </Element>
       );
     });
@@ -59,7 +58,7 @@ class Banner extends React.PureComponent {
             </BannerAnim>
           </div>
         </TweenOneGroup>
-        {/* <TweenOne
+        <TweenOne
           animation={{
             y: '-=20',
             yoyo: true,
@@ -71,7 +70,7 @@ class Banner extends React.PureComponent {
           key="icon"
         >
           <Icon type="down" />
-        </TweenOne> */}
+        </TweenOne>
       </div>
     );
   }

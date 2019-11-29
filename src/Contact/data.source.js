@@ -65,51 +65,9 @@ export const ContactDataSource = {
     className: 'contact-block-wrapper',
     children: [
       {
-        name: 'block0',
-        className: 'contact-block',
-        md: 10,
-        xs: 24,
-        children: {
-          className: 'contact-block-item',
-          children: [
-            {
-              name: 'content',
-              className: 'contact-block-label contact-block-label-tip',
-              children: '请在留言区输入您的相关信息和咨询的问题，发送留言给我们，我们会在24小时内回电您，请认准我们的回电号码：13913370505 / 025-52209660',
-            },
-            {
-              name: 'content',
-              className: 'contact-block-label company',
-              children: '江苏趣通市政工程有限公司',
-            },
-            {
-              name: 'content',
-              className: 'contact-block-label',
-              children: '联系人：徐经理',
-            },
-            {
-              name: 'content',
-              className: 'contact-block-label',
-              children: '联系电话：13913370505/025-52209660',
-            },
-            {
-              name: 'content',
-              className: 'contact-block-label',
-              children: '电子邮箱：1151560686@qq.com',
-            },
-            {
-              name: 'image',
-              className: 'contact-block-img',
-              children: '微信扫码 快速咨询：',
-              src: blackCube,
-            },
-          ],
-        },
-      },
-      {
         name: 'block1',
         className: 'contact-block contact-block-two',
-        md: 14,
+        md: 24,
         xs: 24,
         children: {
           className: 'contact-block-item',
