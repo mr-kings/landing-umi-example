@@ -120,10 +120,12 @@ export const Footer10DataSource = {
     className: 'copyright',
     children: (
       <>
-        <span>
+        <p>
           Copyright ©2019 Powered By Kimshare Version 1.0.0
-        </span>
-        <a href="http://www.miitbeian.gov.cn/" style={{marginLeft: '6px'}}>粤ICP备18059926号</a>
+        </p>
+        <p>
+          <a href="http://www.beian.miit.gov.cn" style={{marginLeft: '6px'}}>苏ICP备19066265号-1</a>
+        </p>
       </>
     ),
   },

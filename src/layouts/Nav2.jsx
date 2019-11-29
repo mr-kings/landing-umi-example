@@ -25,7 +25,8 @@ class Header extends React.Component {
 
   // 页面跳转
   onHandleLink (url) {
-    router.push(url)
+    this.phoneClick();
+    router.push(url);
   }
 
   render() {

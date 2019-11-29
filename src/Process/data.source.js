@@ -298,7 +298,7 @@ export const ProcessContactDataSource = {
           title: { className: 'processContact-title', children: '拨打热线' },
           content: {
             className: 'processContact-content',
-            children: '13913370505 / 025-52209660',
+            children: '13913370505',
           },
         },
       },

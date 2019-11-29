@@ -43,13 +43,18 @@
     width: 100%;
     border-top: 1px solid fade(@line-color, 10);
     .home-page {
-      padding: 0 24px;
+      padding: 10px 24px;
       overflow: hidden;
     }
     .copyright {
-      height: 60px;
       text-align: center;
-      line-height: 60px;
+      line-height: 26px;
+      a {
+        color: @template-footer-text-color;
+        &:hover {
+          color: @primary-color;
+        }
+      }
     }
   }
 }

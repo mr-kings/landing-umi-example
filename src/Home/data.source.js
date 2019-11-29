@@ -824,8 +824,8 @@ export const ContactDataSource = {
           children: [
             {
               name: 'content',
-              className: 'contact-block-label',
-              children: '公司名称：江苏趣通市政工程有限公司',
+              className: 'contact-block-label company',
+              children: '江苏趣通市政工程有限公司',
             },
             {
               name: 'content',

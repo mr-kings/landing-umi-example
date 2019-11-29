@@ -32,6 +32,7 @@ class Contact extends React.PureComponent {
       }
       // Should format date value before submit.
       console.log('Received values of form: ', fieldsValue);
+      parent.location.href = 'mailto: 18576648902@163.com?subject=官网留言&body='+fieldsValue;
     });
   };
 

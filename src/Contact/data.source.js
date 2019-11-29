@@ -33,7 +33,7 @@ export const PositionDataSource = {
           'https://gw.alipayobjects.com/zos/rmsportal/WIePwurYppfVvDNASZRN.svg',
         name: '图标影阴',
       },
-      url: { children: 'https://gaode.com/place/B00190ZDVN', name: '跳转地址' },
+      url: { children: 'https://ditu.amap.com/place/B0FFG4H6N0', name: '跳转地址' },
       title: { children: '公司地址', name: '弹框标题' },
       content: {
         children: '江苏省南京市江宁区天元东路388号',
@@ -79,8 +79,8 @@ export const ContactDataSource = {
             },
             {
               name: 'content',
-              className: 'contact-block-label',
-              children: '公司名称：江苏趣通市政工程有限公司',
+              className: 'contact-block-label company',
+              children: '江苏趣通市政工程有限公司',
             },
             {
               name: 'content',
