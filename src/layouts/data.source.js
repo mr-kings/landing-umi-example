@@ -68,6 +68,7 @@ export const Footer10DataSource = {
             { name: 'link0', children: '企业名称：帕利国际科技（深圳）有限公司' },
             { name: 'link1', children: '企业地址：广东省深圳市福田区市花路南侧长富金茂大厦1号楼303' },
             { name: 'link2', children: '联系电话：+86 134 8074 4769' },
+            { name: 'link3', children: '电子邮箱：contact@emys.co' },
           ],
         },
       },
