@@ -22,9 +22,10 @@ import {
 } from './data.source';
 
 let isMobile;
+const mobileQuery = 'only screen and (max-width: 415px)'
 enquireScreen((b) => {
   isMobile = b;
-});
+}, mobileQuery);
 
 const { location } = window;
 

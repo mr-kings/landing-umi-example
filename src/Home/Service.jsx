@@ -59,13 +59,16 @@ class Service extends React.PureComponent {
 
     let newArr = [];
     let b;
-    block.children.forEach(function(item, index, array) {
-        var a = Math.floor(index / 3);
-        if (b !== a) {
-            b = a;
-            newArr[a] = new Array();
-        }
-        newArr[a].push(item);
+    block.children.forEach(function (item, index, array) {
+      var a = Math.floor(index / 3);
+      if (isMobile && window.innerWidth < 768) {
+        a = Math.floor(index / 1);
+      }
+      if (b !== a) {
+        b = a;
+        newArr[a] = new Array();
+      }
+      newArr[a].push(item);
     });
     const childrenToRender = newArr.map(this.getChildrenToRenderBanner);
     return (

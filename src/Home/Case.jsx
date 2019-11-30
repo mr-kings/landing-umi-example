@@ -17,6 +17,7 @@ class Case extends React.PureComponent {
       childWrapper,
       carousel,
     } = dataSource;
+    isMobile ? carousel.height = '240px' : carousel
     return (
       <div {...props} {...wrapper}>
         <div {...page}>

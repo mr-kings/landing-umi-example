@@ -1,7 +1,5 @@
 import React from 'react';
-import spaceed from '@/assets/img/spaceed.jpeg';
 import blackCube from '@/assets/img/blackCube.jpeg';
-import logo from '@/assets/img/SpaceedLogo(LR).png';
 
 export const Nav20DataSource = {
   isScrollLink: true,
@@ -63,7 +61,7 @@ export const Footer10DataSource = {
       {
         name: 'block1',
         xs: 24,
-        md: 8,
+        md: 7,
         className: 'block',
         title: { children: '网站导航' },
         childWrapper: {
@@ -80,7 +78,7 @@ export const Footer10DataSource = {
       {
         name: 'block2',
         xs: 24,
-        md: 8,
+        md: 10,
         className: 'block',
         title: { children: '公司信息' },
         childWrapper: {
@@ -95,7 +93,7 @@ export const Footer10DataSource = {
       {
         name: 'block3',
         xs: 24,
-        md: 8,
+        md: 7,
         className: 'block',
         title: {
           className: 'image',

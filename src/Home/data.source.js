@@ -1,6 +1,9 @@
 import React from 'react';
-import data from '@/assets/js/data.json';
 import blackCube from '@/assets/img/blackCube.jpeg';
+import hetong from '@/assets/img/icon/hetong.svg';
+import contact from '@/assets/img/icon/contact.svg';
+import xuqiu from '@/assets/img/icon/xuqiu.svg';
+import yanshou from '@/assets/img/icon/yanshou.svg';
 
 // 轮播图
 export const Banner10DataSource = {
@@ -80,9 +83,9 @@ export const AboutDataSource = {
   },
   contentWrap: {
     content: (
-      <>
+      <p className="about-content-text">
         江苏趣通市政工程有限公司是一家专业从事市政疏通行业的公司，本着客户为先、诚信至上、专业高效的服务理念，为广大客户提供管道疏通、管网CCTV检测、工业管道清洗、管道非开挖修复、下水道疏通、排水管道修复、涵洞清淤、排污箱涵清淤、化粪池清理、污水池清理、河道整治清淤、工厂废水清运、水库清淤等综合性服务。公司拥有一流的施工团队、专业的机械设备、正规的合作流程和非常严格的操作管理，快捷服务，高效施工，保证工程质量，让客户省心满意！我们承诺免费定期检查，客户无后顾之忧！公司常年承包各事业单位、企业、工厂、小区物业、酒店、饭店的疏通、排污项目，欢迎来电垂询！免费咨询热线：13913370505/025-52209660，联系人：徐经理
-      </>
+      </p>
     )
   },
   childWrapper: {
@@ -171,7 +174,7 @@ export const AboutDataSource = {
 export const ServiceDataSource = {
   wrapper: { className: 'home-page-wrapper service-wrapper' },
   page: { className: 'home-page service' },
-  OverPack: { playScale: 0.3, className: '' },
+  OverPack: { playScale: 0.3, className: 'overpack' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
@@ -186,7 +189,7 @@ export const ServiceDataSource = {
     ],
   },
   BannerAnim: {
-    autoPlay: true,
+    autoPlay: false,
     arrow: false,
     type: "across"
   },
@@ -198,6 +201,7 @@ export const ServiceDataSource = {
         className: 'service-block',
         md: 8,
         xs: 24,
+        sm: 12,
         children: {
           wrapper: { className: 'service-block-box ' },
           topWrapper: { className: 'service-top-wrapper' },
@@ -234,6 +238,7 @@ export const ServiceDataSource = {
         className: 'service-block',
         md: 8,
         xs: 24,
+        sm: 12,
         children: {
           wrapper: { className: 'service-block-box' },
           topWrapper: { className: 'service-top-wrapper' },
@@ -270,6 +275,7 @@ export const ServiceDataSource = {
         className: 'service-block',
         md: 8,
         xs: 24,
+        sm: 12,
         children: {
           wrapper: { className: 'service-block-box ' },
           topWrapper: { className: 'service-top-wrapper' },
@@ -306,6 +312,7 @@ export const ServiceDataSource = {
         className: 'service-block',
         md: 8,
         xs: 24,
+        sm: 12,
         children: {
           wrapper: { className: 'service-block-box ' },
           topWrapper: { className: 'service-top-wrapper' },
@@ -342,6 +349,7 @@ export const ServiceDataSource = {
         className: 'service-block',
         md: 8,
         xs: 24,
+        sm: 12,
         children: {
           wrapper: { className: 'service-block-box' },
           topWrapper: { className: 'service-top-wrapper' },
@@ -378,6 +386,7 @@ export const ServiceDataSource = {
         className: 'service-block',
         md: 8,
         xs: 24,
+        sm: 12,
         children: {
           wrapper: { className: 'service-block-box ' },
           topWrapper: { className: 'service-top-wrapper' },
@@ -561,8 +570,7 @@ export const ProcessDataSource = {
                   {
                     name: 'image',
                     className: 'process-block-image',
-                    children:
-                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                    children: contact,
                   },
                   {
                     name: 'title',
@@ -593,8 +601,7 @@ export const ProcessDataSource = {
                   {
                     name: 'image',
                     className: 'process-block-image',
-                    children:
-                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                    children: xuqiu,
                   },
                   {
                     name: 'title',
@@ -625,8 +632,7 @@ export const ProcessDataSource = {
                   {
                     name: 'image',
                     className: 'process-block-image',
-                    children:
-                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                    children: hetong,
                   },
                   {
                     name: 'title',
@@ -657,8 +663,7 @@ export const ProcessDataSource = {
                   {
                     name: 'image',
                     className: 'process-block-image',
-                    children:
-                      'https://gw.alipayobjects.com/zos/basement_prod/d8933673-1463-438a-ac43-1a8f193ebf34.svg',
+                    children: yanshou,
                   },
                   {
                     name: 'title',

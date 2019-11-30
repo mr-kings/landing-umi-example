@@ -1,4 +1,13 @@
 @import './assets/style/antMotionStyle.less';
+@font-face {
+  font-family: 'iconfont';  /* project id 1538650 */
+  src: url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.eot');
+  src: url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.svg#iconfont') format('svg');
+}
 
 .header-top{
   height: 64px;
@@ -8,7 +17,7 @@
   display: flex;
   margin: auto;
   &-wraper{
-    background: @template-nav-bg-color;
+    background: #e6f7ff;
     width: 100%;
   }
   &-logo{
@@ -26,7 +35,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    color: #fff;
+    color: #000;
+    font-size: 16px;
   }
 }
 .contentWrap{
@@ -85,10 +95,10 @@
 
 @keyframes dong {
   0% {
-    transform: translateX(calc(~"100vw - 80px - 106px"));
+    transform: translateX(calc(~"100vw - 80px - 252px"));
   }
   50% {
-    transform: translateX(calc(~"(100vw - 80px)/2"));
+    transform: translateX(calc(~"(100vw - 80px  - 252px)/2"));
   }
   100% {
     transform: translateX(0px);
@@ -147,6 +157,14 @@
   }
 }
 
+// 多行省略号
+.imitate_ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;//文本溢出显示省略号
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 
 
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/

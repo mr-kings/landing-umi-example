@@ -62,7 +62,7 @@ class Header extends React.Component {
             </span>
           </Dropdown>
       } else {
-        return <span key={i.toString()} className={pathname==navData[key].href?'menu-item actived':'menu-item'}>
+        return <span key={i.toString()} className={pathname==navData[key].href?'menu-item actived':'menu-item'}  onClick={this.onHandleLink.bind(this,navData[key].href)}>
               <NavLink
                   key={i.toString()}
                   href={navData[key].href}

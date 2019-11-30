@@ -4,7 +4,7 @@ import React from 'react';
 export const ProcessDescDataSource = {
   wrapper: { className: 'home-page-wrapper processDesc-wrapper' },
   page: { className: 'processDesc' },
-  OverPack: { playScale: 0.3, className: '' },
+  OverPack: { playScale: 0.3, className: 'OverPack' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
