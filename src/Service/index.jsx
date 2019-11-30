@@ -4,6 +4,7 @@ import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
 import List from './List';
+import Adv from '@/components/Advertising';
 
 import {
   ServiceListDataSource,
@@ -45,7 +46,11 @@ export default class Team extends React.Component {
 
   render() {
     const children = [
-      <img key="img" style={{width: '100%', height: '300px'}} src="https://img.ui.cn/data/upload/201911/1573186463_935.png"/>,
+      <Adv
+        id="Adv"
+        key="Adv"
+        isMobile={this.state.isMobile}
+      />,
       <List
         id="List"
         key="List"

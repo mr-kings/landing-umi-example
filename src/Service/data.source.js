@@ -1,4 +1,27 @@
-import React from 'react';
+import service11 from '@/assets/img/service/1/1-1.png';
+import service12 from '@/assets/img/service/1/1-2.png';
+import service13 from '@/assets/img/service/1/1-3.png';
+import service14 from '@/assets/img/service/1/1-4.png';
+import service21 from '@/assets/img/service/2/2-1.png';
+import service22 from '@/assets/img/service/2/2-2.png';
+import service23 from '@/assets/img/service/2/2-3.png';
+import service24 from '@/assets/img/service/2/2-4.png';
+import service31 from '@/assets/img/service/3/3-1.png';
+import service32 from '@/assets/img/service/3/3-2.png';
+import service33 from '@/assets/img/service/3/3-3.png';
+import service34 from '@/assets/img/service/3/3-4.png';
+import service41 from '@/assets/img/service/4/4-1.png';
+import service42 from '@/assets/img/service/4/4-2.png';
+import service43 from '@/assets/img/service/4/4-3.png';
+import service44 from '@/assets/img/service/4/4-4.png';
+import service51 from '@/assets/img/service/5/5-1.png';
+import service52 from '@/assets/img/service/5/5-2.png';
+import service53 from '@/assets/img/service/5/5-3.png';
+import service54 from '@/assets/img/service/5/5-4.jpg';
+import service61 from '@/assets/img/service/6/6-1.png';
+import service62 from '@/assets/img/service/6/6-2.png';
+import service63 from '@/assets/img/service/6/6-3.png';
+import service64 from '@/assets/img/service/6/6-4.png';
 
 // 服务项目
 export const ServiceListDataSource = {
@@ -46,8 +69,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service11,
                 },
                 content: { children: '南京市政管道疏通' },
               },
@@ -60,8 +82,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service12,
                 },
                 content: { children: '南京生活管道疏通' },
               },
@@ -74,8 +95,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service13,
                 },
                 content: { children: '南京下水道疏通' },
               },
@@ -88,8 +108,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service14,
                 },
                 content: { children: '南京工业管道疏通' },
               },
@@ -125,8 +144,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service21,
                 },
                 content: { children: '南京市政管道清洗' },
               },
@@ -139,8 +157,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service22,
                 },
                 content: { children: '南京生活管道清洗' },
               },
@@ -153,8 +170,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service23,
                 },
                 content: { children: '南京大型管道清洗' },
               },
@@ -167,66 +183,9 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service24,
                 },
                 content: { children: '南京工业管道清洗' },
-              },
-            },
-            {
-              name: 'block4',
-              className: 'block',
-              md: 6,
-              xs: 24,
-              children: {
-                wrapper: { className: 'serviceItem-block-content' },
-                img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-                },
-                content: { children: 'Ant Design' },
-              },
-            },
-            {
-              name: 'block5',
-              className: 'block',
-              md: 6,
-              xs: 24,
-              children: {
-                wrapper: { className: 'serviceItem-block-content' },
-                img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
-                },
-                content: { children: 'Ant Motion' },
-              },
-            },
-            {
-              name: 'block6',
-              className: 'block',
-              md: 6,
-              xs: 24,
-              children: {
-                wrapper: { className: 'serviceItem-block-content' },
-                img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
-                },
-                content: { children: 'Ant Design' },
-              },
-            },
-            {
-              name: 'block7',
-              className: 'block',
-              md: 6,
-              xs: 24,
-              children: {
-                wrapper: { className: 'serviceItem-block-content' },
-                img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
-                },
-                content: { children: 'Ant Motion' },
               },
             },
           ],
@@ -260,8 +219,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service31,
                 },
                 content: { children: '南京管道CCTV检测' },
               },
@@ -274,8 +232,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service32,
                 },
                 content: { children: '南京大型管道维修' },
               },
@@ -288,8 +245,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service33,
                 },
                 content: { children: '南京管道疏通封堵' },
               },
@@ -302,8 +258,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service34,
                 },
                 content: { children: '南京管道非开挖修复' },
               },
@@ -339,8 +294,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service41,
                 },
                 content: { children: '南京污水池清理' },
               },
@@ -353,8 +307,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service42,
                 },
                 content: { children: '南京化粪池清理' },
               },
@@ -367,8 +320,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service43,
                 },
                 content: { children: '南京隔油池清理' },
               },
@@ -381,8 +333,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service44,
                 },
                 content: { children: '开发区管道系统清理' },
               },
@@ -418,8 +369,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service51,
                 },
                 content: { children: '南京河道整治清淤' },
               },
@@ -432,8 +382,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service52,
                 },
                 content: { children: '南京水库清淤' },
               },
@@ -446,8 +395,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service53,
                 },
                 content: { children: '南京池塘清淤' },
               },
@@ -460,8 +408,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service54,
                 },
                 content: { children: '南京船舶管道清理' },
               },
@@ -497,8 +444,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service61,
                 },
                 content: { children: '南京工厂废水清运' },
               },
@@ -511,8 +457,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service62,
                 },
                 content: { children: '厨房油烟囱清洗' },
               },
@@ -525,8 +470,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                  children: service63,
                 },
                 content: { children: '屋面防水堵漏' },
               },
@@ -539,8 +483,7 @@ export const ServiceListDataSource = {
               children: {
                 wrapper: { className: 'serviceItem-block-content' },
                 img: {
-                  children:
-                    'https://zos.alipayobjects.com/rmsportal/faKjZtrmIbwJvVR.svg',
+                  children: service64,
                 },
                 content: { children: '南京窨井清理' },
               },

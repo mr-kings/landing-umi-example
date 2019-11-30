@@ -1,10 +1,16 @@
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
-import { Row, Col,Form,Input,Button } from 'antd';
+import { Row, Col,Form,Input,Button,message } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from '@/utils/utils';
-
+import { request } from '@/api';
 class Contact extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: false
+    }
+  }
   getChildrenToRender2 = (data) => {
     return data.map((block, i) => {
       const { children: item, ...blockProps } = block;
@@ -15,7 +21,7 @@ class Contact extends React.PureComponent {
           <Col key={i.toString()} {...blockProps}>
             <div {...item}>
               {item.children.map((child, index) => {
-                return child.src ? <div key={index.toString()} className={child.className} ><p>{child.children}</p><img src={child.src} alt="二维码" /></div> : <div key={index.toString()} {...child}>{child.children}</div>
+                return child.name === 'image' ? <div key={index.toString()} className={child.className} ><p>{child.children}</p><img src={child.src} alt="二维码" /></div> : <div key={index.toString()} {...child}>{child.children}</div>
               })}
             </div>
           </Col>
@@ -30,9 +36,20 @@ class Contact extends React.PureComponent {
       if (err) {
         return;
       }
-      // Should format date value before submit.
-      console.log('Received values of form: ', fieldsValue);
-      parent.location.href = 'mailto: 18576648902@163.com?subject=官网留言&body='+fieldsValue;
+      this.setState({
+        loading: true
+      })
+      request.POST('http://localhost:7002/sendEmail', fieldsValue).then(res => {
+        if (res.code === '200') {
+          message.success(res.msg);
+          this.handleReset();
+        } else {
+          message.error(res.msg);
+        }
+        this.setState({
+          loading: false
+        })
+      })
     });
   };
 
@@ -109,7 +126,7 @@ class Contact extends React.PureComponent {
                 message: '请输入您的问题描述',
               },
             ],
-          })(<Input.TextArea maxLength={200} autoSize={{ minRows: 5, maxRows: 6 }} placeholder="请输入您的问题描述" />)}
+          })(<Input.TextArea maxLength={200} rows={5} placeholder="请输入您的问题描述" />)}
         </Form.Item>
         <Form.Item
           wrapperCol={{
@@ -118,7 +135,7 @@ class Contact extends React.PureComponent {
           }}
           style={{ marginBottom: '0px'}}
         >
-          <Button type="primary" htmlType="submit" style={{margin: '0 20px'}}>
+          <Button loading={this.state.loading} disabled={this.state.loading} type="primary" htmlType="submit" style={{margin: '0 20px'}}>
             发送
           </Button>
           <Button onClick={this.handleReset} style={{margin: '0 20px'}}>

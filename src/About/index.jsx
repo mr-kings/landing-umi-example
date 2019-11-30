@@ -8,6 +8,7 @@ import Culture from './Culture';
 import Service from './Service';
 import Group from './Group';
 import Area from './Area';
+import Adv from '@/components/Advertising';
 
 import {
   AboutDataSource,
@@ -53,7 +54,11 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <img key="img" style={{width: '100%', height: '300px'}} src="https://img.ui.cn/data/upload/201911/1572859364_912.png"/>,
+      <Adv
+        id="Adv"
+        key="Adv"
+        isMobile={this.state.isMobile}
+      />,
       <About
         id="About"
         key="About"

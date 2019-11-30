@@ -1,5 +1,5 @@
 import React from 'react';
-import blackCube from '@/assets/img/blackCube.jpeg';
+import erweima from '@/assets/img/erweima.png';
 import bg from '@/assets/img/qianhaiditu.png';
 
 // 公司地址
@@ -95,13 +95,13 @@ export const ContactDataSource = {
             {
               name: 'content',
               className: 'contact-block-label',
-              children: '电子邮箱：1151560686@qq.com',
+              children: '电子邮箱：qutong13913370505@163.com',
             },
             {
               name: 'image',
               className: 'contact-block-img',
               children: '微信扫码 快速咨询：',
-              src: blackCube,
+              src: erweima,
             },
           ],
         },

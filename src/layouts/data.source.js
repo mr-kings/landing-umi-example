@@ -1,5 +1,7 @@
 import React from 'react';
-import blackCube from '@/assets/img/blackCube.jpeg';
+import erweima from '@/assets/img/erweima.png';
+import logo from '@/assets/img/logo/logoCL.png';
+// import logo from '@/assets/img/logo/lg2.png';
 
 export const Nav20DataSource = {
   isScrollLink: true,
@@ -9,8 +11,7 @@ export const Nav20DataSource = {
   logo: {
     className: 'header-logo',
     href: '/index',
-    children: 'https://gw.alipayobjects.com/zos/rmsportal/SVDdpZEbAlWBFuRGIIIL.svg',
-    name: 'LANDING'
+    children: logo,
   },
   LinkMenu: {
     className: 'header-menu',
@@ -86,7 +87,7 @@ export const Footer10DataSource = {
             { name: 'link0', children: '公司名称：江苏趣通市政工程有限公司' },
             { name: 'link1', children: '公司地址：江苏省南京市江宁区天元东路388号' },
             { name: 'link2', children: '公司电话：13913370505 / 025-52209660' },
-            { name: 'link3', children: '公司邮箱：1151560686@qq.com' },
+            { name: 'link3', children: '公司邮箱：qutong13913370505@163.com' },
           ],
         },
       },
@@ -98,7 +99,7 @@ export const Footer10DataSource = {
         title: {
           className: 'image',
           isimg: 'true',
-          children: blackCube,
+          children: erweima,
         },
         childWrapper: {
           className: 'slogan',

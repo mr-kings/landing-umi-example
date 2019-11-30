@@ -104,16 +104,13 @@
     }
 
     &-child {
-      padding: 36px 24px 24px;
+      padding: 30px 18px 18px;
       border-radius: 6px;
-
       height: 100%;
       transition: box-shadow @animate-duration @ease-in-out, background @animate-duration @ease-in-out;
-
       &:hover {
         background-color: #f6f9ff;
         box-shadow: 0 12px 36px fade(#646488, 15);
-
         .@{process}-block-content {
           opacity: 1;
         }
@@ -172,6 +169,8 @@
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0 14px 26px fade(#5f9bf1, 40);
+        color: #fff;
+        background-color: #3c89f6;
       }
     }
   }

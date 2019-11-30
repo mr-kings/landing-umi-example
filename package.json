@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "antd": "^3.10.3",
+    "axios": "^0.19.0",
     "dva-logger": "^1.0.0",
     "echarts": "^4.5.0",
     "element-react": "^1.4.34",
     "element-theme-default": "^1.4.13",
     "enquire-js": "^0.2.1",
+    "nodemailer": "^6.3.1",
     "nprogress": "^0.2.0",
     "rc-banner-anim": "^2.1.0",
     "rc-queue-anim": "^1.6.7",

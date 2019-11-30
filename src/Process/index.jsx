@@ -6,6 +6,7 @@ import { enquireScreen } from 'enquire-js';
 import Step from './Step';
 import Desc from './Description';
 import Contact from './Contact';
+import Adv from '@/components/Advertising';
 
 import {
   ProcessDescDataSource,
@@ -49,7 +50,11 @@ export default class Team extends React.Component {
 
   render() {
     const children = [
-      <img key="img" style={{width: '100%', height: '300px'}} src="https://img.ui.cn/data/upload/201911/1574157846_103.jpeg"/>,
+      <Adv
+        id="Adv"
+        key="Adv"
+        isMobile={this.state.isMobile}
+      />,
       <Desc
         id="Desc"
         key="Desc"

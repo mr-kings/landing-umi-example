@@ -62,7 +62,6 @@ class Process extends React.PureComponent {
         );
       }
       const childrenItem = childRow.map(($item, i) => {
-        console.info('item', $item)
         const { children: colChild, arrow, ...colProps } = $item;
         const { ...childProps } = colChild;
         return (

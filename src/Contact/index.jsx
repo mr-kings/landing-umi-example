@@ -5,6 +5,7 @@ import { enquireScreen } from 'enquire-js';
 
 import Position from './Position';
 import Contact from './Contact';
+import Adv from '@/components/Advertising';
 
 import {
   PositionDataSource,
@@ -47,7 +48,11 @@ export default class Team extends React.Component {
 
   render() {
     const children = [
-      <img key="img" style={{width: '100%', height: '300px'}} src="https://img.ui.cn/data/upload/201911/1573202882_722.jpeg"/>,
+      <Adv
+        id="Adv"
+        key="Adv"
+        isMobile={this.state.isMobile}
+      />,
       <Position
         id="Position"
         key="Position"

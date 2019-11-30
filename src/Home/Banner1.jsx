@@ -9,19 +9,17 @@ import 'rc-banner-anim/assets/index.css';
 const { BgElement } = Element;
 class Banner extends React.PureComponent {
   render() {
-    const { ...props } = this.props;
-    const { dataSource } = props;
-    delete props.dataSource;
-    delete props.isMobile;
+    const { isMobile, dataSource, ...props } = this.props;
     const childrenToRender = dataSource.BannerAnim.children.map((item, i) => {
       const elem = item.BannerElement;
       const elemClassName = elem.className;
       delete elem.className;
-      const { bg, textWrapper, title, content, button } = item;
+      let { bg } = item;
+      isMobile ? bg = { className: 'bg bg' + i + '_s' } : bg;
       return (
         <Element key={i.toString()} {...elem} prefixCls={elemClassName}>
           <BgElement key="bg" {...bg} />
-          <QueueAnim
+          {/* <QueueAnim
             type={['bottom', 'top']}
             delay={200}
             key="text"
@@ -41,7 +39,7 @@ class Banner extends React.PureComponent {
             <Button ghost key="button" {...button}>
               {button.children}
             </Button>
-          </QueueAnim>
+          </QueueAnim> */}
         </Element>
       );
     });

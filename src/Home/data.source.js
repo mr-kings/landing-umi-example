@@ -1,9 +1,26 @@
 import React from 'react';
-import blackCube from '@/assets/img/blackCube.jpeg';
-import hetong from '@/assets/img/icon/hetong.svg';
-import contact from '@/assets/img/icon/contact.svg';
-import xuqiu from '@/assets/img/icon/xuqiu.svg';
-import yanshou from '@/assets/img/icon/yanshou.svg';
+import culture1 from '@/assets/img/culture/1.png';
+import culture2 from '@/assets/img/culture/2.png';
+import culture3 from '@/assets/img/culture/3.png';
+import erweima from '@/assets/img/erweima.png';
+import contact from '@/assets/img/icon/1.png';
+import xuqiu from '@/assets/img/icon/2.png';
+import hetong from '@/assets/img/icon/3.png';
+import yanshou from '@/assets/img/icon/4.png';
+import case1 from '@/assets/img/case/1.png';
+import case2 from '@/assets/img/case/2.png';
+import case3 from '@/assets/img/case/3.png';
+import case4 from '@/assets/img/case/4.png';
+import case5 from '@/assets/img/case/5.png';
+import feature1 from '@/assets/img/feature/1.png';
+import feature2 from '@/assets/img/feature/2.png';
+import feature3 from '@/assets/img/feature/3.png';
+import service1 from '@/assets/img/service/1/1-1.png';
+import service2 from '@/assets/img/service/2/2-1.png';
+import service3 from '@/assets/img/service/3/3-1.png';
+import service4 from '@/assets/img/service/4/4-1.png';
+import service5 from '@/assets/img/service/5/5-1.png';
+import service6 from '@/assets/img/service/6/6-1.png';
 
 // 轮播图
 export const Banner10DataSource = {
@@ -16,48 +33,18 @@ export const Banner10DataSource = {
         BannerElement: { className: 'banner-user-elem' },
         textWrapper: { className: 'banner1-text-wrapper' },
         bg: { className: 'bg bg0' },
-        title: {
-          className: 'banner1-title',
-          children:
-            'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
-        },
-        content: {
-          className: 'banner1-content',
-          children: '一个高效的页面动画解决方案',
-        },
-        button: { className: 'banner1-button', children: 'Learn More' },
       },
       {
         name: 'elem1',
         BannerElement: { className: 'banner-user-elem' },
         textWrapper: { className: 'banner1-text-wrapper' },
         bg: { className: 'bg bg1' },
-        title: {
-          className: 'banner1-title',
-          children:
-            'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
-        },
-        content: {
-          className: 'banner1-content',
-          children: '一个高效的页面动画解决方案',
-        },
-        button: { className: 'banner1-button', children: 'Learn More' },
       },
       {
         name: 'elem2',
         BannerElement: { className: 'banner-user-elem' },
         textWrapper: { className: 'banner1-text-wrapper' },
-        bg: { className: 'bg bg1' },
-        title: {
-          className: 'banner1-title',
-          children:
-            'https://zos.alipayobjects.com/rmsportal/HqnZZjBjWRbjyMr.png',
-        },
-        content: {
-          className: 'banner1-content',
-          children: '一个高效的页面动画解决方案',
-        },
-        button: { className: 'banner1-button', children: 'Learn More' },
+        bg: { className: 'bg bg2' },
       },
     ],
   },
@@ -67,7 +54,7 @@ export const Banner10DataSource = {
 export const AboutDataSource = {
   wrapper: { className: 'home-page-wrapper about-wrapper' },
   page: { className: 'home-page about' },
-  OverPack: { playScale: 0.3, className: '' },
+  OverPack: { playScale: 0.3, className: 'OverPack' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
@@ -102,8 +89,7 @@ export const AboutDataSource = {
             {
               name: 'image',
               className: 'about-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
+              children: culture1,
             },
             {
               name: 'title',
@@ -125,8 +111,7 @@ export const AboutDataSource = {
             {
               name: 'image',
               className: 'about-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
+              children: culture2,
             },
             {
               name: 'title',
@@ -151,8 +136,7 @@ export const AboutDataSource = {
             {
               name: 'image',
               className: 'about-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+              children: culture3,
             },
             {
               name: 'title',
@@ -205,7 +189,7 @@ export const ServiceDataSource = {
         children: {
           wrapper: { className: 'service-block-box ' },
           topWrapper: { className: 'service-top-wrapper' },
-          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          image: { className: 'service-img', children: service1 },
           content: {
             className: 'service-content',
             children: (
@@ -242,7 +226,7 @@ export const ServiceDataSource = {
         children: {
           wrapper: { className: 'service-block-box' },
           topWrapper: { className: 'service-top-wrapper' },
-          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          image: { className: 'service-img', children: service2 },
           content: {
             className: 'service-content',
             children: (
@@ -279,7 +263,7 @@ export const ServiceDataSource = {
         children: {
           wrapper: { className: 'service-block-box ' },
           topWrapper: { className: 'service-top-wrapper' },
-          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          image: { className: 'service-img', children: service3 },
           content: {
             className: 'service-content',
             children: (
@@ -316,7 +300,7 @@ export const ServiceDataSource = {
         children: {
           wrapper: { className: 'service-block-box ' },
           topWrapper: { className: 'service-top-wrapper' },
-          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          image: { className: 'service-img', children: service4},
           content: {
             className: 'service-content',
             children: (
@@ -353,7 +337,7 @@ export const ServiceDataSource = {
         children: {
           wrapper: { className: 'service-block-box' },
           topWrapper: { className: 'service-top-wrapper' },
-          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          image: { className: 'service-img', children: service5 },
           content: {
             className: 'service-content',
             children: (
@@ -390,7 +374,7 @@ export const ServiceDataSource = {
         children: {
           wrapper: { className: 'service-block-box ' },
           topWrapper: { className: 'service-top-wrapper' },
-          image: { className: 'service-img', children: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ' },
+          image: { className: 'service-img', children: service6 },
           content: {
             className: 'service-content',
             children: (
@@ -457,7 +441,7 @@ export const CaseDataSource = {
         className: 'case-block',
         children: {
           className: 'case-block-item',
-          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          image: case1,
           title: '大型管道CCTV检测',
           titleClassName: 'case-block-item-title',
         }
@@ -467,7 +451,7 @@ export const CaseDataSource = {
         className: 'case-block',
         children: {
           className: 'case-block-item',
-          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          image: case2,
           title: '市政管道疏通维护',
           titleClassName: 'case-block-item-title',
         }
@@ -477,7 +461,7 @@ export const CaseDataSource = {
         className: 'case-block',
         children: {
           className: 'case-block-item',
-          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          image: case3,
           title: '工业管道高压冲洗',
           titleClassName: 'case-block-item-title',
         }
@@ -487,7 +471,7 @@ export const CaseDataSource = {
         className: 'case-block',
         children: {
           className: 'case-block-item',
-          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          image: case4,
           title: '南京污水池清理',
           titleClassName: 'case-block-item-title',
         }
@@ -497,7 +481,7 @@ export const CaseDataSource = {
         className: 'case-block',
         children: {
           className: 'case-block-item',
-          image: 'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+          image: case5,
           title: '大型管网改造维护',
           titleClassName: 'case-block-item-title',
         }
@@ -548,7 +532,7 @@ export const ProcessDataSource = {
         {
           name: 'block0',
           className: 'process-block-row',
-          gutter: 100,
+          gutter: 60,
           title: {
             className: 'process-carousel-title-block',
             children: '',
@@ -709,8 +693,7 @@ export const FeatureDataSource = {
             {
               name: 'image',
               className: 'feature-block-icon',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+              children: feature1,
             },
             {
               name: 'title',
@@ -741,8 +724,7 @@ export const FeatureDataSource = {
             {
               name: 'image',
               className: 'feature-block-icon',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+              children: feature2,
             },
             {
               name: 'title',
@@ -773,8 +755,7 @@ export const FeatureDataSource = {
             {
               name: 'image',
               className: 'feature-block-icon',
-              children:
-                'https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*CTp8T7RT-VkAAAAAAAAAAABkARQnAQ',
+              children: feature3,
             },
             {
               name: 'title',
@@ -845,13 +826,13 @@ export const ContactDataSource = {
             {
               name: 'content',
               className: 'contact-block-label',
-              children: '电子邮箱：1151560686@qq.com',
+              children: '电子邮箱：qutong13913370505@163.com',
             },
             {
               name: 'image',
               className: 'contact-block-img',
               children: '微信扫码 快速咨询：',
-              src: blackCube,
+              src: erweima,
             },
           ],
         },

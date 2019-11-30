@@ -1,5 +1,10 @@
 import React from 'react';
-
+import culture1 from '@/assets/img/culture/1.png';
+import culture2 from '@/assets/img/culture/2.png';
+import culture3 from '@/assets/img/culture/3.png';
+import icon1 from '@/assets/img/icon/2-1.png';
+import icon2 from '@/assets/img/icon/2-2.png';
+import icon3 from '@/assets/img/icon/2-3.png';
 
 // 公司简介
 export const AboutDataSource = {
@@ -73,8 +78,7 @@ export const CultureDataSource = {
             {
               name: 'image',
               className: 'aboutCultureModule-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
+              children: culture1,
             },
             {
               name: 'title',
@@ -96,8 +100,7 @@ export const CultureDataSource = {
             {
               name: 'image',
               className: 'aboutCultureModule-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
+              children: culture2,
             },
             {
               name: 'title',
@@ -122,8 +125,7 @@ export const CultureDataSource = {
             {
               name: 'image',
               className: 'aboutCultureModule-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+              children: culture3,
             },
             {
               name: 'title',
@@ -258,11 +260,6 @@ export const ServiceFetureDataSource = {
         children: '服务特点',
         className: 'title-h1',
       },
-      // {
-      //   name: 'content',
-      //   className: 'title-content',
-      //   children: '基于阿里云强大的基础资源',
-      // },
     ],
   },
   block: {
@@ -276,8 +273,7 @@ export const ServiceFetureDataSource = {
         children: {
           icon: {
             className: 'serviceFeature-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
+            children: icon1,
           },
           textWrapper: { className: 'serviceFeature-text' },
           title: { className: 'serviceFeature-title', children: '快' },
@@ -295,8 +291,7 @@ export const ServiceFetureDataSource = {
         children: {
           icon: {
             className: 'serviceFeature-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
+            children: icon2,
           },
           textWrapper: { className: 'serviceFeature-text' },
           title: { className: 'serviceFeature-title', children: '准' },
@@ -314,8 +309,7 @@ export const ServiceFetureDataSource = {
         children: {
           icon: {
             className: 'serviceFeature-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
+            children: icon3,
           },
           textWrapper: { className: 'serviceFeature-text' },
           title: { className: 'serviceFeature-title', children: '稳' },
