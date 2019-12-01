@@ -4,9 +4,15 @@ import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
 import List from './List';
+import Feature1 from './Feature1';
+import Feature2 from './Feature2';
+import Feature4 from './Feature4';
 
 import {
   CaseListDataSource,
+  Feature10DataSource,
+  Feature20DataSource,
+  Feature40DataSource
 } from './data.source';
 
 let isMobile;
@@ -49,6 +55,24 @@ export default class Team extends React.Component {
         id="List"
         key="List"
         dataSource={CaseListDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Feature2
+        id="Feature2"
+        key="Feature2"
+        dataSource={Feature20DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Feature1
+        id="Feature1"
+        key="Feature1"
+        dataSource={Feature10DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Feature4
+        id="Feature4"
+        key="Feature4"
+        dataSource={Feature40DataSource}
         isMobile={this.state.isMobile}
       />,
     ];

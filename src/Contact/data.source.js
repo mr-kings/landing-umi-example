@@ -1,5 +1,6 @@
-import React from 'react';
-import blackCube from '@/assets/img/blackCube.jpeg';
+import address from '@/assets/img/address.png';
+import phone from '@/assets/img/phone.png';
+import email from '@/assets/img/email.png';
 import bg from '@/assets/img/qianhaiditu.png';
 
 // 公司地址
@@ -45,37 +46,105 @@ export const PositionDataSource = {
 
 // 联系我们
 export const ContactDataSource = {
-  wrapper: { className: 'home-page-wrapper contact-wrapper' },
-  page: { className: 'home-page contact' },
-  OverPack: { playScale: 0.3, className: '' },
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      {
-        name: 'title',
-        children: (
-          <>
-            <p>联系我们</p>
-          </>
-        ),
-      },
-    ],
-  },
-  childWrapper: {
-    className: 'contact-block-wrapper',
-    children: [
-      {
-        name: 'block1',
-        className: 'contact-block contact-block-two',
-        md: 24,
-        xs: 24,
-        children: {
-          className: 'contact-block-item',
-          children: [ ],
+    wrapper: { className: 'home-page-wrapper feature-wrapper' },
+    page: { className: 'home-page feature' },
+    OverPack: { playScale: 0.3, className: '' },
+    titleWrapper: {
+      className: 'title-wrapper',
+      children: [{ name: 'title', children: '联系我们' }],
+    },
+    childWrapper: {
+      className: 'feature-block-wrapper',
+      gutter: 100,
+      children: [
+        {
+          name: 'block0',
+          className: 'feature-block',
+          md: 8,
+          xs: 24,
+          children: {
+            className: 'feature-block-item',
+            children: [
+              {
+                name: 'image',
+                className: 'feature-block-icon',
+                children: address,
+              },
+              {
+                name: 'content',
+                className: 'feature-block-tip',
+                children: `US: 1000 N. West St. Ste. 1501,
+                Wilmington, Delaware 19801,`,
+              },
+              {
+                name: 'content',
+                className: 'feature-block-tip',
+                children: `PL:
+                ul. Podwale 62A, pok. 015,
+                50-010 Wrocław, POLAND`,
+              },
+              {
+                name: 'content',
+                className: 'feature-block-tip',
+                children: `CN:
+                广东省深圳市福田区福保街道福保社
+                区市花路南侧长富金茂大厦1号楼303`,
+              },
+            ],
+          },
         },
-      },
-    ],
-  },
-};
-
-
+        {
+          name: 'block1',
+          className: 'feature-block',
+          md: 8,
+          xs: 24,
+          children: {
+            className: 'feature-block-item',
+            children: [
+              {
+                name: 'image',
+                className: 'feature-block-icon',
+                children: phone,
+              },
+              {
+                name: 'content',
+                className: 'feature-block-tip',
+                children: 'US: (+1) 302 294 0790',
+              },
+              {
+                name: 'content',
+                className: 'feature-block-tip',
+                children: 'PL: (+48) 71 750 1526',
+              },
+              {
+                name: 'content',
+                className: 'feature-block-tip',
+                children: 'CN: (+86) 134 8074 4769',
+              },
+            ],
+          },
+        },
+        {
+          name: 'block2',
+          className: 'feature-block',
+          md: 8,
+          xs: 24,
+          children: {
+            className: 'feature-block-item',
+            children: [
+              {
+                name: 'image',
+                className: 'feature-block-icon',
+                children: email,
+              },
+              {
+                name: 'content',
+                className: 'feature-block-tip',
+                children: 'contact@emys.co',
+              },
+            ],
+          },
+        },
+      ],
+    },
+  };
