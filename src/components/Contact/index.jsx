@@ -97,7 +97,7 @@ class Contact extends React.PureComponent {
                 message: '请输入您的电子邮箱',
               },
             ],
-          })(<Input placeholder="请输入您的电子邮箱" maxLength={20} />)}
+          })(<Input placeholder="请输入您的电子邮箱" maxLength={30} />)}
         </Form.Item>
         <Form.Item {...formItemLayout} label="公司名称">
           {getFieldDecorator('company', {
