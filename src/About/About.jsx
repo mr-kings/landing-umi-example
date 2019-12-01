@@ -33,7 +33,6 @@ class About extends React.PureComponent {
             >
               {childWrapper.children.map((block, i) => {
                 const { children: item, ...blockProps } = block;
-                console.info('block',block)
                 return (
                   // <Col key={i.toString()} {...blockProps}>
                     <div key={i.toString()} {...item}>

@@ -32,6 +32,7 @@ export default class Home extends React.Component {
       isMobile,
       show: !location.port, // 如果不是 dva 2.0 请删除
     };
+    this.timer = null
   }
 
   componentDidMount() {
@@ -43,13 +44,20 @@ export default class Home extends React.Component {
     /* 如果不是 dva 2.0 请删除 start */
     if (location.port) {
       // 样式 build 时间在 200-300ms 之间;
-      setTimeout(() => {
+      this.timer = setTimeout(() => {
         this.setState({
           show: true,
         });
       }, 500);
     }
   /* 如果不是 dva 2.0 请删除 end */
+  }
+
+  componentWillUnmount () {
+    this.timer && clearTimeout(this.timer);
+    this.setState = (state, callback) => {
+      return
+    }
   }
 
   render() {

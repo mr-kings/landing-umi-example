@@ -24,7 +24,7 @@ module.exports = appInfo => {
       enable: false, // 前后端分离，post请求不方便携带_csrf
       ignoreJSON: true,
     },
-    domainWhiteList: [ 'http://www.baidu.com', 'http://localhost:8000' ], // 配置白名单
+    domainWhiteList: [ 'http://www.51sjqt.com', 'http://localhost:8000' ], // 配置白名单
   };
 
   config.cors = {

@@ -3,7 +3,7 @@ import QueueAnim from 'rc-queue-anim';
 import { Row, Col,Form,Input,Button,message } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from '@/utils/utils';
-import { request } from '@/api';
+import { sendEmail } from '@/api/sendEmail';
 class Contact extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -39,7 +39,8 @@ class Contact extends React.PureComponent {
       this.setState({
         loading: true
       })
-      request.POST('http://localhost:7002/sendEmail', fieldsValue).then(res => {
+      // 发送邮件
+      sendEmail(fieldsValue).then(res => {
         if (res.code === '200') {
           message.success(res.msg);
           this.handleReset();

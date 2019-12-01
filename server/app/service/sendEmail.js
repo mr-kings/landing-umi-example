@@ -18,14 +18,14 @@ class SendEmailService extends Service {
           port: 465,
           secure: true,
           auth: {
-            user: '18576648902@163.com',
-            pass: 'P@ssw0rd',
+            user: 'qutong13913370505@163.com',
+            pass: 'qu458tong059',
           },
         });
         // 填写发件人, 收件人
         const mailOptions = {
           // 发件人地址
-          from: '18576648902@163.com',
+          from: 'qutong13913370505@163.com',
           // 收件人列表, 向163邮箱, gmail邮箱, qq邮箱各发一封
           to: 'qutong13913370505@163.com, 18576648902@163.com',
           // 邮件主题
