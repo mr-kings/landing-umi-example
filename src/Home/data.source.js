@@ -174,7 +174,7 @@ export const ServiceDataSource = {
   },
   BannerAnim: {
     autoPlay: false,
-    arrow: false,
+    arrow: true,
     type: "across"
   },
   block: {
@@ -410,7 +410,7 @@ export const ServiceDataSource = {
 export const CaseDataSource = {
   wrapper: { className: 'home-page-wrapper case-wrapper' },
   page: { className: 'home-page case' },
-  OverPack: { playScale: 0.3, className: '' },
+  OverPack: { playScale: 0.3, className: 'OverPack' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
@@ -428,7 +428,7 @@ export const CaseDataSource = {
     className: 'case-block-wrapper',
     interval: '4000',
     type: 'card',
-    height: '400px',
+    height: '360px',
     autoplay: false,
     indicatorPosition: 'outside',
     trigger: 'click',

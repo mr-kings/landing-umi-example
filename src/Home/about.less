@@ -3,16 +3,20 @@
   overflow: hidden;
   .@{about} {
     height: 100%;
-    padding: 64px 24px;
+    padding: 48px 24px;
     .title-line-wrapper {
       width: 312px;
-      margin: 10px auto 20px;
+      margin: 10px auto 30px;
       .title-line {
-        animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+        // animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+        transform: translateX(124px);
       }
     }
     >.title-wrapper {
-      margin: 0 auto 20px;
+      margin: 0 auto 30px;
+      & h1 {
+        margin-bottom: 10px!important;
+      }
     }
 
     &-content{
@@ -67,6 +71,7 @@
   .@{about}-wrapper {
     .@{about} {
       &-content{
+        padding: 0;
         &-text{
           line-height: 28px;
           position: relative;

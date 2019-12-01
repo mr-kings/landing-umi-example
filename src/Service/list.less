@@ -1,24 +1,37 @@
 @serviceList: serviceList;
 .@{serviceList}-wrapper {
-  background-color: #fafafa;
   .@{serviceList} {
-    padding-top: 65px;
+    padding: 48px 24px;
     .title-line-wrapper {
       width: 312px;
-      margin: 10px auto 20px;
+      margin: 10px auto 30px;
       .title-line {
-        animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+        // animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+        transform: translateX(124px);
       }
     }
     >h1,
     >p {
       text-align: center;
     }
+    .title-wrapper{
+      margin: 0 auto 60px;
+    }
+    .ant-tabs-nav-container-scrolling {
+      padding-right: 40px;
+      padding-left: 40px;
+      .ant-tabs-tab-arrow-show{
+        cursor: pointer;
+      }
+      svg {
+        font-size: 18px;
+      }
+    }
     .serviceItem-img-wrapper {
       margin: 0 auto;
       padding: 0 24px 24px;
       .block {
-        margin-bottom: 54px;
+        margin-bottom: 48px;
         .serviceItem-block-content {
           display: block;
           background: #fff;
@@ -42,7 +55,7 @@
           & p {
             width: 100%;
             line-height: 40px;
-            font-size: 16px;
+            font-size: 14px;
           }
           &:hover {
             & p {

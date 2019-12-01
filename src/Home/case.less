@@ -3,14 +3,18 @@
   overflow: hidden;
   .@{case} {
     height: 100%;
-    padding: 64px 24px;
+    padding: 48px 24px;
     .title-wrapper {
-      margin: 0 auto 20px;
+      margin: 0 auto 30px;
+      & h1{
+        margin-bottom: 10px!important;
+      }
       .title-line-wrapper {
         width: 312px;
-        margin: 10px auto 20px;
+        margin: 10px auto 30px;
         .title-line {
-          animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+          // animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+          transform: translateX(124px);
         }
       }
     }
@@ -43,11 +47,11 @@
           position: absolute;
           bottom: 0;
           left: 0;
-          padding: 8px;
+          padding: 6px;
           text-align: center;
-          background: @primary-color;
+          background: rgba(24, 144, 255, 0.6);
           color: @white;
-          font-size: 18px;
+          font-size: 16px;
           display: flex;
           justify-content: center;
           width: calc(~"100%");
@@ -57,14 +61,18 @@
       &-wrapper {
         position: relative;
         height: 100%;
-        top: 25%;
-        padding: 20px 0;
+        padding: 0 12px;
+        .el-carousel__container{
+          width: 100%;
+          overflow: hidden;
+        }
       }
       &:hover {
         img {
           transform: scale(1.1);
         }
         span{
+          background: rgba(24, 144, 255, 0.9);
           opacity: 1;
           transition: all 0.5s;
         }
@@ -90,7 +98,30 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .@{case}-wrapper {
+@media screen and (max-width: 768px) {
+  .@{case} {
+    &-block {
+      &-wrapper {
+        padding: 0!important;
+      }
+    }
   }
 }
+
+
+@media screen and (max-width: 415px) {
+  .@{case} {
+    &-block {
+      &-wrapper {
+        padding: 0!important;
+      }
+      &-item{
+        &-title {
+          padding: 2px!important;
+          font-size: 14px!important;
+        }
+      }
+    }
+  }
+}
+

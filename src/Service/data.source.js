@@ -47,7 +47,7 @@ export const ServiceListDataSource = {
         tag: {
           className: 'serviceItem-tag',
           text: { children: '南京管道疏通', className: 'serviceItem-tag-name' },
-          icon: { children: 'fire' },
+          // icon: { children: 'fire' },
         },
         buttonWrapper: {
           className: 'serviceItem-button-wrapper',
@@ -121,7 +121,7 @@ export const ServiceListDataSource = {
         name: 'block1',
         tag: {
           className: 'serviceItem-tag',
-          icon: { children: 'fire' },
+          // icon: { children: 'fire' },
           text: { className: 'serviceItem-tag-name', children: '南京管道清洗' },
         },
         buttonWrapper: {
@@ -197,7 +197,7 @@ export const ServiceListDataSource = {
         tag: {
           className: 'serviceItem-tag',
           text: { children: '管道检测修复', className: 'serviceItem-tag-name' },
-          icon: { children: 'fire' },
+          // icon: { children: 'fire' },
         },
         buttonWrapper: {
           className: 'serviceItem-button-wrapper',
@@ -272,7 +272,7 @@ export const ServiceListDataSource = {
         tag: {
           className: 'serviceItem-tag',
           text: { children: '排污系统清理', className: 'serviceItem-tag-name' },
-          icon: { children: 'fire' },
+          // icon: { children: 'fire' },
         },
         buttonWrapper: {
           className: 'serviceItem-button-wrapper',
@@ -346,7 +346,7 @@ export const ServiceListDataSource = {
         name: 'block4',
         tag: {
           className: 'serviceItem-tag',
-          icon: { children: 'fire' },
+          // icon: { children: 'fire' },
           text: { className: 'serviceItem-tag-name', children: '南京河道清淤' },
         },
         buttonWrapper: {
@@ -422,7 +422,7 @@ export const ServiceListDataSource = {
         tag: {
           className: 'serviceItem-tag',
           text: { children: '更多相关服务', className: 'serviceItem-tag-name' },
-          icon: { children: 'fire' },
+          // icon: { children: 'fire' },
         },
         buttonWrapper: {
           className: 'serviceItem-button-wrapper',
@@ -499,7 +499,7 @@ export const ServiceListDataSource = {
 export const ServiceDetailDataSource = {
   wrapper: { className: 'home-page-wrapper serviceDetail-wrapper' },
   page: { className: 'home-page serviceDetail' },
-  OverPack: { playScale: 0.3, className: '' },
+  OverPack: { playScale: 0.3, className: 'OverPack' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [

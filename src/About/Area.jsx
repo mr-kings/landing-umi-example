@@ -3,7 +3,7 @@ import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import { Row, Col } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import { getChildrenToRender } from '../utils/utils';
+import { getChildrenToRender } from '@/utils/utils';
 import echarts from 'echarts';
 import JiangsuJson from '@/assets/js/jiangsu.json';
 
@@ -88,7 +88,7 @@ class Area extends React.PureComponent {
       return res;
     };
     var series = [];
-    var color = ['#a6c84c', '#ffa022', '#46bee9'];
+    var color = ['#46bee9', '#ffa022', '#46bee9'];
     [['南京市', JiangsuDatas]].forEach(function(item, i) {
       series.push({
           type: 'lines',
@@ -218,10 +218,7 @@ class Area extends React.PureComponent {
   }
 
   render() {
-    const { ...props } = this.props;
-    const { dataSource } = props;
-    delete props.dataSource;
-    delete props.isMobile;
+    const { isMobile, dataSource, ...props } = this.props;
 
     return (
       <div {...props} {...dataSource.wrapper}>
@@ -239,7 +236,7 @@ class Area extends React.PureComponent {
               </Row>
             </QueueAnim>
           </OverPack>
-          <div id="echart" style={{width: '100%',height:'600px'}}></div>
+          <div id="echart" style={{width: '100%',height:isMobile ? '400px':'600px'}}></div>
         </div>
       </div>
     );

@@ -59,15 +59,15 @@ class ServiceList extends React.Component {
 
   getBlockChildren = (item, i) => {
     const { tag, content, buttonWrapper } = item;
-    const { icon } = tag;
-    const iconChildren = icon.children;
+    // const { icon } = tag;
+    // const iconChildren = icon.children;
     const tagText = tag.text;
     return (
       <TabPane
         key={i + 1}
         tab={
           <div className={tag.className}>
-            <Icon type={iconChildren} className={icon.className} />
+            {/* <Icon type={iconChildren} className={icon.className} /> */}
             <div {...tagText}>{tagText.children}</div>
           </div>
         }

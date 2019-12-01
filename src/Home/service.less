@@ -1,30 +1,33 @@
 @service: service;
 .@{service}-wrapper {
-  min-height: 550px;
   overflow: hidden;
   background: #eff3f6;
   .@{service} {
     height: 100%;
-    padding: 64px 24px;
+    padding: 48px 24px;
     .title-wrapper {
-      margin: 0 auto 50px;
+      margin: 0 auto 30px;
+      & h1 {
+        margin-bottom: 10px!important;
+      }
       .title-line-wrapper {
         width: 312px;
-        margin: 10px auto 20px;
+        margin: 10px auto 30px;
         .title-line {
-          animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+          // animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+          transform: translateX(124px);
         }
       }
     }
     .banner2-wrapper{
-      height: 560px;
+      height: 530px;
       width: 100%;
       .banner-anim {
         height: 100%;
       }
       .banner-anim-thumb span{
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
       }
       .banner-anim-thumb span.active, .banner-anim-thumb span:hover{
         background: @primary-color;
@@ -40,7 +43,6 @@
       &-wrapper {
         position: relative;
         height: 100%;
-        top: 25%;
         padding: 20px 0;
       }
 
@@ -135,7 +137,7 @@
   .@{service}-wrapper {
     .@{service} {
       & .banner2-wrapper{
-        height: 500px;
+        height: 440px;
       }
     }
   }
@@ -146,7 +148,7 @@
   .@{service}-wrapper {
     .@{service} {
       & .banner2-wrapper{
-        height: 590px;
+        height: 540px;
       }
     }
   }
