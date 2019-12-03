@@ -1,13 +1,4 @@
 @import './assets/style/antMotionStyle.less';
-@font-face {
-  font-family: 'iconfont';  /* project id 1538650 */
-  src: url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.eot');
-  src: url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1538650_ohh4gyfo91.svg#iconfont') format('svg');
-}
 
 .header-top{
   height: 64px;
@@ -26,7 +17,7 @@
     justify-content: flex-start;
     align-items: center;
     & img{
-      width: 100%
+      width: 400px;
     }
   }
   &-contact{
@@ -184,4 +175,17 @@
   border-radius: 10px;  /*滚动条的圆角*/
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #333;  /*滚动条的背景颜色*/
+}
+
+@media screen and (max-width: 767px) {
+  .header-top{
+    &-logo{
+      & img{
+        width: 100%;
+      }
+    }
+  }
+  .header-top-contact{
+    font-size: 12px;
+  }
 }

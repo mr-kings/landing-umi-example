@@ -7,20 +7,20 @@ import contact from '@/assets/img/icon/1.png';
 import xuqiu from '@/assets/img/icon/2.png';
 import hetong from '@/assets/img/icon/3.png';
 import yanshou from '@/assets/img/icon/4.png';
-import case1 from '@/assets/img/case/1.png';
-import case2 from '@/assets/img/case/2.png';
-import case3 from '@/assets/img/case/3.png';
-import case4 from '@/assets/img/case/4.png';
-import case5 from '@/assets/img/case/5.png';
+import case1 from '@/assets/img/index_case/1.png';
+import case2 from '@/assets/img/index_case/2.png';
+import case3 from '@/assets/img/index_case/3.png';
+import case4 from '@/assets/img/index_case/4.png';
+import case5 from '@/assets/img/index_case/5.png';
 import feature1 from '@/assets/img/feature/1.png';
 import feature2 from '@/assets/img/feature/2.png';
 import feature3 from '@/assets/img/feature/3.png';
-import service1 from '@/assets/img/service/1/1-1.png';
-import service2 from '@/assets/img/service/2/2-1.png';
-import service3 from '@/assets/img/service/3/3-1.png';
-import service4 from '@/assets/img/service/4/4-1.png';
-import service5 from '@/assets/img/service/5/5-1.png';
-import service6 from '@/assets/img/service/6/6-1.png';
+import service1 from '@/assets/img/index_service/1.png';
+import service2 from '@/assets/img/index_service/2.png';
+import service3 from '@/assets/img/index_service/3.png';
+import service4 from '@/assets/img/index_service/4.png';
+import service5 from '@/assets/img/index_service/5.png';
+import service6 from '@/assets/img/index_service/6.png';
 
 // 轮播图
 export const Banner10DataSource = {
@@ -38,7 +38,7 @@ export const Banner10DataSource = {
         name: 'elem1',
         BannerElement: { className: 'banner-user-elem' },
         textWrapper: { className: 'banner1-text-wrapper' },
-        bg: { className: 'bg bg1' },
+        bg: { className: 'bg bg1' }
       },
       {
         name: 'elem2',

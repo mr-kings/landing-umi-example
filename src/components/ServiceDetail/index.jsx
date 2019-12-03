@@ -7,7 +7,6 @@ import { getChildrenToRender } from '@/utils/utils';
 class ServiceDetail extends React.PureComponent {
   getChildrenToRender = (data) =>
     data.map((item) => {
-      console.info(item)
       return (
         <Col key={item.name} {...item}>
           <div {...item.children.wrapper}>
@@ -55,8 +54,8 @@ class ServiceDetail extends React.PureComponent {
               {...serviceItem.content}
             >
               {childrenToRender}
-              {children}
             </TweenOneGroup>
+            {children && <div style={{height: '60px'}}>{children}</div>}
           </OverPack>
         </div>
       </div>

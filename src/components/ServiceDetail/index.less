@@ -1,9 +1,7 @@
 @serviceDetail: serviceDetail;
 .@{serviceDetail}-wrapper {
-  background-color: #fafafa;
   .@{serviceDetail} {
-    padding: 0px 24px;
-    padding-top: 56px;
+    padding: 0px;
     >p {
       text-align: center;
     }
@@ -12,15 +10,17 @@
     }
     .title-line-wrapper {
       width: 312px;
-      margin: 10px auto 20px;
+      margin: 10px auto 30px;
       .title-line {
-        animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+        // animation: page1TitleLine 3s ease-in-out 1.5s infinite;
+        transform: translateX(124px);
       }
     }
     .serviceItem-img-wrapper {
       margin: 0 auto;
       left: 0;
       right: 0;
+      padding: 0px!important;
       .block {
         margin-bottom: 24px;
         .serviceItem-block-content {
@@ -39,7 +39,6 @@
             height: 160px;
             display: block;
             background: @line-color;
-            padding: 5%;
           }
           & p {
             width: 100%;

@@ -1,7 +1,7 @@
 import React from 'react';
 import erweima from '@/assets/img/erweima.png';
-import logo from '@/assets/img/logo/logoCL.png';
-// import logo from '@/assets/img/logo/lg2.png';
+// import logo from '@/assets/img/logo/logoCL.png';
+import logo from '@/assets/img/logo/logol.png';
 
 export const Nav20DataSource = {
   isScrollLink: true,
