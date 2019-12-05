@@ -5,6 +5,7 @@ import { enquireScreen } from 'enquire-js';
 
 import List from './List';
 import Adv from '@/components/Advertising';
+import Breadcrumb from '@/components/Breadcrumb';
 
 import {
   ServiceListDataSource,
@@ -22,6 +23,7 @@ export default class Team extends React.Component {
     super(props);
     this.state = {
       isMobile,
+      routeName: '',
       show: !location.port, // 如果不是 dva 2.0 请删除
     };
     this.timer = null;
@@ -52,6 +54,12 @@ export default class Team extends React.Component {
     }
   }
 
+  onShowDetail = (routeName) => {
+    this.setState({
+      routeName,
+    })
+  }
+
   render() {
     const children = [
       <Adv
@@ -59,9 +67,17 @@ export default class Team extends React.Component {
         key="Adv"
         isMobile={this.state.isMobile}
       />,
+      <Breadcrumb
+        id="Breadcrumb"
+        key="Breadcrumb"
+        routeName="服务项目"
+        firstRoute="/service.html"
+        secondRouteName={this.state.routeName}
+      />,
       <List
         id="List"
         key="List"
+        onShowDetail={this.onShowDetail.bind(this)}
         dataSource={ServiceListDataSource}
         isMobile={this.state.isMobile}
       />,

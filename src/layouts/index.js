@@ -6,14 +6,16 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Alert } from 'antd';
 import NavLink from 'umi/navlink';
 import NProgress from 'nprogress';
-import 'nprogress/nprogress.css'
 import Header from './Nav2';
 import Footer from './Footer1';
-
+import lianxiren from '@/assets/img/logo/lianxiren.svg';
+import phone from '@/assets/img/logo/phone.svg';
 import {
   Nav20DataSource,
   Footer10DataSource,
 } from './data.source.js';
+
+import 'nprogress/nprogress.css';
 
 
 NProgress.configure({ showSpinner: true, easing: 'ease', speed: 900, minimum: 0.1 });
@@ -79,8 +81,8 @@ class Layout extends Component {
               </NavLink>
             </div>
             <div className="header-top-contact">
-              <span className="header-man">联系人：徐经理</span>
-              <span className="header-phone">联系方式：13913370505</span>
+              {/* <div><img src={lianxiren} alt="联系人"/><span className="header-man">徐经理</span></div> */}
+              <div><img src={phone} alt="手机号"/><span className="header-phone">徐经理: 13913370505</span></div>
             </div>
           </div>
         </div>

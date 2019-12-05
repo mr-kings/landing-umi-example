@@ -7,6 +7,7 @@ import Step from './Step';
 import Desc from './Description';
 import Contact from './Contact';
 import Adv from '@/components/Advertising';
+import Breadcrumb from '@/components/Breadcrumb';
 
 import {
   ProcessDescDataSource,
@@ -62,6 +63,11 @@ export default class Team extends React.Component {
         id="Adv"
         key="Adv"
         isMobile={this.state.isMobile}
+      />,
+      <Breadcrumb
+        id="Breadcrumb"
+        key="Breadcrumb"
+        routeName="服务流程"
       />,
       <Desc
         id="Desc"

@@ -5,6 +5,7 @@ import { enquireScreen } from 'enquire-js';
 
 import List from './List';
 import Adv from '@/components/Advertising';
+import Breadcrumb from '@/components/Breadcrumb';
 
 import {
   CaseListDataSource,
@@ -58,6 +59,11 @@ export default class Team extends React.Component {
         id="Adv"
         key="Adv"
         isMobile={this.state.isMobile}
+      />,
+      <Breadcrumb
+        id="Breadcrumb"
+        key="Breadcrumb"
+        routeName="工程案列"
       />,
       <List
         id="List"

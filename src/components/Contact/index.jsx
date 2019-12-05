@@ -21,7 +21,20 @@ class Contact extends React.PureComponent {
           <Col key={i.toString()} {...blockProps}>
             <div {...item}>
               {item.children.map((child, index) => {
-                return child.name === 'image' ? <div key={index.toString()} className={child.className} ><p>{child.children}</p><img src={child.src} alt="二维码" /></div> : <div key={index.toString()} {...child}>{child.children}</div>
+                return child.name === 'image' ?
+                  <div key={index.toString()} className={child.className} >
+                    <p>{child.children}</p>
+                    <img src={child.src} alt="二维码" />
+                  </div> :
+                  <div key={index.toString()} {...child}>
+                    {
+                      child.label ? <>
+                      <span dangerouslySetInnerHTML={{__html: `<span>${child.label}</span>`}}></span>
+                      <span>{child.children}</span>
+                      </> : child.children
+                    }
+
+                  </div>
               })}
             </div>
           </Col>

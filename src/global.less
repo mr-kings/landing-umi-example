@@ -25,15 +25,34 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    color: #000;
-    font-size: 16px;
+    & div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & img {
+        height: 32px;
+        margin-right: 6px;
+      }
+      & span {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #1296db;
+      }
+    }
   }
 }
 .contentWrap{
   min-height: calc(~"100vh - 64px");
   margin: auto;
 }
-
+.ant-breadcrumb{
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .fade-enter {
   opacity: 0;
   z-index: 1;
@@ -181,11 +200,20 @@
   .header-top{
     &-logo{
       & img{
+        vertical-align: sub;
         width: 100%;
       }
     }
   }
   .header-top-contact{
-    font-size: 12px;
+    & div {
+      & img {
+        height: 24px;
+        margin: 0 6px;
+      }
+      & span{
+        font-size: 14px;
+      }
+    }
   }
 }

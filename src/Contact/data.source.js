@@ -85,17 +85,26 @@ export const ContactDataSource = {
             {
               name: 'content',
               className: 'contact-block-label',
-              children: '联系人：徐经理',
+              label: '联系人：',
+              children: '徐经理',
             },
             {
               name: 'content',
               className: 'contact-block-label',
-              children: '联系电话：13913370505/025-52209660',
+              label: '手&nbsp;&nbsp;&nbsp;&nbsp;机：',
+              children: '13913370505',
             },
             {
               name: 'content',
               className: 'contact-block-label',
-              children: '电子邮箱：qutong13913370505@163.com',
+              label: '电&nbsp;&nbsp;&nbsp;&nbsp;话：',
+              children: '025-52209660',
+            },
+            {
+              name: 'content',
+              className: 'contact-block-label',
+              label: '邮&nbsp;&nbsp;&nbsp;&nbsp;箱：',
+              children: 'qutong13913370505@163.com',
             },
             {
               name: 'image',

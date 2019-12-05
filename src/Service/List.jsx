@@ -5,11 +5,11 @@ import { Tabs, Icon, Row, Col, Button } from 'antd';
 import { getChildrenToRender } from '@/utils/utils';
 import ServiceDetail from '@/components/ServiceDetail';
 
-const TabPane = Tabs.TabPane;
-
 import {
   ServiceDetailDataSource,
 } from './data.source';
+
+const TabPane = Tabs.TabPane;
 
 class ServiceList extends React.Component {
   constructor(props) {
@@ -19,6 +19,16 @@ class ServiceList extends React.Component {
       showDetail: false,
       serviceItem: props.dataSource.block[0]
     };
+  }
+
+  componentDidMount () {
+    const { dataSource: { block } } = this.props;
+    if (window.location.hash) {
+      const id = window.location.hash.split('#')[1];
+      if (!isNaN(id) && block.children.length >= parseInt(id) && parseInt(id)>0) {
+        this.onChange(id);
+      }
+    }
   }
 
   onChange = (key) => {
@@ -43,17 +53,21 @@ class ServiceList extends React.Component {
 
   // 查看更多
   onLookMore = id => {
-    const { children } = this.props.dataSource.block
-    const serviceItem = children.find(item => Number(item.id) === Number(id));
+    const { dataSource: { block }, onShowDetail } = this.props
+    const serviceItem = block.children.find(item => Number(item.id) === Number(id));
     this.setState({
       showDetail: true,
       serviceItem
+    }, () => {
+      onShowDetail(serviceItem.tag.text.children)
     })
   }
 
   onGoBack = () => {
     this.setState({
       showDetail: false,
+    }, () => {
+      this.props.onShowDetail('')
     })
   }
 
@@ -98,7 +112,9 @@ class ServiceList extends React.Component {
               {
                 content.children.length > 4 &&
                 <div key="button" {...buttonWrapper}>
-                  <div {...buttonWrapper.children}><Button onClick={this.onLookMore.bind(this,i+1)}>{buttonWrapper.children.children}</Button></div>
+                  <div {...buttonWrapper.children}>
+                    <Button onClick={this.onLookMore.bind(this, i + 1)}>{buttonWrapper.children.children}</Button>
+                  </div>
                 </div>
               }
             </Row>
@@ -109,7 +125,7 @@ class ServiceList extends React.Component {
   };
 
   render() {
-    const { ...props } = this.props;
+    const { onShowDetail, ...props } = this.props;
     const { dataSource } = props;
     delete props.dataSource;
     delete props.isMobile;
@@ -117,34 +133,46 @@ class ServiceList extends React.Component {
     return (
       <div {...props} {...dataSource.wrapper}>
         <div {...dataSource.page}>
-          {this.state.showDetail ? this.state.serviceItem && Object.keys(this.state.serviceItem).length > 0 && <><ServiceDetail dataSource={ServiceDetailDataSource} serviceItem={this.state.serviceItem}><div className="serviceItem-button"><Button onClick={this.onGoBack}>返回列表</Button></div></ServiceDetail></> : <><div {...dataSource.titleWrapper}>
-            {dataSource.titleWrapper.children.map(getChildrenToRender)}
-            <div className="title-line-wrapper page1-line">
-              <div className="title-line" />
-            </div>
-          </div>
-          <OverPack {...dataSource.OverPack}>
-            <TweenOne.TweenOneGroup
-              key="tabs"
-              enter={{
-                y: 30,
-                opacity: 0,
-                delay: 200,
-                type: 'from',
-              }}
-              leave={{ y: 30, opacity: 0 }}
-              {...dataSource.tabsWrapper}
-            >
-              <Tabs
-                key="tabs"
-                onChange={this.onChange}
-                activeKey={`${this.state.current}`}
-                {...dataSource.block}
-              >
-                {tabsChildren}
-              </Tabs>
-            </TweenOne.TweenOneGroup>
-          </OverPack></>}
+          {this.state.showDetail ?
+            this.state.serviceItem && Object.keys(this.state.serviceItem).length > 0 &&
+            <>
+              <ServiceDetail dataSource={ServiceDetailDataSource} serviceItem={this.state.serviceItem}>
+                <div className="serviceItem-button">
+                  <Button onClick={this.onGoBack}>返回列表</Button>
+                </div>
+              </ServiceDetail>
+            </> :
+            <>
+              <div {...dataSource.titleWrapper}>
+                {dataSource.titleWrapper.children.map(getChildrenToRender)}
+                <div className="title-line-wrapper page1-line">
+                  <div className="title-line" />
+                </div>
+              </div>
+              <OverPack {...dataSource.OverPack}>
+                <TweenOne.TweenOneGroup
+                  key="tabs"
+                  enter={{
+                    y: 30,
+                    opacity: 0,
+                    delay: 200,
+                    type: 'from',
+                  }}
+                  leave={{ y: 30, opacity: 0 }}
+                  {...dataSource.tabsWrapper}
+                >
+                  <Tabs
+                    key="tabs"
+                    onChange={this.onChange}
+                    activeKey={`${this.state.current}`}
+                    {...dataSource.block}
+                  >
+                    {tabsChildren}
+                  </Tabs>
+                </TweenOne.TweenOneGroup>
+              </OverPack>
+            </>
+          }
         </div>
       </div>
     );

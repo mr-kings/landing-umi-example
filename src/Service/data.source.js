@@ -123,9 +123,9 @@ const data = [
     },{
       name: '厨房油烟囱清洗', img: service62
     },{
-      name: '南京下水道疏通', img: service63
+      name: '屋面防水堵漏', img: service63
     },{
-      name: '屋面防水堵漏', img: service64
+      name: '南京下水道疏通', img: service64
     },{
       name: '南京化粪池清掏', img: service65
     },{

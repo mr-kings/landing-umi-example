@@ -140,14 +140,42 @@
       &-img {
         text-align: left;
         padding: 0;
-      }
-      &-img {
         margin-top: 32px;
       }
       .ant-tabs-bar {
         width: auto;
-        .ant-tabs-nav {
-          float: left;
+        .ant-tabs-tab-arrow-show{
+          display: none;
+          opacity: 0;
+        }
+        .ant-tabs-nav-wrap{
+          overflow: auto;
+          display: flex;
+          .ant-tabs-nav-scroll{
+            overflow: auto;
+            .ant-tabs-nav{
+              & div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 12px;
+                .ant-tabs-tab{
+                  height: 46px;
+                  margin: 8px 22px;
+                  padding: 10px 16px;
+                  border: 1px solid #ccc;
+                  border-radius: 6px;
+                  &-active{
+                    border-color: #1890ff;
+                  }
+                }
+              }
+              & .ant-tabs-ink-bar{
+                display: none!important;
+              }
+            }
+          }
         }
       }
     }

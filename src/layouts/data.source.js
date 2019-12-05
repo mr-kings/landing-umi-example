@@ -86,8 +86,9 @@ export const Footer10DataSource = {
           children: [
             { name: 'link0', children: '公司名称：江苏趣通市政工程有限公司' },
             { name: 'link1', children: '公司地址：江苏省南京市江宁区天元东路388号' },
-            { name: 'link2', children: '公司电话：13913370505 / 025-52209660' },
-            { name: 'link3', children: '公司邮箱：qutong13913370505@163.com' },
+            { name: 'link2', children: '公司邮箱：qutong13913370505@163.com' },
+            { name: 'link3', children: '联系手机：13913370505' },
+            { name: 'link4', children: '联系电话：025-52209660' },
           ],
         },
       },
@@ -120,7 +121,7 @@ export const Footer10DataSource = {
     children: (
       <>
         <p>
-          Copyright ©2019 Powered By <a href="http://www.kimshare.club" >Kimshareclub</a> Version 1.0.0
+          江苏趣通市政工程有限公司
         </p>
         <p>
           <a href="http://www.beian.miit.gov.cn" style={{marginLeft: '6px'}}>苏ICP备19066265号-1</a>

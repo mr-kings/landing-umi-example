@@ -9,6 +9,7 @@ import Service from './Service';
 import Group from './Group';
 import Area from './Area';
 import Adv from '@/components/Advertising';
+import Breadcrumb from '@/components/Breadcrumb';
 
 import {
   AboutDataSource,
@@ -66,6 +67,11 @@ export default class Home extends React.Component {
         id="Adv"
         key="Adv"
         isMobile={this.state.isMobile}
+      />,
+      <Breadcrumb
+        id="Breadcrumb"
+        key="Breadcrumb"
+        routeName="关于我们"
       />,
       <About
         id="About"

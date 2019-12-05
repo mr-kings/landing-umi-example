@@ -6,6 +6,7 @@ import { enquireScreen } from 'enquire-js';
 import Position from './Position';
 import Contact from './Contact';
 import Adv from '@/components/Advertising';
+import Breadcrumb from '@/components/Breadcrumb';
 
 import {
   PositionDataSource,
@@ -59,6 +60,11 @@ export default class Team extends React.Component {
         id="Adv"
         key="Adv"
         isMobile={this.state.isMobile}
+      />,
+      <Breadcrumb
+        id="Breadcrumb"
+        key="Breadcrumb"
+        routeName="联系我们"
       />,
       <Position
         id="Position"
