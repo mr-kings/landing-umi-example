@@ -1,11 +1,15 @@
-import React from 'react';
-
+import chuangshiren from '@/assets/img/company/chuangshiren.jpg';
+import team1 from '@/assets/img/company/team1.jpg';
+import team2 from '@/assets/img/company/team2.jpg';
+import Rebecca from '@/assets/img/company/Rebecca.jpg';
+import Anna from '@/assets/img/company/Anna.jpg';
+import Katarzyna from '@/assets/img/company/Katarzyna.jpg';
 
 // 公司简介
 export const AboutDataSource = {
   wrapper: { className: 'home-page-wrapper aboutModule-wrapper' },
-  page: { className: 'aboutModule' },
-  OverPack: { playScale: 0.3, className: '' },
+  page: { className: 'home-page aboutModule' },
+  OverPack: { playScale: 0.3, className: 'OverPack' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [
@@ -73,291 +77,131 @@ export const AboutDataSource = {
   },
 };
 
-// 公司文化
-export const CultureDataSource = {
-  wrapper: { className: 'home-page-wrapper aboutCultureModule-wrapper' },
-  page: { className: 'home-page aboutCultureModule' },
-  OverPack: { playScale: 0.3, className: '' },
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      {
-        name: 'title',
-        children: (
-          <>
-            <p>企业文化</p>
-          </>
-        ),
-      },
-    ],
+// 创始人
+export const CreateManDataSource = {
+  wrapper: { className: 'home-page-wrapper createMan-wrapper' },
+  OverPack: { className: 'home-page createMan', playScale: 0.3 },
+  imgWrapper: { className: 'createMan-img', md: 14, xs: 24 },
+  img: {
+    children: chuangshiren,
   },
-  childWrapper: {
-    className: 'aboutCultureModule-block-wrapper',
-    children: [
-      {
-        name: 'block0',
-        className: 'aboutCultureModule-block',
-        md: 8,
-        xs: 24,
-        children: {
-          className: 'aboutCultureModule-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'aboutCultureModule-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
-            },
-            {
-              name: 'title',
-              className: 'aboutCultureModule-block-title',
-              children: '企业价值观',
-            },
-            { name: 'content', children: '以诚行道，以信载物' },
-          ],
-        },
-      },
-      {
-        name: 'block1',
-        className: 'aboutCultureModule-block',
-        md: 8,
-        xs: 24,
-        children: {
-          className: 'aboutCultureModule-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'aboutCultureModule-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
-            },
-            {
-              name: 'title',
-              className: 'aboutCultureModule-block-title',
-              children: '企业服务宗旨',
-            },
-            {
-              name: 'content',
-              children: '专业高效，保证服务质量',
-            },
-          ],
-        },
-      },
-      {
-        name: 'block2',
-        className: 'aboutCultureModule-block',
-        md: 8,
-        xs: 24,
-        children: {
-          className: 'aboutCultureModule-block-item',
-          children: [
-            {
-              name: 'image',
-              className: 'aboutCultureModule-block-icon',
-              children:
-                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
-            },
-            {
-              name: 'title',
-              className: 'aboutCultureModule-block-title',
-              children: '企业使命',
-            },
-            {
-              name: 'content',
-              children: '解决城市刚需，美化环境',
-            },
-          ],
-        },
-      },
-    ],
+  textWrapper: { className: 'createMan-text', md: 10, xs: 24 },
+  title: { className: 'createMan-title', children: `创始人` },
+  content: {
+    className: 'createMan-content',
+    children: `作为有着丰富经验的机器人专 家， 公司的两位创始人花了多年心血 打造和完善EMYS。在2017年， 创始人之一的 JAN KĘDZIERSKI 博士被《麻省理工科技评论》选 为35岁以下的欧洲顶尖科技创新 者之一。另外，EMYS 的联合创始人 MICHAŁ DZIERGWA 也是波兰华沙的前 30名顶尖科技创新者之一。`,
   },
 };
 
-// 服务群体
-export const ServiceGroupDataSource = {
-  wrapper: { className: 'home-page-wrapper serviceGroup-wrapper' },
-  page: { className: 'home-page serviceGroup' },
-  OverPack: { playScale: 0.3 },
+// 团队成员
+export const TeamDataSource = {
+  wrapper: { className: 'home-page-wrapper teams-wrapper' },
+  page: { className: 'home-page teams' },
+  OverPack: { playScale: 0.3, className: 'OverPack' },
   titleWrapper: {
     className: 'title-wrapper',
-    children: [
-      {
-        name: 'title',
-        children: '我们的客户群体',
-        className: 'title-h1',
-      },
-    ],
+    children: [{ name: 'title', children: '核心成员' }],
   },
   block: {
-    wrapper: { className: 'serviceGroup-box' },
-    blockWrapper: { className: 'serviceGroup-block' },
-    height: 300,
-    backgroundColor: `#1890ff`,
-    text: ['市政','公司','物业','家庭','酒店','饭店','工厂','学校'],
-  }
-}
-
-// 服务区域
-export const ServiceAreaDataSource = {
-  wrapper: { className: 'home-page-wrapper serviceArea-wrapper' },
-  page: { className: 'home-page serviceArea' },
-  OverPack: { playScale: 0.3 },
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      {
-        name: 'title',
-        children: '服务区域',
-        className: 'title-h1',
-      },
-    ],
-  },
-  block: {
-    className: 'serviceArea-block-wrapper',
+    className: 'block-wrapper',
     children: [
       {
         name: 'block0',
-        className: 'serviceArea-block',
+        className: 'block',
         md: 8,
         xs: 24,
-        children: {
-          icon: {
-            className: 'serviceArea-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
-          },
-          textWrapper: { className: 'serviceArea-text' },
-          title: { className: 'serviceArea-title', children: '' },
-          content: {
-            className: 'serviceArea-content',
-            children: '客服急速应答，团队高效施工',
-          },
+        titleWrapper: {
+          children: [
+            {
+              name: 'image',
+              className: 'teams-image',
+              children: Rebecca,
+            },
+            { name: 'title', className: 'teams-title', children: 'Rebecca Dawes' },
+            {
+              name: 'content',
+              className: 'teams-job',
+              children: '公司+职位 信息暂缺',
+            },
+            {
+              name: 'content',
+              className: 'teams-content',
+              children: `Rebecca在英国和波兰有8年丰富的儿童教育经验。她是剑桥英语教育 CELTA和CELTYL合格证书的持有者。职业生涯中，她参与了许多儿童教学游戏和教材的内容制作`,
+            },
+          ],
         },
       },
       {
         name: 'block1',
-        className: 'serviceArea-block',
+        className: 'block',
         md: 8,
         xs: 24,
-        children: {
-          icon: {
-            className: 'serviceArea-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
-          },
-          textWrapper: { className: 'serviceArea-text' },
-          title: { className: 'serviceArea-title', children: '' },
-          content: {
-            className: 'serviceArea-content',
-            children: '评估项目难度，收费有凭有据',
-          },
+        titleWrapper: {
+          children: [
+            {
+              name: 'image',
+              className: 'teams-image',
+              children: Anna,
+            },
+            { name: 'title', className: 'teams-title', children: 'Anna Caudle' },
+            {
+              name: 'content',
+              className: 'teams-job',
+              children: '公司+职位 信息暂缺',
+            },
+            {
+              name: 'content',
+              className: 'teams-content',
+              children:`Anna是富有教育经验的儿童英语课本和教材作家。她曾在美国密苏里大学任教，教授英文写作，现阶段是波兰罗兹大学的高级教授。 Anna 参与的英语内容制作包括电视节目《English and Arts》、儿童学校课本。《Surprise》、《Globetrotter》和7级英语教材《Leo English》`,
+            },
+          ],
         },
       },
       {
         name: 'block2',
-        className: 'serviceArea-block',
+        className: 'block',
         md: 8,
         xs: 24,
-        children: {
-          icon: {
-            className: 'serviceArea-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
-          },
-          textWrapper: { className: 'serviceArea-text' },
-          title: { className: 'serviceArea-title', children: '' },
-          content: {
-            className: 'serviceArea-content',
-            children: '合同制合作形式，并提供维护服务',
-          },
+        titleWrapper: {
+          children: [
+            {
+              name: 'image',
+              className: 'teams-image',
+              children: Katarzyna,
+            },
+            { name: 'title', className: 'teams-title', children: 'Katarzyna Rojkowska' },
+            {
+              name: 'content',
+              className: 'teams-job',
+              children: '公司+职位 信息暂缺',
+            },
+            {
+              name: 'content',
+              className: 'teams-content',
+              children: `Katarzyna 是著名的心理 学家、作者、教育专家，也是两个教育品牌— Leader School和Leonardo School 的创始人和总监。她是少儿英语教材品Leo English教科书的作者之一， 也是许多与儿童发展有关的出版物的作者`,
+            },
+          ],
         },
       },
     ],
   },
 }
 
-
-// 服务特点
-export const ServiceFetureDataSource = {
-  wrapper: { className: 'home-page-wrapper serviceFeature-wrapper' },
-  page: { className: 'home-page serviceFeature' },
-  OverPack: { playScale: 0.3 },
-  titleWrapper: {
-    className: 'title-wrapper',
-    children: [
-      {
-        name: 'title',
-        children: '服务特点',
-        className: 'title-h1',
-      },
-      // {
-      //   name: 'content',
-      //   className: 'title-content',
-      //   children: '基于阿里云强大的基础资源',
-      // },
-    ],
+// 团队介绍
+export const GroupDataSource = {
+  wrapper: { className: 'home-page-wrapper group-wrapper' },
+  OverPack: { className: 'home-page group', playScale: 0.3 },
+  imgWrapper: { className: 'group-img', md: 10, xs: 24 },
+  img: {
+    children: team1,
   },
-  block: {
-    className: 'serviceFeature-block-wrapper',
-    children: [
-      {
-        name: 'block0',
-        className: 'serviceFeature-block',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'serviceFeature-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/ScHBSdwpTkAHZkJ.png',
-          },
-          textWrapper: { className: 'serviceFeature-text' },
-          title: { className: 'serviceFeature-title', children: '快' },
-          content: {
-            className: 'serviceFeature-content',
-            children: '客服急速应答，团队高效施工',
-          },
-        },
-      },
-      {
-        name: 'block1',
-        className: 'serviceFeature-block',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'serviceFeature-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/NKBELAOuuKbofDD.png',
-          },
-          textWrapper: { className: 'serviceFeature-text' },
-          title: { className: 'serviceFeature-title', children: '准' },
-          content: {
-            className: 'serviceFeature-content',
-            children: '评估项目难度，收费有凭有据',
-          },
-        },
-      },
-      {
-        name: 'block2',
-        className: 'serviceFeature-block',
-        md: 8,
-        xs: 24,
-        children: {
-          icon: {
-            className: 'serviceFeature-icon',
-            children:
-              'https://zos.alipayobjects.com/rmsportal/xMSBjgxBhKfyMWX.png',
-          },
-          textWrapper: { className: 'serviceFeature-text' },
-          title: { className: 'serviceFeature-title', children: '稳' },
-          content: {
-            className: 'serviceFeature-content',
-            children: '合同制合作形式，并提供维护服务',
-          },
-        },
-      },
-    ],
+  textWrapper: { className: 'group-text', md: 14, xs: 24 },
+  title: { className: 'group-title', children: '团队介绍' },
+  content: {
+    className: 'group-content',
+    children: `EMYS的背后是一群充满创造热情，力争打造最好的教育机器人和课程的工程师、设计师及教育专家。他们在设计、构建和开发多构架机器人控制系统、机器人应用等方面有着丰富的经验。
+    目前，公司雇有多过25名核心成员。他们分别为教育专家、软件研发师、机电工程师、工业设计师、平面设计师、行销营销专家、音响制作人、产品运营及顾问。
+    `,
   },
 };
 

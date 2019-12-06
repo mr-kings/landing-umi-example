@@ -4,17 +4,16 @@ import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
 import About from './About';
-import Culture from './Culture';
-import Service from './Service';
+import CreateMan from './CreateMan';
+import Teams from './Teams';
 import Group from './Group';
-import Area from './Area';
 
 import {
   AboutDataSource,
-  CultureDataSource,
+  GroupDataSource,
   ServiceFetureDataSource,
-  ServiceGroupDataSource,
-  ServiceAreaDataSource
+  TeamDataSource,
+  CreateManDataSource
 } from './data.source';
 
 let isMobile;
@@ -59,22 +58,22 @@ export default class Home extends React.Component {
         dataSource={AboutDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Culture
-        id="Culture"
-        key="Culture"
-        dataSource={CultureDataSource}
+      <CreateMan
+        id="CreateMan"
+        key="CreateMan"
+        dataSource={CreateManDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Area
-        id="Area"
-        key="Area"
-        dataSource={ServiceAreaDataSource}
+      <Group
+        id="Group"
+        key="Group"
+        dataSource={GroupDataSource}
         isMobile={this.state.isMobile}
       />,
-      <Service
-        id="Service"
-        key="Service"
-        dataSource={ServiceFetureDataSource}
+      <Teams
+        id="Teams"
+        key="Teams"
+        dataSource={TeamDataSource}
         isMobile={this.state.isMobile}
       />,
     ];
