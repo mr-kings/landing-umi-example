@@ -133,6 +133,13 @@
     overflow: hidden;
     .@{serviceList} {
       max-width: 100%;
+      .serviceItem-img-wrapper {
+        .block {
+          .serviceItem-block-content {
+            padding: 0!important;
+          }
+        }
+      }
       &-content {
         display: block;
       }
@@ -154,16 +161,15 @@
           .ant-tabs-nav-scroll{
             overflow: auto;
             .ant-tabs-nav{
+              margin-bottom: 16px;
               & div {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                margin-bottom: 12px;
                 .ant-tabs-tab{
-                  height: 46px;
-                  margin: 8px 22px;
-                  padding: 10px 16px;
+                  margin: 8px 12px;
+                  padding: 6px 12px;
                   border: 1px solid #ccc;
                   border-radius: 6px;
                   &-active{

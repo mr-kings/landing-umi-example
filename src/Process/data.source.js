@@ -5,9 +5,7 @@ import process4 from '@/assets/img/process/4.png';
 import process5 from '@/assets/img/process/5.png';
 import process6 from '@/assets/img/process/6.png';
 import call from '@/assets/img/process/call.png';
-import call_s from '@/assets/img/process/call_s.png';
 import message from '@/assets/img/process/message.png';
-import message_s from '@/assets/img/process/message_s.png';
 
 // 服务流程简介
 export const ProcessDescDataSource = {
