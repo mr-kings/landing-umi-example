@@ -89,7 +89,7 @@ export const CreateManDataSource = {
   title: { className: 'createMan-title', children: `创始人` },
   content: {
     className: 'createMan-content',
-    children: `作为有着丰富经验的机器人专 家， 公司的两位创始人花了多年心血 打造和完善EMYS。在2017年， 创始人之一的 JAN KĘDZIERSKI 博士被《麻省理工科技评论》选 为35岁以下的欧洲顶尖科技创新 者之一。另外，EMYS 的联合创始人 MICHAŁ DZIERGWA 也是波兰华沙的前 30名顶尖科技创新者之一。`,
+    children: `作为有着丰富经验的机器人专家， 公司的两位创始人花了多年心血 打造和完善EMYS。在2017年， 创始人之一的 JAN KĘDZIERSKI 博士被《麻省理工科技评论》选 为35岁以下的欧洲顶尖科技创新 者之一。另外，EMYS 的联合创始人 MICHAŁ DZIERGWA 也是波兰华沙的前 30名顶尖科技创新者之一。`,
   },
 };
 
@@ -191,17 +191,28 @@ export const TeamDataSource = {
 export const GroupDataSource = {
   wrapper: { className: 'home-page-wrapper group-wrapper' },
   OverPack: { className: 'home-page group', playScale: 0.3 },
-  imgWrapper: { className: 'group-img', md: 10, xs: 24 },
-  img: {
-    children: team1,
-  },
-  textWrapper: { className: 'group-text', md: 14, xs: 24 },
+  imgWrapper: { className: 'group-img', md: 12, xs: 24 },
+  img: { children: team2 },
+  textWrapper: { className: 'group-text', md: 12, xs: 24 },
   title: { className: 'group-title', children: '团队介绍' },
   content: {
     className: 'group-content',
     children: `EMYS的背后是一群充满创造热情，力争打造最好的教育机器人和课程的工程师、设计师及教育专家。他们在设计、构建和开发多构架机器人控制系统、机器人应用等方面有着丰富的经验。
     目前，公司雇有多过25名核心成员。他们分别为教育专家、软件研发师、机电工程师、工业设计师、平面设计师、行销营销专家、音响制作人、产品运营及顾问。
     `,
+  },
+};
+
+export const Group2DataSource = {
+  wrapper: { className: 'home-page-wrapper group2-wrapper' },
+  OverPack: { className: 'home-page group2', playScale: 0.3 },
+  imgWrapper: { className: 'group2-img', md: 12, xs: 24 },
+  img: { children: team1 },
+  textWrapper: { className: 'group2-text', md: 12, xs: 24 },
+  title: { className: 'group2-title', children: `欧美英语教学专家团队` },
+  content: {
+    className: 'group2-content',
+    children: `一个教育机器人的内容一定要有强大教育团队的支撑。 EMYS 的团队拥有英语教育经验丰富的教育专家， 为孩子们与EMYS的学习之旅铺路!`,
   },
 };
 

@@ -1,39 +1,40 @@
 @content2: content2;
 .@{content2}-wrapper {
-  height: 360px;
   .@{content2} {
     height: 100%;
-    padding: 0 24px;
+    padding: 48px 24px;
     &-img {
       height: 100%;
       transform-origin: top;
-      padding: 0 32px;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 0 24px;
       span {
         display: block;
-        width: 250px;
         img {
           display: block;
+          border-radius: 6px;
         }
       }
     }
     &-text {
-      padding: 0 32px;
+      padding: 0 24px;
       height: 100%;
       .@{content2}-content,
       .@{content2}-title {
         position: relative !important;
       }
       .@{content2}-title {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: normal;
         color: #404040;
-        margin-top: 120px;
+        margin-top: 30px;
       }
       .@{content2}-content {
         margin-top: 20px;
+        text-align: justify;
+        line-height: 24px;
       }
     }
   }

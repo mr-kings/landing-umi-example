@@ -6,13 +6,17 @@ import { enquireScreen } from 'enquire-js';
 import List from './List';
 import Feature1 from './Feature1';
 import Feature2 from './Feature2';
+import Feature3 from './Feature3';
 import Feature4 from './Feature4';
+import Feature5 from './Feature5';
 
 import {
   CaseListDataSource,
   Feature10DataSource,
   Feature20DataSource,
-  Feature40DataSource
+  Feature30DataSource,
+  Feature40DataSource,
+  Feature50DataSource
 } from './data.source';
 
 let isMobile;
@@ -51,12 +55,6 @@ export default class Team extends React.Component {
 
   render() {
     const children = [
-      <List
-        id="List"
-        key="List"
-        dataSource={CaseListDataSource}
-        isMobile={this.state.isMobile}
-      />,
       <Feature2
         id="Feature2"
         key="Feature2"
@@ -69,10 +67,28 @@ export default class Team extends React.Component {
         dataSource={Feature10DataSource}
         isMobile={this.state.isMobile}
       />,
+      <Feature3
+        id="Feature3"
+        key="Feature3"
+        dataSource={Feature30DataSource}
+        isMobile={this.state.isMobile}
+      />,
       <Feature4
         id="Feature4"
         key="Feature4"
         dataSource={Feature40DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Feature5
+        id="Feature5"
+        key="Feature5"
+        dataSource={Feature50DataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <List
+        id="List"
+        key="List"
+        dataSource={CaseListDataSource}
         isMobile={this.state.isMobile}
       />,
     ];

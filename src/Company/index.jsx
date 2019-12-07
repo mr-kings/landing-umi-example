@@ -7,11 +7,12 @@ import About from './About';
 import CreateMan from './CreateMan';
 import Teams from './Teams';
 import Group from './Group';
+import Group2 from './Group2';
 
 import {
   AboutDataSource,
   GroupDataSource,
-  ServiceFetureDataSource,
+  Group2DataSource,
   TeamDataSource,
   CreateManDataSource
 } from './data.source';
@@ -68,6 +69,12 @@ export default class Home extends React.Component {
         id="Group"
         key="Group"
         dataSource={GroupDataSource}
+        isMobile={this.state.isMobile}
+      />,
+      <Group2
+        id="Group2"
+        key="Group2"
+        dataSource={Group2DataSource}
         isMobile={this.state.isMobile}
       />,
       <Teams

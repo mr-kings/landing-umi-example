@@ -1,39 +1,41 @@
 @content1: content1;
 .@{content1}-wrapper {
-  height: 360px;
+  background: @layout-body-background;
   .@{content1} {
     height: 100%;
-    padding: 0 24px;
+    padding: 48px 24px;
     &-img {
       height: 100%;
       transform-origin: top;
-      padding: 0 32px;
+      padding: 0 24px;
       display: flex;
       align-items: center;
       justify-content: center;
       span {
         display: block;
-        width: 250px;
         img {
           display: block;
+          border-radius: 6px;
         }
       }
     }
     &-text {
-      padding: 0 32px;
+      padding: 0 24px;
       height: 100%;
       .@{content1}-content,
       .@{content1}-title {
         position: relative !important;
       }
       .@{content1}-title {
-        font-size: 32px;
+        font-size: 28px;
         font-weight: normal;
         color: #404040;
-        margin-top: 120px;
+        margin-top: 60px;
       }
       .content {
         margin-top: 20px;
+        text-align: justify;
+        line-height: 26px;
       }
     }
   }
