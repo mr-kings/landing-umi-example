@@ -1,6 +1,7 @@
 @contact: contact;
 .@{contact}-wrapper {
   overflow: hidden;
+  background: @layout-body-background;
   .@{contact} {
     width: 100%;
     padding: 48px 24px;
@@ -47,7 +48,7 @@
         p{
           font-size: 16px;
           text-align: left;
-          margin-bottom: 16px;
+          margin-bottom: 6px;
         }
         img{
           width: 200px !important;
@@ -75,10 +76,23 @@
 
 @media screen and (max-width: 767px) {
   .@{contact}-wrapper {
-    min-height: 1220px;
     .@{contact} {
+      width: 100%;
+      padding: 24px;
+      .title-wrapper {
+        h1{
+          margin-bottom: 0;
+        }
+        .title-line-wrapper {
+          width: 312px;
+          margin: 6px auto 20px;
+        }
+      }
       &-block {
         padding: 0 20px;
+        &-wrapper{
+          padding: 20px 0;
+        }
         &-two {
           border-left: none;
         }

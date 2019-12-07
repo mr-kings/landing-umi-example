@@ -121,10 +121,7 @@ export const Footer10DataSource = {
     children: (
       <>
         <p>
-          江苏趣通市政工程有限公司
-        </p>
-        <p>
-          <a href="http://www.beian.miit.gov.cn" style={{marginLeft: '6px'}}>苏ICP备19066265号-1</a>
+          江苏趣通市政工程有限公司 <a href="http://www.beian.miit.gov.cn" style={{marginLeft: '6px'}}>苏ICP备19066265号-1</a>
         </p>
       </>
     ),

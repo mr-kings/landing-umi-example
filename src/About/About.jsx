@@ -32,13 +32,11 @@ class About extends React.PureComponent {
               componentProps={childWrapper}
             >
               {childWrapper.children.map((block, i) => {
-                const { children: item, ...blockProps } = block;
+                const { children: item } = block;
                 return (
-                  // <Col key={i.toString()} {...blockProps}>
-                    <div key={i.toString()} {...item}>
-                      {item.children.map(getChildrenToRender)}
-                    </div>
-                  // </Col>
+                  <div key={i.toString()} {...item}>
+                    {item.children.map(getChildrenToRender)}
+                  </div>
                 );
               })}
             </QueueAnim>

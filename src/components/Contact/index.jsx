@@ -63,6 +63,11 @@ class Contact extends React.PureComponent {
         this.setState({
           loading: false
         })
+      }).catch(err => {
+        console.log(err)
+        this.setState({
+          loading: false
+        })
       })
     });
   };

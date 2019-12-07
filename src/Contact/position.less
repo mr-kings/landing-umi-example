@@ -8,7 +8,6 @@
         width: 312px;
         margin: 10px auto 30px;
         .title-line {
-          // animation: page1TitleLine 3s ease-in-out 1.5s infinite;
           transform: translateX(124px);
         }
       }
@@ -67,7 +66,22 @@
 
 @media screen and (max-width: 767px) {
   .@{position}-wrapper {
-    padding-bottom: 0;
+    .@{position} {
+      padding: 8px 24px 24px 24px;
+      .title-wrapper {
+        margin: 0 auto;
+        h1{
+          margin-bottom: 0;
+        }
+        .title-line-wrapper {
+          width: 312px;
+          margin: 6px auto 20px;
+          .title-line {
+            transform: translateX(124px);
+          }
+        }
+      }
+    }
   }
 }
 

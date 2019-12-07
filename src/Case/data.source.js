@@ -44,7 +44,7 @@ data.map((item,i) => {
 export const CaseListDataSource = {
   wrapper: { className: 'home-page-wrapper caseList-wrapper' },
   page: { className: 'home-page caseList' },
-  OverPack: { playScale: 0.3, className: '' },
+  OverPack: { playScale: 0.3, className: 'OverPack' },
   titleWrapper: {
     className: 'title-wrapper',
     children: [

@@ -1,6 +1,5 @@
 @process: process;
 .@{process} {
-
   padding: 48px 24px!important;
   .title-line-wrapper {
     width: 312px;
@@ -185,11 +184,18 @@
 
 @media screen and (max-width: 767px) {
   .@{process} {
+    padding: 24px!important;
+    .title-line-wrapper {
+      margin: 6px auto 20px;
+    }
+    &-title-wrapper {
+      margin: 0 auto 20px;
+    }
     &-wrapper {
       padding-bottom: 0;
       &.home-page-wrapper {
         .home-page {
-          padding: 56px 24px 64px;
+          padding: 24px 24px 0 24px;
         }
       }
     }
@@ -203,19 +209,28 @@
     }
 
     &-block {
+      &-col{
+        margin: 0px;
+        margin-bottom: 30px;
+      }
       &-child {
-        width: 80%;
+        padding: 12px;
         margin: auto;
+        width: 90%;
         background-color: #f6f9ff;
         box-shadow: 0 12px 36px fade(#646488, 15);
       }
 
+      &-title{
+        margin: 6px 0;
+      }
       &-content {
         text-align: center;
+        margin-top: 0;
       }
 
       &-arrow {
-        bottom: -40px;
+        bottom: -24px;
         top: auto;
         left: 0;
         right: 0;

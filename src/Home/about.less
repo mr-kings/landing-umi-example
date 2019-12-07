@@ -24,6 +24,7 @@
       margin-bottom: 40px;
       padding: 0 4%;
       &-text{
+        text-align: justify;
         font-size: 16px;
         text-indent: 32px;
         line-height: 28px;
@@ -70,9 +71,20 @@
 @media screen and (max-width: 767px) {
   .@{about}-wrapper {
     .@{about} {
+      padding: 24px 24px 0;
+      .title-line-wrapper {
+        margin: 6px auto 20px;
+      }
+      >.title-wrapper {
+        margin: 0 auto 20px;
+        & h1 {
+          margin-bottom: 0px!important;
+        }
+      }
       &-content{
         padding: 0;
         &-text{
+          text-align: justify;
           line-height: 28px;
           position: relative;
           overflow: hidden;

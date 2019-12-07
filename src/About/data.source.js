@@ -9,7 +9,7 @@ import icon3 from '@/assets/img/icon/2-3.png';
 // 公司简介
 export const AboutDataSource = {
   wrapper: { className: 'home-page-wrapper aboutModule-wrapper' },
-  page: { className: 'aboutModule' },
+  page: { className: 'home-page aboutModule' },
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
@@ -27,7 +27,7 @@ export const AboutDataSource = {
         children: {
           className: 'aboutModule-block-item',
           children: [
-            { name: 'content', children: `江苏趣通市政工程有限公司是一家专业从事市政疏通行业的公司，本着客户为先、诚信至上、专业高效的服务理念，为广大客户提供管道疏通、管网CCTV检测、工业管道清洗、管道非开挖修复、下水道疏通、排水管道修复、涵洞清淤、排污箱涵清淤、化粪池清理、污水池清理、河道整治清淤、工厂废水清运、水库清淤等综合性服务。`},
+            { name: 'content', children: `江苏趣通市政工程有限公司是一家专业从事市政疏通行业的公司，本着客户为先、诚信至上、专业高效的服务理念，为广大客户提供管道疏通、管网CCTV检测、工业管道清洗、管道非开挖修复、下水道疏通、排水管道修复、涵洞清淤、排污箱涵清淤、化粪池清理、污水池清理、河道整治清淤、工厂废水清运、水库清淤等综合性服务`},
           ],
         },
       },
@@ -38,7 +38,10 @@ export const AboutDataSource = {
         children: {
           className: 'aboutModule-block-item',
           children: [
-            { name: 'content', children: `公司现今有优秀的施工团队、严格的施工流程、先进的机械设备以及标准化的服务系统，合同制合作形式，我们提供首年内1次项目检查服务，针对大需求客户，我公司特别定制了套餐服务，优惠多多，加速响应，快速解决客户的问题。公司常年承包各企业、工厂、小区物业、酒店、饭店、学校等的工程项目，欢迎广大尊敬的客户来电咨询，服务热线13913370505/025-52209660，联系人徐经理。`},
+            {
+              name: 'content',
+              children: `公司现今有优秀的施工团队、严格的施工流程、先进的机械设备以及标准化的服务系统，合同制合作形式，我们提供首年内1次项目检查服务，针对大需求客户，我公司特别定制了套餐服务，优惠多多，加速响应，快速解决客户的问题。公司常年承包各企业、工厂、小区物业、酒店、饭店、学校等的工程项目，欢迎广大尊敬的客户来电咨询，服务热线13913370505/025-52209660，联系人徐经理
+            `},
           ],
         },
       },
@@ -163,7 +166,17 @@ export const ServiceGroupDataSource = {
     blockWrapper: { className: 'serviceGroup-block' },
     height: 300,
     backgroundColor: `#1890ff`,
-    text: ['市政','公司','物业','家庭','酒店','饭店','工厂','学校'],
+    data: [
+      { name: '趣通', value: 200, size: 120 },
+      { name: '市政', value: 20, size: 90 },
+      { name: '公司', value: 20, size: 90 },
+      { name: '物业', value: 20, size: 90 },
+      { name: '家庭', value: 20, size: 90 },
+      { name: '酒店', value: 20, size: 90 },
+      { name: '饭店', value: 20, size: 90 },
+      { name: '工厂', value: 20, size: 90 },
+      { name: '学校', value: 20, size: 90 }
+    ],
   }
 }
 

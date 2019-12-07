@@ -75,7 +75,20 @@
 
 @media screen and (max-width: 769px) {
   .@{feature} {
+    padding: 24px!important;
+    .title-line-wrapper {
+      margin: 6px auto 20px;
+    }
+    .title-wrapper {
+      margin: 0 auto!important;
+      h1 {
+        margin-bottom: 0;
+      }
+    }
     &-block {
+      &-wrapper{
+        padding: 0!important;
+      }
       &-icon {
         width: 140px;
         height: 140px;

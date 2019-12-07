@@ -45,10 +45,19 @@
 @media screen and (max-width: 767px) {
   .@{serviceFeature}-wrapper {
     .@{serviceFeature} {
+      padding: 24px;
+      .title-wrapper{
+        h1 {
+          margin-bottom: 0;
+        }
+      }
+      .title-line-wrapper {
+        margin: 6px auto 20px;
+      }
       &-block-wrapper {
-        margin: 20px auto;
-        height: auto;
+        margin: auto;
         .@{serviceFeature}-block {
+          padding: 24px;
           .@{serviceFeature}-title {
             font-size: 20px;
           }

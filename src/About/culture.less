@@ -60,6 +60,18 @@
 
 @media screen and (max-width: 767px) {
   .@{aboutCultureModule}-wrapper {
-    min-height: 880px;
+    .@{aboutCultureModule}{
+      padding: 24px 24px 0 24px;
+      .title-line-wrapper {
+        margin: 6px auto 20px;
+      }
+      &-block{
+        padding: 0;
+        min-height: 180px;
+        &-wrapper{
+          padding: 0;
+        }
+      }
+    }
   }
 }

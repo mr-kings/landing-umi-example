@@ -163,38 +163,41 @@
 @media screen and (max-width: 767px) {
   .@{processStep} {
     &-wrapper {
-      padding-bottom: 0;
-      min-height: 1540px;
-
       &.home-page-wrapper {
         .home-page {
-          padding: 56px 24px 64px;
+          padding: 24px 24px 0 24px;
         }
       }
     }
-
     &-carousel-title {
       font-size: 16px;
-
       &-block {
         padding: 0 8px;
       }
     }
-
     &-block {
+      &-col{
+        margin: 0px;
+        margin-bottom: 30px;
+      }
       &-child {
-        width: 80%;
+        padding: 12px;
         margin: auto;
+        width: 80%;
         background-color: #f6f9ff;
         box-shadow: 0 12px 36px fade(#646488, 15);
       }
 
+      &-title{
+        margin: 6px 0;
+      }
       &-content {
         text-align: center;
+        margin-top: 0;
       }
 
       &-arrow {
-        bottom: -40px;
+        bottom: -24px;
         top: auto;
         left: 0;
         right: 0;
