@@ -79,25 +79,30 @@
     }
     &-menu {
       height: auto;
-      padding: 8px;
       float: inherit;
       position: relative;
-      left: -24px;
+      left: 0px;
+      padding: 8px 0;
       width: ~"calc(100% + 48px)";
-      opacity: 0;
+      opacity: 1;
       overflow: hidden;
       transition: opacity .3s @ease-in-out;
       .menu-item {
         display: inline-block;
-        width: 40%;
+        width: 33%;
         border-top: none;
         line-height: 32px;
         height: 32px;
-        margin: 6px 0 3px 0;
+        margin: 6px 0;
+        padding: 0;
+        cursor: pointer;
         &.active, &:hover {
           border: none;
           background: transparent;
           color: @primary-color;
+        }
+        & span{
+          font-size: 14px;
         }
       }
     }

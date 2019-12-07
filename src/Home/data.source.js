@@ -676,7 +676,7 @@ export const FeatureDataSource = {
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
-    children: [{ name: 'title', children: '找聚通,就是省心' }],
+    children: [{ name: 'title', children: '找趣通,就是省心' }],
   },
   childWrapper: {
     className: 'feature-block-wrapper',

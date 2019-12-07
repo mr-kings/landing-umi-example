@@ -102,25 +102,14 @@ class Header extends React.Component {
           <TweenOne
             {...LinkMenu}
             animation={
-              isMobile
-                ? {
-                    height: 0,
-                    duration: 300,
-                    onComplete: (e) => {
-                      if (this.state.phoneOpen) {
-                        e.target.style.height = 'auto';
-                      }
-                    },
-                    ease: 'easeInOutQuad',
-                  }
-                : null
+              null
             }
-            moment={moment}
-            reverse={!!phoneOpen}
+            // moment={moment}
+            // reverse={!!phoneOpen}
           >
             {navChildren}
           </TweenOne>
-          {isMobile && (
+          {/* {isMobile && (
             <div
               {...dataSource.mobileMenu}
               onClick={() => {
@@ -131,7 +120,7 @@ class Header extends React.Component {
               <em />
               <em />
             </div>
-          )}
+          )} */}
         </div>
       </TweenOne>
     );
