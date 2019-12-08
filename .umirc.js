@@ -1,5 +1,5 @@
-
 export default {
+  ssr: false,
   exportStatic: {
     htmlSuffix: true,
     dynamicRoot: true,

@@ -1,3 +1,10 @@
+/**
+ * @Author: kim
+ * @Date: 2019-12-08 14:43:08
+ * @LastEditors: kim
+ * @LastEditTime: Do not edit
+ * @Description: 描述
+ */
 import React from 'react';
 import QueueAnim from 'rc-queue-anim';
 import { Row, Col } from 'antd';
