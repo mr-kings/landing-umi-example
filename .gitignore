@@ -6,6 +6,8 @@
 
 # production
 /dist
+/server
+/ssrServer
 
 # misc
 .DS_Store

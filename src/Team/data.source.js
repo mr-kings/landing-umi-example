@@ -106,7 +106,7 @@ export const TeamContent = {
 // 公司简介
 export const IdealDataSource = {
   wrapper: { className: 'home-page-wrapper ideal-wrapper' },
-  page: { className: 'ideal' },
+  page: { className: 'home-page ideal' },
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
@@ -342,7 +342,7 @@ export const DevelopmentDataSource = {
 // 社会责任
 export const ResponsibilityDataSource = {
   wrapper: { className: 'home-page-wrapper responsibility-wrapper' },
-  page: { className: 'responsibility' },
+  page: { className: 'home-page responsibility' },
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
@@ -425,7 +425,7 @@ export const ResponsibilityDataSource = {
 // 团队文化
 export const CultureDataSource = {
   wrapper: { className: 'home-page-wrapper culture-wrapper' },
-  page: { className: 'culture' },
+  page: { className: 'home-page culture' },
   OverPack: { playScale: 0.3, className: '' },
   titleWrapper: {
     className: 'title-wrapper',
